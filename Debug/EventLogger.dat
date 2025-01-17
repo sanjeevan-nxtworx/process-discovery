@@ -1,0 +1,1550 @@
+[12:15:15 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Start of Logging
+[12:15:15 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Starting Event Socket
+[12:15:15 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Starting Event Capture
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command START
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] STARTACK
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Starting Event Capture
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Timer Thread Started 
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Semaphore found
+[12:15:17 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Started 
+[12:15:18 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Event Capture Started
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 1
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=680, y=749
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data NOT Available
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:21 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 1
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy 1
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 2
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000100d0
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS File Explorer - 1 running window
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000011
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 1
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=680, y=749
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:22 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 2
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 1 2
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 2
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 00000007:00002238:013dc5b5
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy -1
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 1
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00020422
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS 
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 00000007:00002238:032bf35f
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 00000007:00002238:008b8e5b
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 2
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=556, y=372
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 00000007:00002238:013dc5b5
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] 
+[12:15:23 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=556, y=372
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff4ad0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f5e00:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4350:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff2df0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=556, y=372
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff4ad0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=544, y=388
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff7cb0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy -1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f6020:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4440:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff6510:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: Name
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=388
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff7cb0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Name
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=388
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element is now Mouse Element
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Firing Mouse Event: 2 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff4ad0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 3 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff7cb0:00000000
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 3
+[12:15:24 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 3
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=544, y=412
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff3090:00000000
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy -1
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14cde810:00000000
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4da0:00000000
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff5fd0:00000000
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: Name
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 4
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=412
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff3090:00000000
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Name
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=412
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element is now Mouse Element
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 4
+[12:15:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 4 2
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 4
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 4
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff3090:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 4
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 4
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 4
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=544, y=430
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff5a90:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy -1
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14cde5f0:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4620:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff8730:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: Name
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 5
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=430
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff5a90:00000000
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Name
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=544, y=430
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element is now Mouse Element
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 5
+[12:15:26 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 5 2
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 5
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 5
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff5a90:00000000
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 5
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 5
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:27 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=540, y=453
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data NOT Available
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff35d0:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14cded60:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4800:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff3870:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=540, y=453
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff35d0:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 6 2
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff35d0:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 7
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=536, y=470
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff35d0:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] 
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=536, y=470
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff91b0:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy 7
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14cdec50:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150f4710:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff8490:00000000
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 7
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 7
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:28 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=536, y=470
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff91b0:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 7 2
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 7
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 7
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14ff91b0:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 7
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 7
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 7
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=532, y=492
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150cc230:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy -1
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 6
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:14cde1b0:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005060e
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000c0142
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010622
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000105a6
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000d0554
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS Name
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:1504a660:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150cdf10:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: Name
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 8
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=532, y=492
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150cc230:00000000
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Name
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=532, y=492
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element is now Mouse Element
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 8
+[12:15:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 8 2
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 8
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 8
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 000016ac:150cc230:00000000
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 8
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 8
+[12:15:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 8
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=718, y=754
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=718, y=754
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data Available
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] 
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=718, y=754
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Firing Mouse Event: 9 2
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 2
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Mouse Event 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Create Event Record 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Compiled Keys
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] {"keystrokes":[]}
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Removing Event Data from List 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Saved Event Record 9
+[12:15:32 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 1
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Event Data 10
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement x=245, y=320
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Data NOT Available
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00020778
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Added to Map
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Adding Element to Hierarchy 10
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Set Element Hierarchy
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Parent List size is 2
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:0005033c
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00030744
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Control Name IS panel
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:000207e8
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseElement Data acquired for Mouse Event 10
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback Process
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Mouse Move Callback: UIA Message KVal: 10
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Event Function 3
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Get Mouse Move Event Data -1
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMouseElement x=245, y=320
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Get Element Data
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Searching Element with Runtime ID 0000002a:00020778
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] In Element Existing in Map
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] Mouse Move Element Name: 
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Complete
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command STOP
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Ending Event Capture
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Event Capture Ended
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 16396] Timer Thread Ended 
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Killing Timer Thread
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Timer Thread Killed
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Begin
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Process Exiting
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 12076] UIA Thread Ended 
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Killing UIA Thread
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] UIA Thread Killed
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] STOP ACK
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command EVENTSIZE
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] EVENTSIZE=000002579
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command GETEVENTS
+[12:15:34 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] GETEVENTSACK=[
+	{"TimestampH":16,"TimestampL":-1048350040,"MouseX":680,"MouseY":749,"Monitor":65537,"EventCode":2,"EventID":1,"RectLeft":665,"RectTop":745,"RectRight":702,"RectBottom":775,"Descriptor": "{\"Name\":\"File Explorer - 1 running window\", \"Document\":\"\" ,\"Duration\": 3461965}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1046838351,"MouseX":556,"MouseY":372,"Monitor":65537,"EventCode":2,"EventID":10,"RectLeft":474,"RectTop":356,"RectRight":710,"RectBottom":378,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1511689}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1045526527,"MouseX":544,"MouseY":388,"Monitor":65537,"EventCode":2,"EventID":19,"RectLeft":474,"RectTop":377,"RectRight":710,"RectBottom":399,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1311824}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1043717607,"MouseX":544,"MouseY":412,"Monitor":65537,"EventCode":2,"EventID":23,"RectLeft":474,"RectTop":398,"RectRight":710,"RectBottom":420,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1808920}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1042638367,"MouseX":544,"MouseY":430,"Monitor":65537,"EventCode":2,"EventID":27,"RectLeft":474,"RectTop":419,"RectRight":710,"RectBottom":441,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1079240}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1041550378,"MouseX":540,"MouseY":453,"Monitor":65537,"EventCode":2,"EventID":31,"RectLeft":474,"RectTop":440,"RectRight":710,"RectBottom":462,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1087989}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1040678388,"MouseX":536,"MouseY":470,"Monitor":65537,"EventCode":2,"EventID":35,"RectLeft":474,"RectTop":461,"RectRight":710,"RectBottom":483,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 871990}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1039774387,"MouseX":532,"MouseY":492,"Monitor":65537,"EventCode":2,"EventID":39,"RectLeft":474,"RectTop":482,"RectRight":710,"RectBottom":504,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 904001}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-1037254530,"MouseX":718,"MouseY":754,"Monitor":65537,"EventCode":2,"EventID":5,"RectLeft":702,"RectTop":766,"RectRight":739,"RectBottom":796,"Descriptor": "{\"Name\":\"\", \"Document\":\"\" ,\"Duration\": 2519857}","Keys": "{\"keystrokes\":[]}"}
+]
+
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command WIDGETSIZE
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] WIDGETSIZE=000013771
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command GETWIDGETS
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] GETWIDGETSACK=[
+	{"ElementID":9,"ControlType":50025,"ProcessName":"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\devenv.exe","AutomationID":"TaskStatusCenter","BoundingRect":{"Left":0,"Top":744,"Right":24,"Bottom":767},"ClassName":"TaskStatusCenterCompartment","ItemType":"","Names": [ { "ID": 6,"Name":""} ] },
+	{"ElementID":6,"ControlType":50017,"ProcessName":"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\devenv.exe","AutomationID":"StatusBarContainer","BoundingRect":{"Left":24,"Top":744,"Right":966,"Bottom":767},"ClassName":"StatusBar","Parent":7,"Child":8,"Left":9,"ItemType":"","Names": [ ] },
+	{"ElementID":8,"ControlType":50020,"ProcessName":"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\devenv.exe","AutomationID":"TextCompartment","BoundingRect":{"Left":24,"Top":744,"Right":34,"Bottom":767},"ClassName":"CompartmentAutomationPeer","ItemType":"","Names": [ { "ID": 6,"Name":"Ready"} ] },
+	{"ElementID":3,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":766,"Right":1366,"Bottom":798},"ClassName":"Shell_TrayWnd","ItemType":"","Names": [ { "ID": 1,"Name":"Taskbar"} ] },
+	{"ElementID":2,"ControlType":50021,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":144,"Top":758,"Right":1067,"Bottom":788},"ClassName":"MSTaskListWClass","Parent":3,"ItemType":"","Names": [ { "ID": 1,"Name":"Running applications"} ] },
+	{"ElementID":4,"ControlType":50011,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App","BoundingRect":{"Left":628,"Top":766,"Right":665,"Bottom":796},"ClassName":"","ItemType":"","Names": [ { "ID": 1,"Name":"Sticky Notes - 2 running windows"} ] },
+	{"ElementID":1,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"Microsoft.Windows.Explorer","BoundingRect":{"Left":665,"Top":745,"Right":702,"Bottom":775},"ClassName":"","Parent":2,"Left":4,"Right":5,"ItemType":"","Names": [ ] },
+	{"ElementID":5,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","BoundingRect":{"Left":702,"Top":766,"Right":739,"Bottom":796},"ClassName":"","ItemType":"","Names": [ { "ID": 1,"Name":"NxtScope.exe - 1 running window"} ] },
+	{"ElementID":15,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":60,"Top":241,"Right":1348,"Bottom":618},"ClassName":"ShellTabWindowClass","Parent":16,"ItemType":"","Names": [ { "ID": 10,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 19,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 23,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 27,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 31,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 35,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 39,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"} ] },
+	{"ElementID":14,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":60,"Top":241,"Right":1348,"Bottom":618},"ClassName":"DUIViewWndClassName","Parent":15,"ItemType":"","Names": [ { "ID": 10,"Name":""}, { "ID": 19,"Name":""}, { "ID": 23,"Name":""}, { "ID": 27,"Name":""}, { "ID": 31,"Name":""}, { "ID": 35,"Name":""}, { "ID": 39,"Name":""} ] },
+	{"ElementID":7,"ControlType":50032,"ProcessName":"","AutomationID":"VisualStudioMainWindow","BoundingRect":{"Left":-8,"Top":-8,"Right":1374,"Bottom":776},"ClassName":"Window","ItemType":"","Names": [ { "ID": 6,"Name":"ProcoanProcessDiscovery (Running) - Microsoft Visual Studio "} ] },
+	{"ElementID":43,"ControlType":50033,"ProcessName":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6008","BoundingRect":{"Left":221,"Top":291,"Right":271,"Bottom":341},"ClassName":"wxWindowNR","Parent":44,"Right":46,"ItemType":"","Names": [ ] },
+	{"ElementID":46,"ControlType":50033,"ProcessName":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6006","BoundingRect":{"Left":281,"Top":291,"Right":331,"Bottom":341},"ClassName":"wxWindowNR","ItemType":"","Names": [ { "ID": 43,"Name":"panel"} ] },
+	{"ElementID":45,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":100,"Top":100,"Right":560,"Bottom":341},"ClassName":"#32770","ItemType":"","Names": [ { "ID": 43,"Name":""} ] },
+	{"ElementID":44,"ControlType":50033,"ProcessName":"","AutomationID":"-31975","BoundingRect":{"Left":101,"Top":288,"Right":561,"Bottom":343},"ClassName":"wxWindowNR","Parent":45,"ItemType":"","Names": [ { "ID": 43,"Name":"panel"} ] },
+	{"ElementID":12,"ControlType":50008,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":438,"Top":241,"Right":1071,"Bottom":595},"ClassName":"UIItemsView","Parent":13,"ItemType":"","Names": [ { "ID": 10,"Name":"Items View"}, { "ID": 19,"Name":"Items View"}, { "ID": 23,"Name":"Items View"}, { "ID": 27,"Name":"Items View"}, { "ID": 31,"Name":"Items View"}, { "ID": 35,"Name":"Items View"}, { "ID": 39,"Name":"Items View"} ] },
+	{"ElementID":13,"ControlType":50033,"ProcessName":"","AutomationID":"listview","BoundingRect":{"Left":438,"Top":241,"Right":1071,"Bottom":595},"ClassName":"DUIListView","Parent":14,"ItemType":"","Names": [ { "ID": 10,"Name":"Shell Folder View"}, { "ID": 19,"Name":"Shell Folder View"}, { "ID": 23,"Name":"Shell Folder View"}, { "ID": 27,"Name":"Shell Folder View"}, { "ID": 31,"Name":"Shell Folder View"}, { "ID": 35,"Name":"Shell Folder View"}, { "ID": 39,"Name":"Shell Folder View"} ] },
+	{"ElementID":16,"ControlType":50032,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":52,"Top":52,"Right":1356,"Bottom":626},"ClassName":"CabinetWClass","ItemType":"","Names": [ { "ID": 10,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 19,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 23,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 27,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 31,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 35,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 39,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"} ] },
+	{"ElementID":40,"ControlType":50007,"ProcessName":"","AutomationID":"10","BoundingRect":{"Left":452,"Top":482,"Right":1050,"Bottom":504},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 39,"Name":"NxtScopeEvents.ilk"} ] },
+	{"ElementID":28,"ControlType":50007,"ProcessName":"","AutomationID":"7","BoundingRect":{"Left":452,"Top":419,"Right":1050,"Bottom":441},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 27,"Name":"NxtScopeEventProcessor.ilk"} ] },
+	{"ElementID":24,"ControlType":50007,"ProcessName":"","AutomationID":"6","BoundingRect":{"Left":452,"Top":398,"Right":1050,"Bottom":420},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 23,"Name":"NxtScopeEventProcessor.exe"} ] },
+	{"ElementID":36,"ControlType":50007,"ProcessName":"","AutomationID":"9","BoundingRect":{"Left":452,"Top":461,"Right":1050,"Bottom":483},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 35,"Name":"NxtScopeEvents.exe"} ] },
+	{"ElementID":32,"ControlType":50007,"ProcessName":"","AutomationID":"8","BoundingRect":{"Left":452,"Top":440,"Right":1050,"Bottom":462},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 31,"Name":"NxtScopeEventProcessor.pdb"} ] },
+	{"ElementID":18,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":356,"Right":854,"Bottom":378},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 10,"Name":"Date modified"} ] },
+	{"ElementID":23,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":398,"Right":710,"Bottom":420},"ClassName":"UIProperty","Parent":24,"Left":25,"Right":26,"ItemType":"","Names": [ ] },
+	{"ElementID":31,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":440,"Right":710,"Bottom":462},"ClassName":"UIProperty","Parent":32,"Left":33,"Right":34,"ItemType":"","Names": [ ] },
+	{"ElementID":34,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":440,"Right":854,"Bottom":462},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 31,"Name":"Date modified"} ] },
+	{"ElementID":10,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":356,"Right":710,"Bottom":378},"ClassName":"UIProperty","Parent":11,"Left":17,"Right":18,"ItemType":"","Names": [ ] },
+	{"ElementID":27,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":419,"Right":710,"Bottom":441},"ClassName":"UIProperty","Parent":28,"Left":29,"Right":30,"ItemType":"","Names": [ ] },
+	{"ElementID":26,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":398,"Right":854,"Bottom":420},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 23,"Name":"Date modified"} ] },
+	{"ElementID":22,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":377,"Right":854,"Bottom":399},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 19,"Name":"Date modified"} ] },
+	{"ElementID":19,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":377,"Right":710,"Bottom":399},"ClassName":"UIProperty","Parent":20,"Left":21,"Right":22,"ItemType":"","Names": [ ] },
+	{"ElementID":38,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":461,"Right":854,"Bottom":483},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 35,"Name":"Date modified"} ] },
+	{"ElementID":30,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":419,"Right":854,"Bottom":441},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 27,"Name":"Date modified"} ] },
+	{"ElementID":35,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":461,"Right":710,"Bottom":483},"ClassName":"UIProperty","Parent":36,"Left":37,"Right":38,"ItemType":"","Names": [ ] },
+	{"ElementID":41,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":482,"Right":474,"Bottom":504},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 39,"Name":""} ] },
+	{"ElementID":39,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":474,"Top":482,"Right":710,"Bottom":504},"ClassName":"UIProperty","Parent":40,"Left":41,"Right":42,"ItemType":"","Names": [ ] },
+	{"ElementID":42,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":710,"Top":482,"Right":854,"Bottom":504},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 39,"Name":"Date modified"} ] },
+	{"ElementID":17,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":356,"Right":474,"Bottom":378},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 10,"Name":""} ] },
+	{"ElementID":21,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":377,"Right":474,"Bottom":399},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 19,"Name":""} ] },
+	{"ElementID":29,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":419,"Right":474,"Bottom":441},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 27,"Name":""} ] },
+	{"ElementID":37,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":461,"Right":474,"Bottom":483},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 35,"Name":""} ] },
+	{"ElementID":33,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":440,"Right":474,"Bottom":462},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 31,"Name":""} ] },
+	{"ElementID":25,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":456,"Top":398,"Right":474,"Bottom":420},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 23,"Name":""} ] },
+	{"ElementID":11,"ControlType":50007,"ProcessName":"","AutomationID":"4","BoundingRect":{"Left":452,"Top":356,"Right":1050,"Bottom":378},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 10,"Name":"NxtScope.ilk"} ] },
+	{"ElementID":20,"ControlType":50007,"ProcessName":"","AutomationID":"5","BoundingRect":{"Left":452,"Top":377,"Right":1050,"Bottom":399},"ClassName":"UIItem","Parent":12,"ItemType":"","Names": [ { "ID": 19,"Name":"NxtScope.pdb"} ] }
+]
+
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Received Command END
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] ENDACK
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Ending Event Process
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Closing Window
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 6220] Ending Program
+[12:15:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 13940] Event Socket Thread Closed
+[12:25:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Start of Logging
+[12:25:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Starting Event Socket
+[12:25:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Starting Event Capture
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command START
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] STARTACK
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Starting Event Capture
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Timer Thread Started 
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Semaphore found
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Started 
+[12:25:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Event Capture Started
+[12:25:49 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:49 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:49 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 1
+[12:25:49 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=674, y=750
+[12:25:49 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data NOT Available
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 1
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 1
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 2
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000100d0
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS File Explorer - 1 running window
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000011
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 1
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=674, y=750
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:50 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 1 2
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 1
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 1
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 1
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 1
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 2
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=486, y=419
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data Available
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000015
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] 
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=486, y=419
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:51 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150ce6f0:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f6130:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f5160:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150cd1f0:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=486, y=419
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150ce6f0:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 2 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150ce6f0:00000000
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 2
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:52 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=479, y=471
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff2b50:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy -1
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f5470:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f49e0:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff6a50:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: Name
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=479, y=471
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data Available
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff2b50:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Name
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=479, y=471
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element is now Mouse Element
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 3 2
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff2b50:00000000
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 3
+[12:25:53 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=478, y=506
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data NOT Available
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff8490:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f6020:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f4440:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff8730:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=478, y=506
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff8490:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 4 2
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff8490:00000000
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 4
+[12:25:54 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=478, y=528
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data Available
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14ff8490:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] 
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=478, y=528
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519c530:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14cde810:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f4da0:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519a070:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=478, y=528
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519c530:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 5 2
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519c530:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 5
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=480, y=546
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519ca70:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy -1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14cde5f0:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f4620:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:15197e50:00000000
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: Name
+[12:25:55 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=480, y=546
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data Available
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519ca70:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Name
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=480, y=546
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element is now Mouse Element
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 6 2
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519ca70:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 7
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=480, y=572
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data NOT Available
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 7
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519e210:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 7
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:14cded60:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0005060e
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000c0142
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010622
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000105a6
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000d0554
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS Name
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:150f4800:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:151988d0:00000000
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 7
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:56 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=480, y=572
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519e210:00000000
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 7 2
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 7
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 7
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 000016ac:1519e210:00000000
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 7
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 7
+[12:25:57 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback Process
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Mouse Move Callback: UIA Message KVal: 7
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 3
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Move Event Data -1
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMouseElement x=723, y=760
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Existing in Map
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseMoveElement Data acquired for Mouse Event -1
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Element Name: 
+[12:25:59 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 8
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=699, y=688
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data Available
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00010138:00000004:80000001:00010138:fffffffc:00000017
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] 
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=699, y=688
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0001013c:00000004:80000001:00010010:fffffffc:00000001
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 8
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 1
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0001013c
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS 
+[12:26:00 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:000a0846
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0001013c:00000004:80000001:00010010:fffffffc:00000002
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 8
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Firing Mouse Event: 8 2
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 2
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Mouse Event 8
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Create Event Record 8
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0001013c:00000004:80000001:00010010:fffffffc:00000001
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Compiled Keys
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] {"keystrokes":[]}
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Removing Event Data from List 8
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Saved Event Record 8
+[12:26:01 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Event Function 1
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Get Mouse Event Data 9
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement x=254, y=311
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Mouse Move Data NOT Available
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Get Element Data
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00030866
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] In Element Added to Map
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Adding Element to Hierarchy 9
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Set Element Hierarchy
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Parent List size is 2
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:0003086c
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00810418
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Control Name IS panel
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] Searching Element with Runtime ID 0000002a:00030868
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] GetMouseElement Data acquired for Mouse Event 9
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Complete
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command STOP
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Ending Event Capture
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Event Capture Ended
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 17888] Timer Thread Ended 
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Killing Timer Thread
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Timer Thread Killed
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Begin
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Process Exiting
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 8188] UIA Thread Ended 
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Killing UIA Thread
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] UIA Thread Killed
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] STOP ACK
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command EVENTSIZE
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] EVENTSIZE=000002286
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command GETEVENTS
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] GETEVENTSACK=[
+	{"TimestampH":16,"TimestampL":-419574878,"MouseX":674,"MouseY":750,"Monitor":65537,"EventCode":2,"EventID":1,"RectLeft":665,"RectTop":736,"RectRight":702,"RectBottom":766,"Descriptor": "{\"Name\":\"File Explorer - 1 running window\", \"Document\":\"\" ,\"Duration\": 2440854}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-417799023,"MouseX":486,"MouseY":419,"Monitor":65537,"EventCode":2,"EventID":6,"RectLeft":445,"RectTop":414,"RectRight":681,"RectBottom":436,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1775855}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-416463050,"MouseX":479,"MouseY":471,"Monitor":65537,"EventCode":2,"EventID":15,"RectLeft":445,"RectTop":456,"RectRight":681,"RectBottom":478,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1335973}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-415255012,"MouseX":478,"MouseY":506,"Monitor":65537,"EventCode":2,"EventID":19,"RectLeft":445,"RectTop":498,"RectRight":681,"RectBottom":520,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 1208038}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-414391102,"MouseX":478,"MouseY":528,"Monitor":65537,"EventCode":2,"EventID":23,"RectLeft":445,"RectTop":519,"RectRight":681,"RectBottom":541,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 863910}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-413511154,"MouseX":480,"MouseY":546,"Monitor":65537,"EventCode":2,"EventID":27,"RectLeft":445,"RectTop":540,"RectRight":681,"RectBottom":562,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 879948}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-412663015,"MouseX":480,"MouseY":572,"Monitor":65537,"EventCode":2,"EventID":31,"RectLeft":445,"RectTop":561,"RectRight":681,"RectBottom":583,"Descriptor": "{\"Name\":\"Name\", \"Document\":\"\" ,\"Duration\": 848139}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":16,"TimestampL":-408631110,"MouseX":699,"MouseY":688,"Monitor":65537,"EventCode":2,"EventID":35,"RectLeft":612,"RectTop":591,"RectRight":828,"RectBottom":736,"Descriptor": "{\"Name\":\"\", \"Document\":\"\" ,\"Duration\": 4031905}","Keys": "{\"keystrokes\":[]}"}
+]
+
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command WIDGETSIZE
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] WIDGETSIZE=000012122
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command GETWIDGETS
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] GETWIDGETSACK=[
+	{"ElementID":3,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":736,"Right":1366,"Bottom":768},"ClassName":"Shell_TrayWnd","ItemType":"","Names": [ { "ID": 1,"Name":"Taskbar"} ] },
+	{"ElementID":2,"ControlType":50021,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":144,"Top":736,"Right":1067,"Bottom":766},"ClassName":"MSTaskListWClass","Parent":3,"ItemType":"","Names": [ { "ID": 1,"Name":"Running applications"} ] },
+	{"ElementID":4,"ControlType":50011,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App","BoundingRect":{"Left":628,"Top":736,"Right":665,"Bottom":766},"ClassName":"","ItemType":"","Names": [ { "ID": 1,"Name":"Sticky Notes - 2 running windows"} ] },
+	{"ElementID":1,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"Microsoft.Windows.Explorer","BoundingRect":{"Left":665,"Top":736,"Right":702,"Bottom":766},"ClassName":"","Parent":2,"Left":4,"Right":5,"ItemType":"","Names": [ ] },
+	{"ElementID":5,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","BoundingRect":{"Left":702,"Top":736,"Right":739,"Bottom":766},"ClassName":"","ItemType":"","Names": [ { "ID": 1,"Name":"NxtScope.exe - 1 running window"} ] },
+	{"ElementID":36,"ControlType":50008,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":521,"Right":1366,"Bottom":736},"ClassName":"TaskListThumbnailWnd","ItemType":"","Names": [ { "ID": 35,"Name":"Task Switcher"} ] },
+	{"ElementID":35,"ControlType":50007,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":612,"Top":591,"Right":828,"Bottom":736},"ClassName":"","Parent":36,"Left":37,"Right":38,"ItemType":"","Names": [ ] },
+	{"ElementID":38,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":796,"Top":591,"Right":828,"Bottom":623},"ClassName":"","ItemType":"","Names": [ { "ID": 35,"Name":"Close"} ] },
+	{"ElementID":11,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":31,"Top":362,"Right":1319,"Bottom":739},"ClassName":"ShellTabWindowClass","Parent":12,"ItemType":"","Names": [ { "ID": 6,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 15,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 19,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 23,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 27,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 31,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"} ] },
+	{"ElementID":10,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":31,"Top":362,"Right":1319,"Bottom":739},"ClassName":"DUIViewWndClassName","Parent":11,"ItemType":"","Names": [ { "ID": 6,"Name":""}, { "ID": 15,"Name":""}, { "ID": 19,"Name":""}, { "ID": 23,"Name":""}, { "ID": 27,"Name":""}, { "ID": 31,"Name":""} ] },
+	{"ElementID":39,"ControlType":50033,"ProcessName":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6008","BoundingRect":{"Left":221,"Top":291,"Right":271,"Bottom":341},"ClassName":"wxWindowNR","Parent":40,"Right":42,"ItemType":"","Names": [ ] },
+	{"ElementID":42,"ControlType":50033,"ProcessName":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6006","BoundingRect":{"Left":281,"Top":291,"Right":331,"Bottom":341},"ClassName":"wxWindowNR","ItemType":"","Names": [ { "ID": 39,"Name":"panel"} ] },
+	{"ElementID":40,"ControlType":50033,"ProcessName":"","AutomationID":"-31954","BoundingRect":{"Left":101,"Top":288,"Right":561,"Bottom":343},"ClassName":"wxWindowNR","Parent":41,"ItemType":"","Names": [ { "ID": 39,"Name":"panel"} ] },
+	{"ElementID":8,"ControlType":50008,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":409,"Top":362,"Right":1042,"Bottom":716},"ClassName":"UIItemsView","Parent":9,"ItemType":"","Names": [ { "ID": 6,"Name":"Items View"}, { "ID": 15,"Name":"Items View"}, { "ID": 19,"Name":"Items View"}, { "ID": 23,"Name":"Items View"}, { "ID": 27,"Name":"Items View"}, { "ID": 31,"Name":"Items View"} ] },
+	{"ElementID":37,"ControlType":50033,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":612,"Top":591,"Right":828,"Bottom":736},"ClassName":"TaskListOverlayWnd","ItemType":"","Names": [ { "ID": 35,"Name":""} ] },
+	{"ElementID":9,"ControlType":50033,"ProcessName":"","AutomationID":"listview","BoundingRect":{"Left":409,"Top":362,"Right":1042,"Bottom":716},"ClassName":"DUIListView","Parent":10,"ItemType":"","Names": [ { "ID": 6,"Name":"Shell Folder View"}, { "ID": 15,"Name":"Shell Folder View"}, { "ID": 19,"Name":"Shell Folder View"}, { "ID": 23,"Name":"Shell Folder View"}, { "ID": 27,"Name":"Shell Folder View"}, { "ID": 31,"Name":"Shell Folder View"} ] },
+	{"ElementID":12,"ControlType":50032,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":23,"Top":173,"Right":1327,"Bottom":747},"ClassName":"CabinetWClass","ItemType":"","Names": [ { "ID": 6,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 15,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 19,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 23,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 27,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"}, { "ID": 31,"Name":"C:\\Users\\sanjeevand\\source\\repos\\ProcoanProcessDiscovery\\Debug"} ] },
+	{"ElementID":41,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":100,"Top":100,"Right":560,"Bottom":341},"ClassName":"#32770","ItemType":"","Names": [ { "ID": 39,"Name":""} ] },
+	{"ElementID":28,"ControlType":50007,"ProcessName":"","AutomationID":"7","BoundingRect":{"Left":423,"Top":540,"Right":1021,"Bottom":562},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 27,"Name":"NxtScopeEventProcessor.ilk"} ] },
+	{"ElementID":24,"ControlType":50007,"ProcessName":"","AutomationID":"6","BoundingRect":{"Left":423,"Top":519,"Right":1021,"Bottom":541},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 23,"Name":"NxtScopeEventProcessor.exe"} ] },
+	{"ElementID":32,"ControlType":50007,"ProcessName":"","AutomationID":"8","BoundingRect":{"Left":423,"Top":561,"Right":1021,"Bottom":583},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 31,"Name":"NxtScopeEventProcessor.pdb"} ] },
+	{"ElementID":15,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":456,"Right":681,"Bottom":478},"ClassName":"UIProperty","Parent":16,"Left":17,"Right":18,"ItemType":"","Names": [ ] },
+	{"ElementID":18,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":456,"Right":825,"Bottom":478},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 15,"Name":"Date modified"} ] },
+	{"ElementID":19,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":498,"Right":681,"Bottom":520},"ClassName":"UIProperty","Parent":20,"Left":21,"Right":22,"ItemType":"","Names": [ ] },
+	{"ElementID":22,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":498,"Right":825,"Bottom":520},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 19,"Name":"Date modified"} ] },
+	{"ElementID":14,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":414,"Right":825,"Bottom":436},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 6,"Name":"Date modified"} ] },
+	{"ElementID":6,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":414,"Right":681,"Bottom":436},"ClassName":"UIProperty","Parent":7,"Left":13,"Right":14,"ItemType":"","Names": [ ] },
+	{"ElementID":21,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":498,"Right":445,"Bottom":520},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 19,"Name":""} ] },
+	{"ElementID":29,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":540,"Right":445,"Bottom":562},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 27,"Name":""} ] },
+	{"ElementID":33,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":561,"Right":445,"Bottom":583},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 31,"Name":""} ] },
+	{"ElementID":17,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":456,"Right":445,"Bottom":478},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 15,"Name":""} ] },
+	{"ElementID":25,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":519,"Right":445,"Bottom":541},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 23,"Name":""} ] },
+	{"ElementID":13,"ControlType":50006,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"","BoundingRect":{"Left":427,"Top":414,"Right":445,"Bottom":436},"ClassName":"UIImage","ItemType":"","Names": [ { "ID": 6,"Name":""} ] },
+	{"ElementID":16,"ControlType":50007,"ProcessName":"","AutomationID":"3","BoundingRect":{"Left":423,"Top":456,"Right":1021,"Bottom":478},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 15,"Name":"NxtScope.exe"} ] },
+	{"ElementID":20,"ControlType":50007,"ProcessName":"","AutomationID":"5","BoundingRect":{"Left":423,"Top":498,"Right":1021,"Bottom":520},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 19,"Name":"NxtScope.pdb"} ] },
+	{"ElementID":7,"ControlType":50007,"ProcessName":"","AutomationID":"1","BoundingRect":{"Left":423,"Top":414,"Right":1021,"Bottom":436},"ClassName":"UIItem","Parent":8,"ItemType":"","Names": [ { "ID": 6,"Name":"resources"} ] },
+	{"ElementID":30,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":540,"Right":825,"Bottom":562},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 27,"Name":"Date modified"} ] },
+	{"ElementID":34,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":561,"Right":825,"Bottom":583},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 31,"Name":"Date modified"} ] },
+	{"ElementID":26,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.DateModified","BoundingRect":{"Left":681,"Top":519,"Right":825,"Bottom":541},"ClassName":"UIProperty","ItemType":"","Names": [ { "ID": 23,"Name":"Date modified"} ] },
+	{"ElementID":23,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":519,"Right":681,"Bottom":541},"ClassName":"UIProperty","Parent":24,"Left":25,"Right":26,"ItemType":"","Names": [ ] },
+	{"ElementID":27,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":540,"Right":681,"Bottom":562},"ClassName":"UIProperty","Parent":28,"Left":29,"Right":30,"ItemType":"","Names": [ ] },
+	{"ElementID":31,"ControlType":50004,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"System.ItemNameDisplay","BoundingRect":{"Left":445,"Top":561,"Right":681,"Bottom":583},"ClassName":"UIProperty","Parent":32,"Left":33,"Right":34,"ItemType":"","Names": [ ] }
+]
+
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Received Command END
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] ENDACK
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Ending Event Process
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Closing Window
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 14676] Ending Program
+[12:26:02 +05:30] [NxtWorxEventLogger] [---I---] [thread 10176] Event Socket Thread Closed
+[10:50:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Start of Logging
+[10:50:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Starting Event Socket
+[10:50:25 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Starting Event Capture
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command START
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] STARTACK
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Starting Event Capture
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Semaphore found
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Event Capture Started
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Timer Thread Started 
+[10:50:29 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Started 
+[10:50:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 1
+[10:50:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=524, y=13
+[10:50:30 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data NOT Available
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000092
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 7
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000052
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:0000008e
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000059
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000053
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b5
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000061
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Finding Browser Address Bar
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback Process
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback: UIA Message KVal: 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Not Found Edge Browser Address Bar
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Found Edge Chromium Browser Address Bar
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS Google
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000bb
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:0000007d
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000ba
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 3
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Move Event Data -1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMouseElement x=524, y=13
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000092
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Existing in Map
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMoveElement Data acquired for Mouse Event -1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element Name: 
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Firing Mouse Event: 1 2
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Mouse Event 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000092
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[]}
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 1
+[10:50:31 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=930, y=413
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data Available
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000092
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] 
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=930, y=413
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 8
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041c
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:0000005b
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000414
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b8
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000053
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b5
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000061
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS 
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000433
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback Process
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback: UIA Message KVal: 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 3
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Move Event Data -1
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMouseElement x=930, y=413
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Existing in Map
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMoveElement Data acquired for Mouse Event -1
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element Name: 
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Firing Mouse Event: 2 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Mouse Event 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[]}
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 2
+[10:50:33 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=930, y=413
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data Available
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] 
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=930, y=413
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element is now Mouse Element
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 4
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=930, y=413
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data NOT Available
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041d
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy 4
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 10
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000423
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041c
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:0000005b
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000414
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b8
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000053
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b5
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000061
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS Search
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000444
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000044b
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Firing Mouse Event: 3 2
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 4
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Mouse Event 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00000425
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[]}
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 3
+[10:50:35 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 5
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,72,5
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041d
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Existing in Map
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Data acquired for Key Event: 5
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 6
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,72,6
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 6
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 72, key: 33 action: M scanCode: 128 keyPressed: 128
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 33 
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Firing Mouse Event: 4 2
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Mouse Event 4
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 4
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041d
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[]}
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 4
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 4
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 7
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,69,7
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 7
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 69, key: 30 action: M scanCode: 0 keyPressed: 0
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 0
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed and stored keyVal: 30, scanCode: 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 8
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,69,8
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 8
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 69, key: 30 action: M scanCode: 128 keyPressed: 128
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 30 
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 9
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,76,9
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 9
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 0 keyPressed: 0
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 10
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,76,10
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 10
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 128 keyPressed: 128
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 37 
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 11
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,76,11
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 11
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 0 keyPressed: 0
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 12
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,76,12
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 12
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 128 keyPressed: 128
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 37 
+[10:50:36 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 13
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,79,13
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 13
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 79, key: 40 action: M scanCode: 0 keyPressed: 0
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 14
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,79,14
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 14
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 79, key: 40 action: M scanCode: 128 keyPressed: 128
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 40 
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 15
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,32,15
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 15
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 32, key: 0 action: I scanCode: 0 keyPressed: 0
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 16
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,32,16
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 16
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 32, key: 0 action: I scanCode: 128 keyPressed: 128
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 0 
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 17
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,87,17
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 17
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 87, key: 48 action: M scanCode: 0 keyPressed: 0
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:37 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 18
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,87,18
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 18
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 87, key: 48 action: M scanCode: 128 keyPressed: 128
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 48 
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 19
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,79,19
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 19
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 79, key: 40 action: M scanCode: 0 keyPressed: 0
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 20
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,82,20
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 20
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 82, key: 43 action: M scanCode: 0 keyPressed: 0
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 21
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,79,21
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 21
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 79, key: 40 action: M scanCode: 128 keyPressed: 128
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 40 
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 22
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,82,22
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 22
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 82, key: 43 action: M scanCode: 128 keyPressed: 128
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 43 
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 23
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,76,23
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 23
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 0 keyPressed: 0
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 24
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,68,24
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 24
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 68, key: 29 action: M scanCode: 0 keyPressed: 0
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Multiple Key cleared
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 25
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,76,25
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 25
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 76, key: 37 action: M scanCode: 128 keyPressed: 128
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 37 
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 26
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,68,26
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 26
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 68, key: 29 action: M scanCode: 128 keyPressed: 128
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 29 
+[10:50:38 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 27
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 0,13,27
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 27
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 13, key: 3 action: C scanCode: 0 keyPressed: 0
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed, Count = 1
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Pressed and stored keyVal: 3, scanCode: 0
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Key Event Data 28
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In KeyHook Event key = 128,13,28
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetKeyElement Key pressed in same control 28
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key details: vk_code 13, key: 3 action: C scanCode: 128 keyPressed: 128
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Key Released 3 
+[10:50:40 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback Process
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback: UIA Message KVal: 28
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 3
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Move Event Data -1
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMouseElement x=1152, y=432
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00001115
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy -1
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 7
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:0000005b
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000414
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b8
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000053
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:000000b5
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322:00000004:00000061
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010322
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS hello world - Google Search
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000111e
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMoveElement Data acquired for Mouse Event -1
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element Name: hello world - Google Search
+[10:50:42 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 29
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=1008, y=1073
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data Available
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:00001115
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] hello world - Google Search
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=1008, y=1073
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118:00000004:80000001:00010118:fffffffc:00000012
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy 29
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 2
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000100b0
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS NxtScope - 1 running window
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118:00000004:80000001:00010118:fffffffc:0000000d
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Firing Key Event: 5 21
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 29
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback Process
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback: UIA Message KVal: 29
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Key Event 5
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 5
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000401f0:00000004:0000041d
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[[255,0],[3,0]]}
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 5
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 5
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 3
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Move Event Data -1
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMouseElement x=1008, y=1073
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118:00000004:80000001:00010118:fffffffc:00000012
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Existing in Map
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMoveElement Data acquired for Mouse Event -1
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element Name: 
+[10:50:44 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Firing Mouse Event: 29 2
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 2
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Mouse Event 29
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Create Event Record 29
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118:00000004:80000001:00010118:fffffffc:00000012
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Compiled Keys
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] {"keystrokes":[]}
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Removing Event Data from List 29
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Saved Event Record 29
+[10:50:45 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 1
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Event Data 30
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=252, y=318
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Data Available
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00010118:00000004:80000001:00010118:fffffffc:00000012
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] 
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement x=252, y=318
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000205e4
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Added to Map
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Adding Element to Hierarchy 30
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Set Element Hierarchy
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Parent List size is 2
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000205e2
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00030524
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Control Name IS panel
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:00050568
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseElement Data acquired for Mouse Event 30
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback Process
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Mouse Move Callback: UIA Message KVal: 30
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Event Function 3
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Get Mouse Move Event Data -1
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMouseElement x=252, y=318
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Get Element Data
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Searching Element with Runtime ID 0000002a:000205e4
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] In Element Existing in Map
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] GetMouseMoveElement Data acquired for Mouse Event -1
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] Mouse Move Element Name: 
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Complete
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command STOP
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Ending Event Capture
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Event Capture Ended
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 11936] Timer Thread Ended 
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Killing Timer Thread
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Timer Thread Killed
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Begin
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Process Exiting
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 5616] UIA Thread Ended 
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Killing UIA Thread
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] UIA Thread Killed
+[10:50:46 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] STOP ACK
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command EVENTSIZE
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] EVENTSIZE=000001832
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command GETEVENTS
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] GETEVENTSACK=[
+	{"TimestampH":0,"TimestampL":1150760818,"MouseX":524,"MouseY":13,"Monitor":65537,"EventCode":2,"EventID":1,"RectLeft":481,"RectTop":0,"RectRight":729,"RectBottom":33,"Descriptor": "{\"Name\":\"Google\", \"Document\":\"https://www.google.com\" ,\"Duration\": 1659886}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":0,"TimestampL":1153272927,"MouseX":930,"MouseY":413,"Monitor":65537,"EventCode":2,"EventID":12,"RectLeft":0,"RectTop":71,"RectRight":1920,"RectBottom":1040,"Descriptor": "{\"Name\":\"\", \"Document\":\"https://www.google.com\" ,\"Duration\": 2512109}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":0,"TimestampL":1155533977,"MouseX":930,"MouseY":413,"Monitor":65537,"EventCode":2,"EventID":12,"RectLeft":0,"RectTop":71,"RectRight":1920,"RectBottom":1040,"Descriptor": "{\"Name\":\"\", \"Document\":\"https://www.google.com\" ,\"Duration\": 2261050}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":0,"TimestampL":1155677452,"MouseX":930,"MouseY":413,"Monitor":65537,"EventCode":2,"EventID":18,"RectLeft":716,"RectTop":393,"RectRight":1203,"RectBottom":428,"Descriptor": "{\"Name\":\"Search\", \"Document\":\"https://www.google.com\" ,\"Duration\": 143475}","Keys": "{\"keystrokes\":[]}"},
+	{"TimestampH":0,"TimestampL":1156019780,"MouseX":930,"MouseY":413,"Monitor":65537,"EventCode":21,"EventID":18,"RectLeft":716,"RectTop":393,"RectRight":1203,"RectBottom":428,"Descriptor": "{\"Name\":\"\", \"Document\":\"https://www.google.com\" ,\"Duration\": 342328}","Keys": "{\"keystrokes\":[[255,0],[3,0]]}"},
+	{"TimestampH":0,"TimestampL":1164383753,"MouseX":1008,"MouseY":1073,"Monitor":65537,"EventCode":2,"EventID":24,"RectLeft":981,"RectTop":1040,"RectRight":1030,"RectBottom":1080,"Descriptor": "{\"Name\":\"NxtScope - 1 running window\", \"Document\":\"\" ,\"Duration\": 8363973}","Keys": "{\"keystrokes\":[]}"}
+]
+
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command WIDGETSIZE
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] WIDGETSIZE=000008755
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command GETWIDGETS
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] GETWIDGETSACK=[
+	{"ElementID":26,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":1040,"Right":1920,"Bottom":1080},"ClassName":"Shell_TrayWnd","ItemType":"","Names": [ { "ID": 24,"Name":"Taskbar"} ] },
+	{"ElementID":25,"ControlType":50021,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":488,"Top":1040,"Right":1587,"Bottom":1080},"ClassName":"MSTaskListWClass","Parent":26,"ItemType":"","Names": [ { "ID": 24,"Name":"Running applications"} ] },
+	{"ElementID":27,"ControlType":50011,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App","BoundingRect":{"Left":932,"Top":1040,"Right":981,"Bottom":1080},"ClassName":"","ItemType":"","Names": [ { "ID": 24,"Name":"Sticky Notes - 3 running windows"} ] },
+	{"ElementID":24,"ControlType":50000,"ProcessName":"C:\\Windows\\explorer.exe","AutomationID":"C:\\Users\\Sanjeevan\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","BoundingRect":{"Left":981,"Top":1040,"Right":1030,"Bottom":1080},"ClassName":"","Parent":25,"Left":27,"ItemType":"","Names": [ ] },
+	{"ElementID":8,"ControlType":50032,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":-8,"Top":-8,"Right":1928,"Bottom":1048},"ClassName":"Chrome_WidgetWin_1","ItemType":"","Names": [ { "ID": 1,"Name":"Google and 2 more pages - Personal - Microsoft? Edge"}, { "ID": 12,"Name":"Google and 2 more pages - Personal - Microsoft? Edge"}, { "ID": 18,"Name":"Google and 2 more pages - Personal - Microsoft? Edge"}, { "ID": 22,"Name":"hello world - Google Search and 2 more pages - Personal - Microsoft? Edge"} ] },
+	{"ElementID":2,"ControlType":50033,"ProcessName":"","AutomationID":"view_22","BoundingRect":{"Left":3,"Top":0,"Right":1783,"Bottom":33},"ClassName":"TabStrip","Parent":3,"ItemType":"","Names": [ { "ID": 1,"Name":""} ] },
+	{"ElementID":5,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":0,"Right":1920,"Bottom":1040},"ClassName":"BrowserView","Parent":6,"ItemType":"","Names": [ { "ID": 1,"Name":""}, { "ID": 12,"Name":""}, { "ID": 18,"Name":""}, { "ID": 22,"Name":""} ] },
+	{"ElementID":4,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":0,"Right":1920,"Bottom":71},"ClassName":"TopContainerView","Parent":5,"ItemType":"","Names": [ { "ID": 1,"Name":""} ] },
+	{"ElementID":14,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"View","Parent":15,"ItemType":"","Names": [ { "ID": 12,"Name":""}, { "ID": 18,"Name":""}, { "ID": 22,"Name":""} ] },
+	{"ElementID":7,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":-8,"Right":1920,"Bottom":1040},"ClassName":"BrowserRootView","Parent":8,"ItemType":"","Names": [ { "ID": 1,"Name":"Google - Microsoft Edge"}, { "ID": 12,"Name":"Google - Microsoft Edge"}, { "ID": 18,"Name":"Google - Microsoft Edge"}, { "ID": 22,"Name":"hello world - Google Search - Microsoft Edge"} ] },
+	{"ElementID":10,"ControlType":50019,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"view_21","BoundingRect":{"Left":242,"Top":0,"Right":490,"Bottom":33},"ClassName":"Tab","ItemType":"","Names": [ { "ID": 1,"Name":"(6) WhatsApp"} ] },
+	{"ElementID":3,"ControlType":50018,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":3,"Top":0,"Right":1783,"Bottom":33},"ClassName":"TabStripRegionView","Parent":4,"ItemType":"","Names": [ { "ID": 1,"Name":"Tab bar"} ] },
+	{"ElementID":1,"ControlType":50019,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"view_21","BoundingRect":{"Left":481,"Top":0,"Right":729,"Bottom":33},"ClassName":"Tab","Parent":2,"Child":9,"Left":10,"Right":11,"ItemType":"","Names": [ ] },
+	{"ElementID":6,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":-8,"Right":1920,"Bottom":1040},"ClassName":"NonClientView","Parent":7,"ItemType":"","Names": [ { "ID": 1,"Name":"Microsoft Edge"}, { "ID": 12,"Name":"Microsoft Edge"}, { "ID": 18,"Name":"Microsoft Edge"}, { "ID": 22,"Name":"Microsoft Edge"} ] },
+	{"ElementID":16,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"View","Parent":5,"ItemType":"","Names": [ { "ID": 12,"Name":""}, { "ID": 18,"Name":""}, { "ID": 22,"Name":""} ] },
+	{"ElementID":11,"ControlType":50033,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":727,"Top":0,"Right":755,"Bottom":30},"ClassName":"View","ItemType":"","Names": [ { "ID": 1,"Name":""} ] },
+	{"ElementID":9,"ControlType":50000,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"view_24","BoundingRect":{"Left":700,"Top":8,"Right":717,"Bottom":25},"ClassName":"TabCloseButton","ItemType":"","Names": [ { "ID": 1,"Name":"Close tab"} ] },
+	{"ElementID":15,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"View","Parent":16,"ItemType":"","Names": [ { "ID": 12,"Name":""}, { "ID": 18,"Name":""}, { "ID": 22,"Name":""} ] },
+	{"ElementID":29,"ControlType":50033,"ProcessName":"","AutomationID":"-31975","BoundingRect":{"Left":101,"Top":288,"Right":561,"Bottom":343},"ClassName":"wxWindowNR","Parent":30,"ItemType":"","Names": [ { "ID": 28,"Name":"panel"} ] },
+	{"ElementID":28,"ControlType":50033,"ProcessName":"C:\\Users\\Sanjeevan\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6008","BoundingRect":{"Left":221,"Top":291,"Right":271,"Bottom":341},"ClassName":"wxWindowNR","Parent":29,"Right":31,"ItemType":"","Names": [ ] },
+	{"ElementID":30,"ControlType":50033,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":100,"Top":100,"Right":560,"Bottom":341},"ClassName":"#32770","ItemType":"","Names": [ { "ID": 28,"Name":""} ] },
+	{"ElementID":13,"ControlType":50030,"ProcessName":"","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"","Parent":14,"ItemType":"","Names": [ { "ID": 12,"Name":"Google"}, { "ID": 18,"Name":"Google"} ] },
+	{"ElementID":18,"ControlType":50003,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":716,"Top":393,"Right":1203,"Bottom":428},"ClassName":"gLFyf gsfi","Parent":19,"Left":20,"Right":21,"ItemType":"","Names": [ ] },
+	{"ElementID":19,"ControlType":50026,"ProcessName":"","AutomationID":"tsf","BoundingRect":{"Left":32,"Top":382,"Right":1888,"Bottom":522},"ClassName":"tsf","Parent":12,"ItemType":"","Names": [ { "ID": 18,"Name":""} ] },
+	{"ElementID":12,"ControlType":50026,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"viewport","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"ctr-p","Parent":13,"Child":17,"ItemType":"","Names": [ { "ID": 18,"Name":""} ] },
+	{"ElementID":17,"ControlType":50005,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":1708,"Top":90,"Right":1743,"Bottom":114},"ClassName":"gb_g","ItemType":"","Names": [ { "ID": 12,"Name":"Gmail"} ] },
+	{"ElementID":20,"ControlType":50026,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":683,"Top":389,"Right":716,"Bottom":433},"ClassName":"iblpc","ItemType":"","Names": [ { "ID": 18,"Name":""} ] },
+	{"ElementID":21,"ControlType":50000,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":1203,"Top":389,"Right":1243,"Bottom":433},"ClassName":"hpuQDe","ItemType":"","Names": [ { "ID": 18,"Name":"Search by voice"} ] },
+	{"ElementID":22,"ControlType":50030,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1920,"Bottom":1040},"ClassName":"","Parent":14,"Child":23,"ItemType":"","Names": [ ] },
+	{"ElementID":23,"ControlType":50020,"ProcessName":"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe","AutomationID":"","BoundingRect":{"Left":0,"Top":71,"Right":1,"Bottom":72},"ClassName":"Uo8X3b","ItemType":"","Names": [ { "ID": 22,"Name":"Accessibility links"} ] },
+	{"ElementID":31,"ControlType":50033,"ProcessName":"C:\\Users\\Sanjeevan\\source\\repos\\ProcoanProcessDiscovery\\Debug\\NxtScope.exe","AutomationID":"6006","BoundingRect":{"Left":281,"Top":291,"Right":331,"Bottom":341},"ClassName":"wxWindowNR","ItemType":"","Names": [ { "ID": 28,"Name":"panel"} ] }
+]
+
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Received Command END
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] ENDACK
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Ending Event Process
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Closing Window
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 12952] Ending Program
+[10:50:47 +05:30] [NxtWorxEventLogger] [---I---] [thread 14840] Event Socket Thread Closed

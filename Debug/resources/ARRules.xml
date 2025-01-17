@@ -1,0 +1,235 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ARRuleSet>
+	<ARRule>
+		<RuleName>MouseEvents</RuleName>
+		<RuleLevel>1</RuleLevel>
+		<Rule>Event.Type EQ 1</Rule>
+		<TrueNextPath>WidgetStart</TrueNextPath>
+		<FalseNextPath>KeyEvents</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>KeyEvents</RuleName>
+		<RuleLevel>1</RuleLevel>
+		<Rule>Event.Type EQ 2</Rule>
+		<TrueValue>Event.KeyDescriptor</TrueValue>
+		<FalseNextPath>DefaultAnnotation</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>WidgetStart</RuleName>
+		<RuleLevel>1</RuleLevel>
+		<Rule>Control.Type EQ 50033</Rule>
+		<TrueNextPath>WindowMain</TrueNextPath>
+		<FalseNextPath>ButtonStart</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>WindowMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.ClassName EQ "Shell_TrayWnd"</Rule>
+		<TrueValue>"Select " + Event.DescriptorName.Evaluate("^[^-]*")</TrueValue>
+		<FalseNextPath></FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonStart</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50000</Rule>
+		<TrueNextPath>ButtonMain</TrueNextPath>
+		<FalseNextPath>CalendarMain</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50032 OR Control.Parent.Type EQ 50033 OR Control.Parent.Type EQ 50019 OR Control.Parent.Type EQ 50017 OR Control.Parent.Type EQ 50037</Rule>
+		<TrueValue>"Click On " + Control.Name</TrueValue>
+		<FalseNextPath>ButtonInMenu</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInMenu</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50010 OR Control.Parent.Type EQ 50009 OR Control.Parent.Type EQ 50011</Rule>
+		<TrueValue>"Click On " + Control.Name + " in Menu " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInGroup</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInGroup</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50026</Rule>
+		<TrueValue>"Click On " + Control.Name + " in Group " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInListItem</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInListItem</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50007</Rule>
+		<TrueValue>"Click On " + Control.Name + " in Item " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInToolBar</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInToolBar</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50021</Rule>
+		<TrueValue>"Click On " + Control.Name + " in Toolbar " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInDataGrid</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInDataGrid</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50028</Rule>
+		<TrueValue>"Click On " + Control.Name + " in Grid " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInCombo</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInCombo</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50003 OR Control.Parent.Type EQ 50023</Rule>
+		<TrueValue>"Expand " + Control.Parent.Name + " Items"</TrueValue>
+		<FalseNextPath>ButtonInScrollBar</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInScrollBar</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50014</Rule>
+		<TrueValue>"Scroll " + Control.Parent.Parent.Name</TrueValue>
+		<FalseNextPath>ButtonInSliderSpinner</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInSlider</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50015 OR Control.Parent.Type EQ 50016</Rule>
+		<TrueValue>"Change " + Control.Parent.Name + " Value"</TrueValue>
+		<FalseNextPath>ButtonInSplitButton</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInSplitButton</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50031</Rule>
+		<TrueValue>"Expand " + Control.Parent.Name + " Items"</TrueValue>
+		<FalseNextPath>ButtonInCalendar</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ButtonInCalendar</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Parent.Type EQ 50001</Rule>
+		<TrueValue>"Select " + Control.Name + " In " + Control.Parent.Name</TrueValue>
+	</ARRule>
+	
+	<!-- Start of Calendar -->
+	<ARRule>
+		<RuleName>CalendarMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50001</Rule>
+		<TrueValue>"Select " + Control.Name</TrueValue>
+		<FalseNextPath>CheckBoxMain</FalseNextPath>
+	</ARRule>
+	
+	<!-- Start of CheckBox -->
+	<ARRule>
+		<RuleName>CheckBoxMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50002</Rule>
+		<TrueValue>"Toggle " + Control.Name</TrueValue>
+		<FalseNextPath>ComboBoxMain</FalseNextPath>
+	</ARRule>
+	
+	<!-- Start of ComboBox -->
+	<ARRule>
+		<RuleName>ComboBoxMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50003</Rule>
+		<TrueValue>"Select " + Control.ItemName + " In " + Control.Name</TrueValue>
+		<FalseNextPath>EditMain</FalseNextPath>
+	</ARRule>
+	
+	<!-- Start of Edit -->
+	<ARRule>
+		<RuleName>EditMain</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50004 AND Control.Parent.Type EQ 50003</Rule>
+		<TrueValue>""</TrueValue>
+		<FalseNextPath>EditInList</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>EditInList</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50004 AND Control.Parent.Type EQ 50007</Rule>
+		<TrueValue>"Select " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>EditInRest</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>EditInRest</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50004</Rule>
+		<TrueValue>""</TrueValue>
+		<FalseNextPath>Hyperlink</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>Hyperlink</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50005</Rule>
+		<TrueValue>"Click on " + Control.Name + " Link"</TrueValue>
+		<FalseNextPath>Image</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>Image</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50006</Rule>
+		<TrueValue>"Click on " + Control.Name</TrueValue>
+		<FalseNextPath>ListItem</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>ListItem</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50007</Rule>
+		<TrueValue>"Select Item " + Control.Name + " In " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>Menu</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>Menu</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50009 OR Control.Type EQ 50010 OR Control.Type EQ 50011</Rule>
+		<TrueValue>"Select " + Control.Name + " Menu"</TrueValue>
+		<FalseNextPath>RadioButtonInGroup</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>RadioButtonInGroup</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50013 AND Control.Parent.Type EQ 50026</Rule>
+		<TrueValue>"Select " + Control.Name + " In " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>RadioButton</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>RadioButton</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50013</Rule>
+		<TrueValue>"Select " + Control.Name</TrueValue>
+		<FalseNextPath>TabItem</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>TabItem</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50019</Rule>
+		<TrueValue>"Select Tab" + Control.Name</TrueValue>
+		<FalseNextPath>Thumb</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>Thumb</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50019</Rule>
+		<TrueValue>"Position " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>TreeItem</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>TreeItem</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>Control.Type EQ 50024</Rule>
+		<TrueValue>"Select Item " + Control.Name + " In " + Control.Parent.Name</TrueValue>
+		<FalseNextPath>DefaultAnnotation</FalseNextPath>
+	</ARRule>
+	<ARRule>
+		<RuleName>DefaultAnnotation</RuleName>
+		<RuleLevel>2</RuleLevel>
+		<Rule>1 EQ 1</Rule>
+		<TrueValue>"Click On " + Control.Name</TrueValue>
+	</ARRule>
+	
+</ARRuleSet>
+

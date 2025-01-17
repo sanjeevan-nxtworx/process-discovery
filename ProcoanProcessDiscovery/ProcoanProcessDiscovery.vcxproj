@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{25F63B0F-12F3-40A3-9FBC-6A3C68079B02}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProcoanProcessDiscovery</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NxtScope</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(WXWIN)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;__WXMSW__;_WINDOWS;NOPCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;.\..\..\lib\vc_lib\mswud;.\..\..\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/permissive %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;$(SolutionDir)\Debug;$(SolutionDir)\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw31ud_core.lib;wxbase31ud.lib;wxpdfdocd.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;wininet.lib;zlib.lib;pecanlib.lib;Ws2_32.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;__WXMSW__;_WINDOWS;NOPCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;.\..\..\lib\vc_lib\mswud;.\..\..\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wxmsw31ud_core.lib;wxbase31ud.lib;wxpdfdocd.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;wininet.lib;zlib64.lib;pecanlib.lib;Ws2_32.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_x64_lib;C:\Users\Sanjeevan\source\repos\ProcoanProcessDiscovery\Libraries;C:\Users\Sanjeevan\source\repos\ProcoanProcessDiscovery\x64\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;__WXMSW__;_WINDOWS;NOPCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>"$(WXWIN)\include\msvc";"$(WXWIN)\include";.\..\..\lib\vc_lib\mswud;.\..\..\include;.;.\..\..\samples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wxmsw31u_core.lib;wxbase31u.lib;wxpdfdoc.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;wininet.lib;zlib.lib;pecanlib.lib;Ws2_32.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;C:\Users\sanjeevan\source\repos\ProcoanProcessDiscovery\Libraries;C:\Users\Sanjeevan\source\repos\ProcoanProcessDiscovery\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/permissive %(AdditionalOptions)</AdditionalOptions>
+      <ImageHasSafeExceptionHandlers />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_CRT_SECURE_NO_WARNINGS;__WXMSW__;_WINDOWS;NOPCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;.\..\..\lib\vc_x64_lib\mswud;.\..\..\include;.;.\..\..\samples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wxmsw31u_core.lib;wxbase31u.lib;wxpdfdoc.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;wininet.lib;zlib64.lib;pecanlib.lib;Ws2_32.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_x64_lib;C:\Users\Sanjeevan\source\repos\ProcoanProcessDiscovery\Libraries\x64;C:\Users\Sanjeevan\source\repos\ProcoanProcessDiscovery\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionTabPanel.h" />
+    <ClInclude Include="AnnotationRuleDefinitions.h" />
+    <ClInclude Include="AudioGauge.h" />
+    <ClInclude Include="AudioPlayerBuffer.h" />
+    <ClInclude Include="b64.h" />
+    <ClInclude Include="BitmapMerge.h" />
+    <ClInclude Include="BPMNControlPanel.h" />
+    <ClInclude Include="BPMNDecision.h" />
+    <ClInclude Include="BPMNDiagram.h" />
+    <ClInclude Include="BPMNDrawPanel.h" />
+    <ClInclude Include="BPMNElement.h" />
+    <ClInclude Include="BPMNFacade.h" />
+    <ClInclude Include="BPMNStart.h" />
+    <ClInclude Include="BPMNStop.h" />
+    <ClInclude Include="BPMNSubProcess.h" />
+    <ClInclude Include="BPMNTask.h" />
+    <ClInclude Include="CaptureElementData.h" />
+    <ClInclude Include="ChannelDataMapping.h" />
+    <ClInclude Include="ConfigClass.h" />
+    <ClInclude Include="CustomEvents.h" />
+    <ClInclude Include="DataFile.h" />
+    <ClInclude Include="EditorButtons.h" />
+    <ClInclude Include="ElementData.h" />
+    <ClInclude Include="encrypt.h" />
+    <ClInclude Include="EventCaptureURL.h" />
+    <ClInclude Include="EventRecorder.h" />
+    <ClInclude Include="ExecutionManager.h" />
+    <ClInclude Include="Expression.h" />
+    <ClInclude Include="FileContext.h" />
+    <ClInclude Include="HorizScrollBarPanel.h" />
+    <ClInclude Include="IBPMNControl.h" />
+    <ClInclude Include="InfoTabPanel.h" />
+    <ClInclude Include="IPlayerWindow.h" />
+    <ClInclude Include="json11.hpp" />
+    <ClInclude Include="KeyAnnotation.h" />
+    <ClInclude Include="KeyState.h" />
+    <ClInclude Include="LEDDisplayPanel.h" />
+    <ClInclude Include="licenceUtil.h" />
+    <ClInclude Include="LicenseDlg.h" />
+    <ClInclude Include="LineConnectionInfo.h" />
+    <ClInclude Include="lz4.h" />
+    <ClInclude Include="MainButtons.h" />
+    <ClInclude Include="MainToolBarPanel.h" />
+    <ClInclude Include="MainWindowPanel.h" />
+    <ClInclude Include="ManageScenarioDlg.h" />
+    <ClInclude Include="MaskImagePanel.h" />
+    <ClInclude Include="MMHeader.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="PDFDocument.h" />
+    <ClInclude Include="PDFSOPDoc.h" />
+    <ClInclude Include="PecanMainFrame.h" />
+    <ClInclude Include="PecanSemaphore.h" />
+    <ClInclude Include="PicButtonControlPanel.h" />
+    <ClInclude Include="PicControlPanel.h" />
+    <ClInclude Include="PictureDisplay.h" />
+    <ClInclude Include="PlayerDataFileManager.h" />
+    <ClInclude Include="ProcessDescriptionDialog.h" />
+    <ClInclude Include="ProcessSummaryPanel.h" />
+    <ClInclude Include="ProcessWindowData.h" />
+    <ClInclude Include="ProcoanButton.h" />
+    <ClInclude Include="ProcoanProcessDiscovery.h" />
+    <ClInclude Include="pugiconfig.hpp" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="RecordBufferManager.h" />
+    <ClInclude Include="RecorderButtonBar.h" />
+    <ClInclude Include="recorderButtons.h" />
+    <ClInclude Include="RecorderDataFileManager.h" />
+    <ClInclude Include="RecorderDisplayPanel.h" />
+    <ClInclude Include="RecorderInfoBarPanel.h" />
+    <ClInclude Include="RecorderMinimizePanel.h" />
+    <ClInclude Include="RecorderStartDlg.h" />
+    <ClInclude Include="RecorderTitleBarPanel.h" />
+    <ClInclude Include="RecorderUI.h" />
+    <ClInclude Include="RecorderWindow.h" />
+    <ClInclude Include="RecordingDescriptionDialog.h" />
+    <ClInclude Include="RecStatusPanel.h" />
+    <ClInclude Include="ResizeBitmap.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScenarioDefintion.h" />
+    <ClInclude Include="ScenarioFacade.h" />
+    <ClInclude Include="ScreenRecorder.h" />
+    <ClInclude Include="SliderPanel.h" />
+    <ClInclude Include="SOPPrintReport.h" />
+    <ClInclude Include="SPDLogFile.h" />
+    <ClInclude Include="SpyControlData.h" />
+    <ClInclude Include="SpyControlProxy.h" />
+    <ClInclude Include="SPYDataFacade.h" />
+    <ClInclude Include="SPYEditorEnum.h" />
+    <ClInclude Include="SpyEditorScreen.h" />
+    <ClInclude Include="SpyHeader.h" />
+    <ClInclude Include="SpyMaskData.h" />
+    <ClInclude Include="SpyProcessData.h" />
+    <ClInclude Include="SpyUrlData.h" />
+    <ClInclude Include="SpyWindowData.h" />
+    <ClInclude Include="SpyCaptureScreen.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeDisplay.h" />
+    <ClInclude Include="Tokenizer.h" />
+    <ClInclude Include="ToolbarButtons.h" />
+    <ClInclude Include="TransparentWindow.h" />
+    <ClInclude Include="UIUtility.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VertScrollBarPanel.h" />
+    <ClInclude Include="VideoEditorScreen.h" />
+    <ClInclude Include="VideoSegmentClass.h" />
+    <ClInclude Include="vigenere.h" />
+    <ClInclude Include="WavDeviceList.h" />
+    <ClInclude Include="WavePlayer.h" />
+    <ClInclude Include="WaveRecorder.h" />
+    <ClInclude Include="WindowControlData.h" />
+    <ClInclude Include="WordReport\AppProps.h" />
+    <ClInclude Include="WordReport\CoreProps.h" />
+    <ClInclude Include="WordReport\DocumentBody.h" />
+    <ClInclude Include="WordReport\DocXDocPart.h" />
+    <ClInclude Include="WordReport\DocXTag.h" />
+    <ClInclude Include="WordReport\DocXTagAttributes.h" />
+    <ClInclude Include="WordReport\DrawingAnchor.h" />
+    <ClInclude Include="WordReport\DrawingInline.h" />
+    <ClInclude Include="WordReport\EndnotesDocument.h" />
+    <ClInclude Include="WordReport\Font.h" />
+    <ClInclude Include="WordReport\FontTableDoc.h" />
+    <ClInclude Include="WordReport\Footer.h" />
+    <ClInclude Include="WordReport\FootnotesDocument.h" />
+    <ClInclude Include="WordReport\Header.h" />
+    <ClInclude Include="WordReport\lodepng.h" />
+    <ClInclude Include="WordReport\lodepng_util.h" />
+    <ClInclude Include="WordReport\miniz.h" />
+    <ClInclude Include="WordReport\Numbering.h" />
+    <ClInclude Include="WordReport\Paragraph.h" />
+    <ClInclude Include="WordReport\ParagraphRun.h" />
+    <ClInclude Include="WordReport\PropertyStructures.h" />
+    <ClInclude Include="WordReport\Settings.h" />
+    <ClInclude Include="WordReport\SOPWordReport.h" />
+    <ClInclude Include="WordReport\StyleDocument.h" />
+    <ClInclude Include="WordReport\Table.h" />
+    <ClInclude Include="WordReport\TableCell.h" />
+    <ClInclude Include="WordReport\TableRow.h" />
+    <ClInclude Include="WordReport\Theme1.h" />
+    <ClInclude Include="WordReport\TOCsdt.h" />
+    <ClInclude Include="WordReport\WebSettings.h" />
+    <ClInclude Include="WordReport\WordDocument.h" />
+    <ClInclude Include="WordReport\zip.h" />
+    <ClInclude Include="wxImagePanel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionTabPanel.cpp" />
+    <ClCompile Include="AnnotationRuleDefinitions.cpp" />
+    <ClCompile Include="AudioGauge.cpp" />
+    <ClCompile Include="AudioPlayerBuffer.cpp" />
+    <ClCompile Include="BitmapMerge.cpp" />
+    <ClCompile Include="BPMNControlPanel.cpp" />
+    <ClCompile Include="BPMNDecision.cpp" />
+    <ClCompile Include="BPMNDiagram.cpp" />
+    <ClCompile Include="BPMNDrawPanel.cpp" />
+    <ClCompile Include="BPMNElement.cpp" />
+    <ClCompile Include="BPMNFacade.cpp" />
+    <ClCompile Include="BPMNStart.cpp" />
+    <ClCompile Include="BPMNStop.cpp" />
+    <ClCompile Include="BPMNSubProcess.cpp" />
+    <ClCompile Include="BPMNTask.cpp" />
+    <ClCompile Include="CaptureElementData.cpp" />
+    <ClCompile Include="ChannelDataMapping.cpp" />
+    <ClCompile Include="ConfigClass.cpp" />
+    <ClCompile Include="DataFile.cpp" />
+    <ClCompile Include="ElementData.cpp" />
+    <ClCompile Include="EventCaptureURL.cpp" />
+    <ClCompile Include="EventRecorder.cpp" />
+    <ClCompile Include="ExecutionManager.cpp" />
+    <ClCompile Include="Expression.cpp" />
+    <ClCompile Include="FileContext.cpp" />
+    <ClCompile Include="HorizScrollBarPanel.cpp" />
+    <ClCompile Include="InfoTabPanel.cpp" />
+    <ClCompile Include="json11.cpp" />
+    <ClCompile Include="KeyState.cpp" />
+    <ClCompile Include="LEDDisplayPanel.cpp" />
+    <ClCompile Include="licenceUtil.cpp" />
+    <ClCompile Include="LicenseDlg.cpp" />
+    <ClCompile Include="LineConnectionInfo.cpp" />
+    <ClCompile Include="lz4.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MainToolBarPanel.cpp" />
+    <ClCompile Include="MainWindowPanel.cpp" />
+    <ClCompile Include="ManageScenarioDlg.cpp" />
+    <ClCompile Include="MaskImagePanel.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="PDFDocument.cpp" />
+    <ClCompile Include="PDFSOPDoc.cpp" />
+    <ClCompile Include="PecanMainFrame.cpp" />
+    <ClCompile Include="PecanSemaphore.cpp" />
+    <ClCompile Include="PicButtonControlPanel.cpp" />
+    <ClCompile Include="PicControlPanel.cpp" />
+    <ClCompile Include="PictureDisplay.cpp" />
+    <ClCompile Include="PlayerDataFileManager.cpp" />
+    <ClCompile Include="ProcessDescriptionDialog.cpp" />
+    <ClCompile Include="ProcessSummaryPanel.cpp" />
+    <ClCompile Include="ProcessWindowData.cpp" />
+    <ClCompile Include="ProcoanButton.cpp" />
+    <ClCompile Include="ProcoanProcessDiscovery.cpp" />
+    <ClCompile Include="pugixml.cpp" />
+    <ClCompile Include="RecordBufferManager.cpp" />
+    <ClCompile Include="RecorderButtonBar.cpp" />
+    <ClCompile Include="RecorderDataFileManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RecorderDisplayPanel.cpp" />
+    <ClCompile Include="RecorderInfoBarPanel.cpp" />
+    <ClCompile Include="RecorderMinimizePanel.cpp" />
+    <ClCompile Include="RecorderStartDlg.cpp" />
+    <ClCompile Include="RecorderTitleBarPanel.cpp" />
+    <ClCompile Include="RecorderUI.cpp" />
+    <ClCompile Include="RecorderWindow.cpp" />
+    <ClCompile Include="RecordingDescriptionDialog.cpp" />
+    <ClCompile Include="RecStatusPanel.cpp" />
+    <ClCompile Include="ResizeBitmap.cpp" />
+    <ClCompile Include="ScenarioDefintion.cpp" />
+    <ClCompile Include="ScenarioFacade.cpp" />
+    <ClCompile Include="ScreenRecorder.cpp" />
+    <ClCompile Include="SliderPanel.cpp" />
+    <ClCompile Include="SOPPrintReport.cpp" />
+    <ClCompile Include="SPDLogFile.cpp" />
+    <ClCompile Include="SpyControlData.cpp" />
+    <ClCompile Include="SpyControlProxy.cpp" />
+    <ClCompile Include="SPYDataFacade.cpp" />
+    <ClCompile Include="SpyEditorScreen.cpp" />
+    <ClCompile Include="SpyMaskData.cpp" />
+    <ClCompile Include="SpyProcessData.cpp" />
+    <ClCompile Include="SpyUrlData.cpp" />
+    <ClCompile Include="SpyWindowData.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SpyCaptureScreen.cpp" />
+    <ClCompile Include="TimeDisplay.cpp" />
+    <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="TransparentWindow.cpp" />
+    <ClCompile Include="UIUtility.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="VertScrollBarPanel.cpp" />
+    <ClCompile Include="VideoEditorScreen.cpp" />
+    <ClCompile Include="VideoSegmentClass.cpp" />
+    <ClCompile Include="WavDeviceList.cpp" />
+    <ClCompile Include="WavePlayer.cpp" />
+    <ClCompile Include="WaveRecorder.cpp" />
+    <ClCompile Include="WindowControlData.cpp" />
+    <ClCompile Include="WordReport\AppProps.cpp" />
+    <ClCompile Include="WordReport\CoreProps.cpp" />
+    <ClCompile Include="WordReport\DocumentBody.cpp" />
+    <ClCompile Include="WordReport\DocXDocPart.cpp" />
+    <ClCompile Include="WordReport\DocXTag.cpp" />
+    <ClCompile Include="WordReport\DocXTagAttributes.cpp" />
+    <ClCompile Include="WordReport\DrawingAnchor.cpp" />
+    <ClCompile Include="WordReport\DrawingInline.cpp" />
+    <ClCompile Include="WordReport\EndnotesDocument.cpp" />
+    <ClCompile Include="WordReport\Font.cpp" />
+    <ClCompile Include="WordReport\FontTableDoc.cpp" />
+    <ClCompile Include="WordReport\Footer.cpp" />
+    <ClCompile Include="WordReport\FootnotesDocument.cpp" />
+    <ClCompile Include="WordReport\Header.cpp" />
+    <ClCompile Include="WordReport\lodepng.cpp" />
+    <ClCompile Include="WordReport\lodepng_util.cpp" />
+    <ClCompile Include="WordReport\Numbering.cpp" />
+    <ClCompile Include="WordReport\Paragraph.cpp" />
+    <ClCompile Include="WordReport\ParagraphRun.cpp" />
+    <ClCompile Include="WordReport\Settings.cpp" />
+    <ClCompile Include="WordReport\SOPWordReport.cpp" />
+    <ClCompile Include="WordReport\StyleDocument.cpp" />
+    <ClCompile Include="WordReport\Table.cpp" />
+    <ClCompile Include="WordReport\TableCell.cpp" />
+    <ClCompile Include="WordReport\TableRow.cpp" />
+    <ClCompile Include="WordReport\Theme1.cpp" />
+    <ClCompile Include="WordReport\TOCsdt.cpp" />
+    <ClCompile Include="WordReport\WebSettings.cpp" />
+    <ClCompile Include="WordReport\WordDocument.cpp" />
+    <ClCompile Include="WordReport\zip.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="wxImagePanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProcoanProcessDiscovery.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ProcoanProcessDiscovery.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

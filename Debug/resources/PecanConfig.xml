@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+	<general />
+	<recorder>
+		<captureaudio>OFF</captureaudio>
+		<captureevents>ON</captureevents>
+		<captureactivemonitors>ON</captureactivemonitors>
+		<capturevideo>ON</capturevideo>
+		<framerate>10</framerate>
+		<selectedmonitors>
+			<monitorname>#1 - 1366x768</monitorname>
+		</selectedmonitors>
+	</recorder>
+	<player>
+		<playactivemonitors>OFF</playactivemonitors>
+	</player>
+</config>
