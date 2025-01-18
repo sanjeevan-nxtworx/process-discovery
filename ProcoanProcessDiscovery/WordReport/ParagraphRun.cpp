@@ -174,11 +174,11 @@ void ParagraphRun::SetText(string text, bool bPreserve = false)
 
 void ParagraphRun::UpdateMetrics(string text)
 {
-	DocXDocPart::noCharactersWithSpaces += text.size();
+	DocXDocPart::noCharactersWithSpaces += (long)text.size();
 
-	int spaces = std::count_if(text.begin(), text.end(),
+	int spaces = (int)std::count_if(text.begin(), text.end(),
 		[](unsigned char c) { return std::isspace(c); });
-	DocXDocPart::noCharacters += (text.size() - spaces);
+	DocXDocPart::noCharacters += ((long)text.size() - spaces);
 
 	size_t words = 1;
 	if (spaces != 0)
@@ -205,7 +205,7 @@ void ParagraphRun::UpdateMetrics(string text)
 			)
 			+ !std::isspace(*text.rbegin());
 	}
-	DocXDocPart::noWords += words;
+	DocXDocPart::noWords += (long)words;
 }
 
 void ParagraphRun::SetSeperator()

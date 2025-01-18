@@ -13,7 +13,7 @@ class ProcessDescriptionDialog :
 	wxNotebook *prMainNotebook;
 	ProcessSummaryPanel *prSummaryPanel;
 public:
-	ProcessDescriptionDialog(string jSonProcessDesc, wxWindow * parent, wxWindowID id, const wxString & title,
+	ProcessDescriptionDialog(string jSonProcessDesc,  const wxString & title,
 		const wxPoint & position, const wxSize & size);
 	~ProcessDescriptionDialog();
 	string GetProcessData();

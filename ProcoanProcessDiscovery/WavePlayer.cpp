@@ -44,7 +44,7 @@ void WavePlayer::SetExitFlag(bool bFlg)
 	lockWavPlayer.unlock();
 }
 
-void WavePlayer::SetAudioParameters(long freq, int noChannels, int format, int bitsPerSample)
+void WavePlayer::SetAudioParameters(long freq, int noChannels,  int bitsPerSample)
 {
 	m_wvFormat.nSamplesPerSec = freq;
 	m_wvFormat.nChannels = noChannels;
@@ -103,7 +103,7 @@ void WavePlayer::StopPlay()
 	bExitThreads = true;
 }
 
-void WavePlayer::StartPlay(long long fPos)
+void WavePlayer::StartPlay(void)
 {
 	spdlog::info("Starting Audio Play");
 

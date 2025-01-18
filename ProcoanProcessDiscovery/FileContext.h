@@ -44,8 +44,8 @@ class FileContext
 	struct eventListElement *pEventListRoot;
 
 
-	USHORT mainChannelNumber;
-	USHORT currContextChannel;
+	SHORT mainChannelNumber;
+	SHORT currContextChannel;
 
 	long long currVideoFPos;
 	long long maxVideoBufferSize;

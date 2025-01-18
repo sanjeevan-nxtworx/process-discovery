@@ -18,6 +18,15 @@ RecorderDisplayPanel::RecorderDisplayPanel(wxWindow *parent, wxSize size) :
 	wxPanel(parent, -1, wxPoint(0, 67), wxSize(size), wxNO_BORDER)
 {
 	pParent = parent;
+	audioGauge = nullptr;
+	bVideoFlg = false;
+	bAudioFlg = false;
+	bEventFlg = false;
+	nFPS = 0;
+	bActiveMonitorFlg = false;
+	pMonitorList = nullptr;
+	recMode = 0;
+
 	ledPanel = DBG_NEW LEDDisplayPanel(this, wxPoint(110, 45), wxSize(225, 50));
 	ledPanel->SetThickness(2);
 	ledPanel->SetGap(2);
@@ -33,7 +42,6 @@ RecorderDisplayPanel::RecorderDisplayPanel(wxWindow *parent, wxSize size) :
 	//audioGauge->SetLEDBackColor(wxColor(RGB(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10)));
 	//audioGauge->SetAudioValue(0);
 	//audioGauge->paintNow();
-	pMonitorList = NULL;
 	recMode = 0;
 	nBlocksWritten = 0;
 	nTotalBlocks = 0;
@@ -208,51 +216,51 @@ void RecorderDisplayPanel::render(wxDC&  dc)
 		std::list <struct monitorDetails *>::iterator itMon = pMonitorList->begin();
 		struct monitorDetails *pMonitor = NULL;
 		if (itMon == pMonitorList->end())
-			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 80, 32, 10, 10); // no monitor
+			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 80, 32, 10); // no monitor
 		else
 		{
 			pMonitor = *itMon;
 			itMon++;
 			if (pMonitor->bSelect)
-				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 80, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 80, 32, 10); // selected Monitor
 			else
-				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 80, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 80, 32, 10); // selected Monitor
 		}
 
 		if (itMon == pMonitorList->end())
-			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 100, 32, 10, 10); // no monitor
+			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 100, 32, 10); // no monitor
 		else
 		{
 			pMonitor = *itMon;
 			itMon++;
 			if (pMonitor->bSelect)
-				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 100, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 100, 32, 10); // selected Monitor
 			else
-				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 100, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 100, 32, 10); // selected Monitor
 		}
 
 		if (itMon == pMonitorList->end())
-			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 120, 32, 10, 10); // no monitor
+			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 120, 32, 10); // no monitor
 		else
 		{
 			pMonitor = *itMon;
 			itMon++;
 			if (pMonitor->bSelect)
-				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 120, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 120, 32, 10); // selected Monitor
 			else
-				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 120, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 120, 32, 10); // selected Monitor
 		}
 
 		if (itMon == pMonitorList->end())
-			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 140, 32, 10, 10); // no monitor
+			DrawLED(dc, wxColor(0x29 + 0x10, 0x37 + 0x10, 0x49 + 0x10), 140, 32, 10); // no monitor
 		else
 		{
 			pMonitor = *itMon;
 			itMon++;
 			if (pMonitor->bSelect)
-				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 140, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0xff, 0x00), 140, 32, 10); // selected Monitor
 			else
-				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 140, 32, 10, 10); // selected Monitor
+				DrawLED(dc, wxColor(0x00, 0x00, 0xff), 140, 32, 10); // selected Monitor
 		}
 
 	}

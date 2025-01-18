@@ -39,7 +39,7 @@ std::string extend_key(std::string& msg, std::string& key) {
 std::string encrypt_vigenere(std::string& msg, std::string& key) {
     size_t msgLen = msg.size();
     //int keyLen = key.size();
-    int i;
+    size_t i;
  	std::string encryptedMsg(msgLen, 'x');
     // char newKey[msgLen], encryptedMsg[msgLen], decryptedMsg[msgLen];
  

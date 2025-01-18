@@ -307,13 +307,13 @@ void ChannelDataMapping::DrawRectangleInEventBitmap(LPSTR pBuffer, int monNum, R
 	DrawHorizLine(pBuffer, width, height, r.left, r.bottom + 1, r.right);
 	DrawHorizLine(pBuffer, width, height, r.left, r.bottom + 2, r.right);
 
-	DrawVertLine(pBuffer, width, height, r.left, r.top, r.bottom);
-	DrawVertLine(pBuffer, width, height, r.left - 1, r.top, r.bottom);
-	DrawVertLine(pBuffer, width, height, r.left - 2, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.left, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.left - 1, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.left - 2, r.top, r.bottom);
 
-	DrawVertLine(pBuffer, width, height, r.right, r.top, r.bottom);
-	DrawVertLine(pBuffer, width, height, r.right + 1, r.top, r.bottom);
-	DrawVertLine(pBuffer, width, height, r.right + 2, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.right, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.right + 1, r.top, r.bottom);
+	DrawVertLine(pBuffer, width,  r.right + 2, r.top, r.bottom);
 }
 
 
@@ -337,7 +337,7 @@ void ChannelDataMapping::DrawHorizLine(char *pBuffer, int width, int height, int
 	}
 }
 
-void ChannelDataMapping::DrawVertLine(char *pBuffer, int width, int height, int col, int topRow, int botRow)
+void ChannelDataMapping::DrawVertLine(char *pBuffer, int width,int col, int topRow, int botRow)
 {
 	unsigned char lineColor[4] = { (unsigned char)0x00, (unsigned char)0x00,(unsigned char)0xff,(unsigned char)0xff };
 

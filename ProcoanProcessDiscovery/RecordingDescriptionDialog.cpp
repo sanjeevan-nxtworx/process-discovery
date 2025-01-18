@@ -90,20 +90,20 @@ string RecordingDescriptionDialog::GetProcessData()
 
 string RecordingDescriptionDialog::GetProcessName()
 {
-	return pProcessName->GetValue();
+	return string(pProcessName->GetValue().mb_str());
 }
 
 string RecordingDescriptionDialog::GetProcessDescription()
 {
-	return pProcessDescription->GetValue();
+	return string(pProcessDescription->GetValue().mb_str());
 }
 
 string RecordingDescriptionDialog::GetHistory()
 {
-	return pHistory->GetValue();
+	return string(pHistory->GetValue().mb_str());;
 }
 
 string RecordingDescriptionDialog::GetCreatedBy()
 {
-	return pCreatedBy->GetValue();
+	return string(pCreatedBy->GetValue().mb_str());
 }

@@ -569,7 +569,6 @@ void PlayerDataFileManager::StartAudio()
 	curContext->GetAudioHeaderData(&audioHeader);
 	pWavPlayer->SetAudioParameters(audioHeader.freq,
 		audioHeader.noChannels,
-		audioHeader.wFormatTag,
 		audioHeader.bitsPerSample);
 	pWavPlayer->SetAudioPlayerBuffer(curContext->GetAudioPlayerBuffer());
 	GetExecutionManager()->StartAudioThread();
@@ -717,7 +716,7 @@ void PlayerDataFileManager::UpdateEventRecord(struct eventListElement *pEventLis
 	curContext->UpdateEventRecord(pEventListElement, NULL);
 }
 
-ULONG PlayerDataFileManager::GetChannelNextEventID(int channelNum)
+LONG PlayerDataFileManager::GetChannelNextEventID(int channelNum)
 {
 	ChannelDataMapping *pChannel = curContext->GetChannelDataMapping(channelNum);
 	if (pChannel == NULL)
@@ -831,7 +830,7 @@ void PlayerDataFileManager::SetRecorderStop()
 	bool bRewindFlag = bRewind;
 	//bool bFwdFlag = bForward;
 	//bool bStepRewindFlag = bStepRewind;
-	bool bStepFwdFlag = bStepForward;
+	//bool bStepFwdFlag = bStepForward;
 	bool bRewFwdThreadFlg = bRewFwdThreadOn;
 	bool bStepRewFwdThreadFlg = bStepRewFwdThreadOn;
 	bRewind = false;
@@ -892,7 +891,7 @@ void PlayerDataFileManager::PlayAudio()
 	struct AudioHdr audioHeader;
 	ZeroMemory(&audioHeader, sizeof(struct AudioHdr));
 	curContext->GetAudioHeaderData(&audioHeader);
-	pWavPlayer->StartPlay(audioHeader.fPosRoot);
+	pWavPlayer->StartPlay();
 }
 
 void PlayerDataFileManager::PlayVideo()
@@ -911,7 +910,9 @@ void PlayerDataFileManager::PlayVideo()
 	curContext->GetVideoHeaderData(&videoHeader);
 	fps = videoHeader.fps;
 	playerWindow->SetFramesPerSecond(fps);
-	playerWindow->StartPlay(videoHeader.fPosRoot);
+	//playerWindow->StartPlay(videoHeader.fPosRoot);
+	//playerWindow->StartPlay(videoHeader.fPosRoot);
+	playerWindow->StartPlay();
 }
 
 void PlayerDataFileManager::SetSubProcessTab()
@@ -1115,7 +1116,6 @@ void PlayerDataFileManager::StepRewindForwardVideo()
 
 void PlayerDataFileManager::RewindForwardVideo()
 {
-	char strMessage[100];
 	//long long prevTimeDiff = 0;
 	long timeDiffVal = 0L;
 	lockPlayerManager.lock();
@@ -1285,10 +1285,10 @@ void PlayerDataFileManager::ShowThumb()
 	curContext->CreateThumbImage(nChannel, &videoIndex, nVideo, fPos);
 }
 
-void PlayerDataFileManager::SetThumbImageNumber(int thumbNum)
-{
-//	playerWindow->SetThumbImageNumber(thumbNum);
-}
+//void PlayerDataFileManager::SetThumbImageNumber(int thumbNum)
+//{
+////	playerWindow->SetThumbImageNumber(thumbNum);
+//}
 
 void PlayerDataFileManager::ThumbDisplay()
 {
@@ -1300,15 +1300,15 @@ void PlayerDataFileManager::ShowSliderTime()
 	playerWindow->SetPlayerTimeWindow();
 }
 
-void PlayerDataFileManager::CheckTabNotifications(NMHDR *pNMHdr)
-{
-//	playerWindow->CheckTabNotifications(pNMHdr);
-}
+//void PlayerDataFileManager::CheckTabNotifications(NMHDR *pNMHdr)
+//{
+////	playerWindow->CheckTabNotifications(pNMHdr);
+//}
 
-void PlayerDataFileManager::CheckKillFocus(HWND hWnd)
-{
+//void PlayerDataFileManager::CheckKillFocus(HWND hWnd)
+//{
 //	playerWindow->CheckKillFocus(hWnd);
-}
+//}
 
 void PlayerDataFileManager::SetTabFields(struct cellDef *pSelected)
 {
@@ -1371,7 +1371,6 @@ void PlayerDataFileManager::ReadDataFile()
 	curContext->GetAudioHeaderData(&audioHeader);
 	pWavPlayer->SetAudioParameters(audioHeader.freq,
 									audioHeader.noChannels,
-									audioHeader.wFormatTag,
 									audioHeader.bitsPerSample);
 	pWavPlayer->SetAudioPlayerBuffer(curContext->GetAudioPlayerBuffer());
 	curContext->GetVideoHeaderData(&videoHeader);
@@ -1466,8 +1465,8 @@ list <BPMNElement *> *PlayerDataFileManager::GetBPMNDiagram()
 }
 
 
-void PlayerDataFileManager::CreateThumbIndex(struct VideoHdr *vHeader)
-{
+//void PlayerDataFileManager::CreateThumbIndex(struct VideoHdr *vHeader)
+//{
 //	long long recordingTimeSpan = mainChannelRecord.recDurationus - mainChannelRecord.timeDeleted - mainChannelRecord.timePaused + mainChannelRecord.timeAdded;
 //	struct IndexHdr videoIndex;
 ////	int oldPlayingNumVideo = playingNumVideo;
@@ -1499,7 +1498,7 @@ void PlayerDataFileManager::CreateThumbIndex(struct VideoHdr *vHeader)
 //	memcpy((char *)&playingVideoIndex, (char *)&videoIndex, sizeof(struct IndexHdr));
 //	playerWindow->SetThumbListInProgress(false);
 //	currVideoFPos = curVideoPos;
-}
+//}
 
 void PlayerDataFileManager::ReadBlockFromFile(char *buffer, ULONG len, ULONG compressedLength, long long pos)
 {

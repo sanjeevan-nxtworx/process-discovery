@@ -144,7 +144,7 @@ void PDFSOPDoc::DataTable(wxArrayString& header, wxArrayPtrVoid& data, double *w
 	}
 
 	double widthVal = 0.0f;
-	for (int i = 0; i < header.GetCount(); i++)
+	for (size_t i = 0; i < header.GetCount(); i++)
 	{
 		widthVal += w[i];
 	}
@@ -232,7 +232,7 @@ void PDFSOPDoc::DataLinkTable(wxArrayString& header, wxArrayPtrVoid& data, wxArr
 	}
 
 	double widthVal = 0.0f;
-	for (int i = 0; i < header.GetCount(); i++)
+	for (size_t i = 0; i < header.GetCount(); i++)
 	{
 		widthVal += w[i];
 	}

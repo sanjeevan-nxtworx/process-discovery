@@ -113,7 +113,7 @@ const int MIN_TAB_HEIGHT = 200;
 
 wxFrame *pVideoFrame = NULL;
 
-VideoEditorScreen::VideoEditorScreen(wxWindow * parent, wxWindowID id, const wxString & title,
+VideoEditorScreen::VideoEditorScreen(wxWindow * parent, const wxString & title,
 	const wxPoint & position, const wxSize & size, bool bFlg) 
 	: wxFrame(NULL, -1, title, position, size, wxDEFAULT_FRAME_STYLE)
 	
@@ -199,7 +199,7 @@ VideoEditorScreen::VideoEditorScreen(wxWindow * parent, wxWindowID id, const wxS
 	wxPoint pos = wxPoint(target.rcWork.left, target.rcWork.top);
 	SetPosition(pos);
 	SetSize(frameSize);
-	mainToolBarPanel = DBG_NEW MainToolBarPanel(this, -1, wxPoint(0, 0), wxSize(frameSize.GetWidth(), 35), bPlayerMode);
+	mainToolBarPanel = DBG_NEW MainToolBarPanel(this, (DWORD)-1, wxPoint(0, 0), wxSize(frameSize.GetWidth(), 35), bPlayerMode);
 	mainToolBarPanel->EnableShowActiveMonitor(false);
 	mainToolBarPanel->EnableShowMultiMonitor(false);
 	mainToolBarPanel->EnableScenarioChoice(false);
@@ -264,7 +264,7 @@ void VideoEditorScreen::OnEditorResize(wxSizeEvent& event)
 	wxSize szFrameSize;   //size of the frame
 	szFrameSize = event.GetSize();
 	if (framePanel != NULL)
-		ResizeWindow(szFrameSize);
+		ResizeWindow();
 	SetButtonStatus();
 }
 
@@ -598,7 +598,7 @@ void VideoEditorScreen::OnManageScenario(wxCommandEvent& WXUNUSED(event))
 		pDataRecorder->SetRecorderStop();
 	string strValue = pDataRecorder->GetScenarioJSON();
 	ScenarioFacade scenarios(strValue);
-	ManageScenarioDlg prDialog(&scenarios, this, -1, _("Manage Scenario"), wxPoint(80, 100), wxSize(500, 450));
+	ManageScenarioDlg prDialog(&scenarios, this, _("Manage Scenario"), wxPoint(80, 100), wxSize(500, 450));
 	int retValue = prDialog.ShowModal();
 
 	if (retValue == SCENARIO_PLAYBTN || retValue == SCENARIO_SELECTBTN)
@@ -976,7 +976,7 @@ void VideoEditorScreen::CalculatePanelPortraitDimensions()
 	}
 }
 
-void VideoEditorScreen::ResizeWindow(wxSize szFrameSize)
+void VideoEditorScreen::ResizeWindow(void)
 {
 	ReArrangeForm();
 }
@@ -1252,7 +1252,7 @@ void VideoEditorScreen::DrawVideoPanel(wxPanel *parent, int panelWidth, int pane
 
 	if (picControlPanel == NULL)
 	{
-		picControlPanel = DBG_NEW PicControlPanel(videoPanel, -1, wxPoint(videoMainTab->GetPosition().x, videoMainTab->GetPosition().y + videoMainTab->GetSize().GetHeight()), wxSize(videoMainTab->GetSize().GetWidth(), 20));
+		picControlPanel = DBG_NEW PicControlPanel(videoPanel, (DWORD)-1, wxPoint(videoMainTab->GetPosition().x, videoMainTab->GetPosition().y + videoMainTab->GetSize().GetHeight()), wxSize(videoMainTab->GetSize().GetWidth(), 20));
 		picControlPanel->SetBackgroundColour(wxColor(0x53, 0x9c, 0xff));
 	}
 	else
@@ -1269,7 +1269,7 @@ void VideoEditorScreen::DrawVideoPanel(wxPanel *parent, int panelWidth, int pane
 
 	if (toolControlPanel == NULL)
 	{
-		toolControlPanel = DBG_NEW PicButtonControlPanel(videoPanel, -1, wxPoint(toolBarPos.x, toolBarPos.y),
+		toolControlPanel = DBG_NEW PicButtonControlPanel(videoPanel, (DWORD)-1, wxPoint(toolBarPos.x, toolBarPos.y),
 			wxSize(toolBarSize.GetWidth(), toolBarSize.GetHeight()), buttonWidth, buttonMargin, buttonXPosDiff, buttonYPosDiff,  bPlayerMode);
 		toolControlPanel->SetBackgroundColour(wxColor(0xcc, 0xcc, 0x99));
 	}
@@ -1504,7 +1504,7 @@ void VideoEditorScreen::OnClose(wxCloseEvent & event)
 
 }
 
-void VideoEditorScreen::OnExit(wxCommandEvent & event)
+void VideoEditorScreen::OnExit(wxCommandEvent& event)
 {
 //	SetButtonStatus();
 	Close();
@@ -1642,7 +1642,7 @@ void VideoEditorScreen::SetStartFlag(bool bFlg)
 	lockPlayerWindow.unlock();
 }
 
-void VideoEditorScreen::StartPlay(long long fPos)
+void VideoEditorScreen::StartPlay(void)
 {
 	int lastMon = 0;
 
@@ -1839,7 +1839,7 @@ void VideoEditorScreen::OnReportSOP(wxCommandEvent& WXUNUSED(event))
 {
 	string strValue = pDataRecorder->ReadProcessValue();
 
-	ProcessDescriptionDialog prDialog("", this, -1, _("Process Information"), wxPoint(80, 100), wxSize(600, 500));
+	ProcessDescriptionDialog prDialog("", _("Process Information"), wxPoint(80, 100), wxSize(600, 500));
 	prDialog.SetProcessData(strValue);
 	if (prDialog.ShowModal() == wxID_OK)
 	{

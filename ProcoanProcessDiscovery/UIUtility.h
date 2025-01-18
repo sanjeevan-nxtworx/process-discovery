@@ -5,7 +5,7 @@
 
 
 void DrawBevel(wxDC& dc, wxColor color, wxColor borderColor, wxPoint top, wxSize size, int depth, bool raisedFlg);
-void DrawLED(wxDC& dc, wxColor color, int left, int top, int width, int height);
+void DrawLED(wxDC& dc, wxColor color, int left, int top, int width);
 void DrawVideo(wxDC& dc, wxColor color, int left, int top);
 void DrawAudio(wxDC& dc, wxColor color, int left, int top);
 void DrawBell(wxDC& dc, wxColor color, int left, int top);

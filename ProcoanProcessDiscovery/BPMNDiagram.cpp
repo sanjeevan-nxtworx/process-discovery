@@ -671,7 +671,7 @@ void BPMNDiagram::SetDrawPosition()
 	}
 }
 
-bool BPMNDiagram::IsElementInWindow(BPMNElement *pElement, LPRECT pWindowRect, LPRECT pElementRect)
+bool BPMNDiagram::IsElementInWindow(LPRECT pWindowRect, LPRECT pElementRect)
 {
 	POINT topLeft, topRight, botLeft, botRight;
 	topLeft.x = pElementRect->left;
@@ -697,7 +697,7 @@ bool BPMNDiagram::IsElementInWindow(BPMNElement *pElement, LPRECT pWindowRect, L
 
 }
 
-bool BPMNDiagram::IsElementPartialInWindow(BPMNElement *pElement, LPRECT pWindowRect, LPRECT pElementRect)
+bool BPMNDiagram::IsElementPartialInWindow(LPRECT pWindowRect, LPRECT pElementRect)
 {
 	POINT topLeft, topRight, botLeft, botRight;
 	topLeft.x = pElementRect->left;
@@ -723,7 +723,7 @@ bool BPMNDiagram::IsElementPartialInWindow(BPMNElement *pElement, LPRECT pWindow
 
 }
 
-wxSize BPMNDiagram::GetDiagramExtents(HDC hdc)
+wxSize BPMNDiagram::GetDiagramExtents()
 {
 	vector <vector <struct cellDef *> *>::iterator itColumn = diagram.begin();
 	vector <struct headerDef *>::iterator itColHdr = columnHeader.begin();
@@ -815,7 +815,7 @@ void BPMNDiagram::CreateBPMNBitmap(vector<unsigned char>& buffer, SIZE *szBmp)
 	
 	SetMapMode(dc, MM_HIMETRIC);
 
-	wxSize sz = GetDiagramExtents(dc);
+	wxSize sz = GetDiagramExtents();
 
 	int cx = sz.GetWidth();
 	int cy = sz.GetHeight();
@@ -965,7 +965,7 @@ void BPMNDiagram::DrawDiagram(HDC hdc, int width, int height, POINT offset)
 					RECT rect;
 					pElement->GetDisplayPosition(&rect);
 					OffsetRect(&rect, offset.x, offset.y);
-					if (IsElementPartialInWindow(pElement, &windowRect, &rect))
+					if (IsElementPartialInWindow(&windowRect, &rect))
 					{
 						if (pCell->bSelected)
 							oBrush = (HBRUSH)SelectObject(hdc, hBrushGrey);
@@ -1040,7 +1040,7 @@ void BPMNDiagram::DrawDiagram(HDC hdc, int width, int height, POINT offset)
 		while (itConnection != notInPathList.end())
 		{
 			LineConnectionInfo *pConnectionInfo = *itConnection;
-			DrawConnectingLines(hdc, pConnectionInfo->GetFromRect(), pConnectionInfo->GetToRect(), pConnectionInfo->GetWndRect());
+			DrawConnectingLines(hdc, pConnectionInfo->GetFromRect(), pConnectionInfo->GetToRect());
 			itConnection++;
 			delete pConnectionInfo;
 		}
@@ -1060,7 +1060,7 @@ void BPMNDiagram::DrawDiagram(HDC hdc, int width, int height, POINT offset)
 		while (itConnection != inPathList.end())
 		{
 			LineConnectionInfo *pConnectionInfo = *itConnection;
-			DrawConnectingLines(hdc, pConnectionInfo->GetFromRect(), pConnectionInfo->GetToRect(), pConnectionInfo->GetWndRect());
+			DrawConnectingLines(hdc, pConnectionInfo->GetFromRect(), pConnectionInfo->GetToRect());
 			itConnection++;
 			delete pConnectionInfo;
 		}
@@ -1133,7 +1133,7 @@ void BPMNDiagram::DrawDiagramForPrint(HDC hdc, int width, int height, POINT offs
 						HBRUSH oConnBrush;
 
 						oConnBrush = (HBRUSH)SelectObject(hdc, nBrush);
-						DrawConnectingLines(hdc, &rectFrom, &rectTo, &windowRect);
+						DrawConnectingLines(hdc, &rectFrom, &rectTo);
 
 						SelectObject(hdc, oPen);
 						SelectObject(hdc, oConnBrush);
@@ -1157,7 +1157,7 @@ void BPMNDiagram::DrawDiagramForPrint(HDC hdc, int width, int height, POINT offs
 }
 
 
-void BPMNDiagram::DrawConnectingLines(HDC hdc, LPRECT rectFrom, LPRECT rectTo, LPRECT wndRect)
+void BPMNDiagram::DrawConnectingLines(HDC hdc, LPRECT rectFrom, LPRECT rectTo)
 {
 	//if (!RectInRect(wndRect, rectFrom) && RectInRect(wndRect, rectTo))
 	//	return;

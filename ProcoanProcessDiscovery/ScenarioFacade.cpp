@@ -13,7 +13,7 @@ ScenarioFacade::ScenarioFacade(string jSonSenarioList)
 
 	jSonElement = Json::parse(jSonSenarioList, err);
 	vector <Json> prcScenarioDefs = jSonElement.array_items();
-	for (int i = 0; i < prcScenarioDefs.size(); i++)
+	for (size_t i = 0; i < prcScenarioDefs.size(); i++)
 	{
 		ScenarioDefintion *pScenarioDef = DBG_NEW ScenarioDefintion;
 
@@ -21,11 +21,11 @@ ScenarioFacade::ScenarioFacade(string jSonSenarioList)
 		pScenarioDef->SetName(scenarioDef["Name"].string_value());
 		pScenarioDef->SetDesc(scenarioDef["Desc"].string_value());
 		vector <Json> pathDefs = scenarioDef["Paths"].array_items();
-		for (int j = 0; j < pathDefs.size(); j++)
+		for (size_t j = 0; j < pathDefs.size(); j++)
 		{
 			Json pathDef = pathDefs[j];
 			ULONG nIndex = pathDef["Index"].int_value();
-			short nPath = pathDef["Path"].int_value();
+			short nPath = (short)pathDef["Path"].int_value();
 			pScenarioDef->SetPath(nIndex, nPath);
 		}
 		scenarioList.push_back(pScenarioDef);

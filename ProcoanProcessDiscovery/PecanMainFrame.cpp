@@ -50,7 +50,7 @@ void PecanMainFrame::OnRecord(wxCommandEvent& WXUNUSED(event))
 
 	GetScreenDataDetails(&monitorList);
 
-	RecorderStartDlg startDialog(&monitorList, this, -1, _("Recorder Settings"),
+	RecorderStartDlg startDialog(&monitorList, this, _("Recorder Settings"),
 		wxPoint(80, 100), wxSize(440, 310));
 	startDialog.UpdateDialog(false);
 	if (startDialog.ShowModal() == wxID_OK)
@@ -95,7 +95,7 @@ void PecanMainFrame::OnRecord(wxCommandEvent& WXUNUSED(event))
 
 void PecanMainFrame::OnEditor(wxCommandEvent& WXUNUSED(event))
 {
-	VideoEditorScreen *editorDlg = DBG_NEW VideoEditorScreen(this, wxID_ANY, _("Edit Recording"),
+	VideoEditorScreen *editorDlg = DBG_NEW VideoEditorScreen(this,  _("Edit Recording"),
 		wxPoint(100, 100), wxSize(400, 200), false);
 	this->Hide();
 	editorDlg->Show();
@@ -103,7 +103,7 @@ void PecanMainFrame::OnEditor(wxCommandEvent& WXUNUSED(event))
 
 void PecanMainFrame::OnPlayer(wxCommandEvent& WXUNUSED(event))
 {
-	VideoEditorScreen *playerDlg = DBG_NEW VideoEditorScreen(this, wxID_ANY, _("Play Recording"),
+	VideoEditorScreen *playerDlg = DBG_NEW VideoEditorScreen(this,  _("Play Recording"),
 		wxPoint(100, 100), wxSize(400, 200), true);
 	playerDlg->Show();
 }

@@ -4,7 +4,7 @@
 #include "json11.hpp"
 using namespace json11;
 
-ProcessDescriptionDialog::ProcessDescriptionDialog(string jSonProcessDesc, wxWindow * parent, wxWindowID id, const wxString & title,
+ProcessDescriptionDialog::ProcessDescriptionDialog(string jSonProcessDesc, const wxString & title,
 const wxPoint & position, const wxSize & size)
 	: wxDialog(NULL, -1, title, position, size)
 {

@@ -10,7 +10,7 @@ Tokenizer::Tokenizer(char* data) : str(std::string(data))
 NumberExpression* Tokenizer::number()
 {
 	this->skipWhiteSpace();
-	char ch = str.peek();
+	int ch = str.peek();
 	if (std::isdigit(ch)) {
 		int x;
 		str >> x;
@@ -46,14 +46,14 @@ StringExpression* Tokenizer::stringConstant()
 	std::string strConstant;
 
 	this->skipWhiteSpace();
-	char ch = str.peek();
+	int ch = str.peek();
 	if (ch == '\"')
 	{
 		ch = str.get();
 		ch = str.get();
 		while (ch != '\"' && !atEnd())
 		{
-			strConstant = strConstant + ch;
+			strConstant = strConstant + (char)ch;
 			ch = str.get();
 		}
 		if (!atEnd())
@@ -67,7 +67,7 @@ StringExpression* Tokenizer::stringConstant()
 
 bool Tokenizer::character(char expected) {
 	this->skipWhiteSpace();
-	char ch = str.peek();
+	int ch = str.peek();
 	if (ch == expected) {
 		ch = str.get();
 		return true;
@@ -80,11 +80,11 @@ std::string Tokenizer::token()
 	std::string strToken;
 
 	this->skipWhiteSpace();
-	char ch = str.peek();
-	while (!delimiter(ch) && !atEnd())
+	int ch = str.peek();
+	while (!delimiter((char)ch) && !atEnd())
 	{
 		ch = str.get();
-		strToken = strToken + ch;
+		strToken = strToken + (char)ch;
 		ch = str.peek();
 	}
 	return strToken;
@@ -132,7 +132,7 @@ void Tokenizer::reset(int mark) {
 }
 
 void Tokenizer::skipWhiteSpace() {
-	char ch = str.peek();
+	int ch = str.peek();
 	while (ch == ' ' || ch == '\t') {
 		ch = str.get();
 		ch = str.peek();

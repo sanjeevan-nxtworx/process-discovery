@@ -14,7 +14,7 @@ EVT_COMMAND(RECORDER_SETUP_CLOSE, PROCOAN_BUTTON_DOWN, RecorderStartDlg::OnClose
 END_EVENT_TABLE()
 
 
-RecorderStartDlg::RecorderStartDlg(std::list<struct monitorDetails *> *pList, wxWindow * parent, wxWindowID id, const wxString & title,
+RecorderStartDlg::RecorderStartDlg(std::list<struct monitorDetails *> *pList, wxWindow * parent,  const wxString & title,
 	const wxPoint & position, const wxSize & size)
 	: wxDialog(NULL, -1, title, position, size)
 {

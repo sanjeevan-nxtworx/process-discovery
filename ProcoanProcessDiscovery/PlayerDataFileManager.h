@@ -71,7 +71,7 @@ private:
 	void ClearAllContextSegments();
 
 public:
-	ULONG GetChannelNextEventID(int channelNum);
+	LONG GetChannelNextEventID(int channelNum);
 	void ResetPlayerScreen();
 	vector <string> GetScenarioNames();
 
@@ -111,10 +111,10 @@ public:
 	void SetCurrentPositionMarker(long long lastfPosVideoPlayed, ULONG lastVideoIndexNum, USHORT fileNum, USHORT channelNum);
 	bool IsEventDataPresent();
 	bool IsSegmentOn();
-	void SetThumbImageNumber(int thumbNum);
+	//void SetThumbImageNumber(int thumbNum);
 	void ShowSliderTime();
-	void CheckTabNotifications(NMHDR *pNMHdr);
-	void CheckKillFocus(HWND hWnd);
+	//void CheckTabNotifications(NMHDR *pNMHdr);
+	//void CheckKillFocus(HWND hWnd);
 	void BPMNElementSelected(struct cellDef *pCell);
 	void Pause();
 	void Restart();

@@ -28,6 +28,7 @@ bool SOPPrintReport::HasPage(int pageNum)
 
 bool SOPPrintReport::OnBeginDocument(int startPage, int endPage)
 {
+	// TBD
 	return true;
 }
 
@@ -53,7 +54,7 @@ void SOPPrintReport::OnPreparePrinting()
 
 bool SOPPrintReport::OnPrintPage(int pageNum)
 {
-
+	// TBD
 	return false;
 }
 

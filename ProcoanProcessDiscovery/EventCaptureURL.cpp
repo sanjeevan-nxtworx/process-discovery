@@ -13,7 +13,7 @@ IUIAutomation* g_pCaptureUIA = NULL;
 mutex captureLockEvent;
 static LRESULT CALLBACK TransparentWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-void EventCaptureURL::MouseCallback(int nEventCode, DWORD pt)
+void EventCaptureURL::MouseCallback(int nEventCode, ULONG lParam)
 {
 	if (nEventCode == 30)
 	{
@@ -133,15 +133,11 @@ void EventCaptureURL::TimerEnd()
 	CloseHandle(hTimer);
 }
 
-EventCaptureURL::EventCaptureURL()
+EventCaptureURL::EventCaptureURL() : timerThread(NULL), UIAThread(NULL), timerThreadID(NULL),
+					UIAThreadID(NULL), moveWaitFlg(false), moveTimer(0), bQuitCapture(false),
+					rectElement(), pCapturedElement(nullptr), overLapWindow(NULL), pCapturedElementData(nullptr),
+					newCaptureFlg(false)
 {
-	bQuitCapture = false;
-	moveTimer = 0;
-	moveWaitFlg = false;
-	pCapturedElement = NULL;
-	pCapturedElementData = NULL;
-	newCaptureFlg = false;
-
 	// Create windows
 	overLapWindow = CreateTransparentWindow()->GetTransparentWindowHandle();
 }

@@ -51,8 +51,8 @@ class MainToolBarPanel
 public:
 	MainToolBarPanel(wxFrame *parent, DWORD id, wxPoint pt, wxSize size, bool bFlg);
 	~MainToolBarPanel();
-	void SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth);
-	void SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth);
+	void SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed);
+	void SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed);
 
 	void EnableOpenPrimary(bool bFlg);
 	void EnableOpenSecondary(bool bFlg);

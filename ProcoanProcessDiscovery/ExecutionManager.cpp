@@ -96,29 +96,29 @@ void ExecutionManager::ShowSliderTime()
 	//	pPlayerDataManager->ShowSliderTime();
 }
 
-void ExecutionManager::CheckKillFocus(HWND hWnd)
-{
-	//if (pPlayerDataManager != NULL)
-	//	pPlayerDataManager->CheckKillFocus(hWnd);
-}
+//void ExecutionManager::CheckKillFocus(HWND hWnd)
+//{
+//	//if (pPlayerDataManager != NULL)
+//	//	pPlayerDataManager->CheckKillFocus(hWnd);
+//}
 
-void ExecutionManager::CheckTabNotifications(NMHDR *pNMHdr)
-{
-	//if (pPlayerDataManager != NULL)
-	//	pPlayerDataManager->CheckTabNotifications(pNMHdr);
-}
+//void ExecutionManager::CheckTabNotifications(NMHDR *pNMHdr)
+//{
+//	//if (pPlayerDataManager != NULL)
+//	//	pPlayerDataManager->CheckTabNotifications(pNMHdr);
+//}
 
-void ExecutionManager::SetThumbImage(int numThumb)
-{
-	//if (pPlayerDataManager != NULL)
-	//	pPlayerDataManager->SetThumbImageNumber(numThumb);
-}
-
-void ExecutionManager::SetInsertEvent()
-{
-	//if (pPlayerDataManager != NULL)
-	//	pPlayerDataManager->InsertEvent();
-}
+//void ExecutionManager::SetThumbImage(int numThumb)
+//{
+//	//if (pPlayerDataManager != NULL)
+//	//	pPlayerDataManager->SetThumbImageNumber(numThumb);
+//}
+//
+//void ExecutionManager::SetInsertEvent()
+//{
+//	//if (pPlayerDataManager != NULL)
+//	//	pPlayerDataManager->InsertEvent();
+//}
 
 void ExecutionManager::StartExecutionManager()
 {

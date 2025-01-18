@@ -137,11 +137,11 @@ void CResizeImage::ScaleDown(void)
 		diffY = endy - starty;
 		nry = 0;
 
-		for (float y = starty; y < endy; y = floor(y + 1.0f))
+		for (float y = starty; y < endy; y = (float)floor(y + 1.0))
 		{
 			iyA[nry] = (int)y;
 			if (endy - y > 1.0f)
-				dyA[nry] = floor(y + 1.0f) - y;
+				dyA[nry] = (float)floor(y + 1.0) - y;
 			else
 				dyA[nry] = endy - y;
 
@@ -183,19 +183,19 @@ void CResizeImage::ScaleDown(void)
 		newline += newrowsize;
 	}
 
-	delete rows;
+	delete[] rows;
 	delete nrxA;
 	delete ixA;
-	delete iyA;
+	delete[] iyA;
 	delete dxA;
-	delete dyA;
+	delete[] dyA;
 	delete dxB;
 }
 
 void CResizeImage::ScaleDownPreCalculate(int* &ixA, float* &dxA, int* &nrxA, float* &dxB)
 {
-	int nrcols = (int)ceil(fx + 1.0f);
-	int nrx = 0, nrx1;
+	int nrcols = (int)ceil(fx + 1.0);
+	int nrx = 0, nrx1 = 0;
 	float startx = 0.0f;
 	float endx = fx;
 
@@ -208,11 +208,11 @@ void CResizeImage::ScaleDownPreCalculate(int* &ixA, float* &dxA, int* &nrxA, flo
 	{
 		endx = endx < width + 1 ? endx : endx - width + 1;
 
-		for (float x = startx; x < endx; x = floor(x + 1.0f))
+		for (float x = startx; x < endx; x = (float)floor(x + 1.0))
 		{
 			ixA[nrx] = (int)x * bpp;
 			if (endx - x > 1.0f)
-				dxA[nrx] = floor(x + 1.0f) - x;
+				dxA[nrx] = (float)floor(x + 1.0) - x;
 			else
 				dxA[nrx] = endx - x;
 			nrx++;
@@ -370,8 +370,8 @@ float CResizeImage::Lanczos(float x)
 		return 1.0f;
 	else
 	{
-		float xpi = x * 3.141593f;
-		return LANCZOS_WINDOW * sin(xpi) * sin(xpi / LANCZOS_WINDOW) / (xpi * xpi);
+		double xpi = x * 3.141593;
+		return (float)(LANCZOS_WINDOW * sin(xpi) * sin(xpi / LANCZOS_WINDOW) / (xpi * xpi));
 	}
 }
 

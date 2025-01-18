@@ -234,7 +234,7 @@ void DrawLEDString(wxDC& dc, char *text, wxColor color, int left, int top , int 
 
 }
 
-void DrawLED(wxDC& dc, wxColor color, int left, int top, int width, int height)
+void DrawLED(wxDC& dc, wxColor color, int left, int top, int width)
 {
 	HDC hDC = dc.GetHDC();
 

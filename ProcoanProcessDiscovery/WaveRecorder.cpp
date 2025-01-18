@@ -51,7 +51,7 @@ int WaveRecorder::SelectDevice()
 
 void WaveRecorder::SetDeviceCaps()
 {
-	m_wavDeviceList.GetDeviceCaps(m_deviceNum, &m_numChannels, &m_freq, &m_dataSize);
+	m_wavDeviceList.GetDeviceCaps((WORD)m_deviceNum, &m_numChannels, &m_freq, &m_dataSize);
 	ZeroMemory(&m_wvFormat, sizeof(WAVEFORMATEX));
 	m_wvFormat.nSamplesPerSec = m_freq;
 	m_wvFormat.nChannels = (WORD)m_numChannels;

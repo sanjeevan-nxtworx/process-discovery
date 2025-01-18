@@ -34,7 +34,7 @@ class ManageScenarioDlg :
 	void OnCloseDlg(wxCommandEvent& event);
 
 public:
-	ManageScenarioDlg(ScenarioFacade *pScenarios, wxWindow * parent, wxWindowID id, const wxString & title,
+	ManageScenarioDlg(ScenarioFacade *pScenarios, wxWindow * parent, const wxString & title,
 		const wxPoint & position, const wxSize & size);
 	~ManageScenarioDlg();
 	string GetSelectedString();

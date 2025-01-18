@@ -76,13 +76,13 @@ IUIAutomation *g_pUIA = NULL;
 DWORD WINAPI GetURLThreadFunction(LPVOID lpParameter);
 DWORD WINAPI GetChromeURLThreadFunction(LPVOID lpParameter);
 DWORD WINAPI GetWindowNameThreadFunction(LPVOID lpParameter);
-DWORD WINAPI GetWindowControlsThreadFunction(LPVOID lpParameter);
-DWORD WINAPI GetEdgeURLControlsThreadFunction(LPVOID lpParameter);
-DWORD WINAPI GetChromeURLControlsThreadFunction(LPVOID lpParameter);
+//DWORD WINAPI GetWindowControlsThreadFunction(LPVOID lpParameter);
+//DWORD WINAPI GetEdgeURLControlsThreadFunction(LPVOID lpParameter);
+//DWORD WINAPI GetChromeURLControlsThreadFunction(LPVOID lpParameter);
 
 void GetWindowNamesInThread(struct threaddata *pThreadData);
-void GetWindowControlsInThread(struct threaddata *pThreadData);
-void GetURLControlsInThread(struct threaddata *pThreadData);
+//void GetWindowControlsInThread(struct threaddata *pThreadData);
+//void GetURLControlsInThread(struct threaddata *pThreadData);
 //void GetChromeURLControlsInThread(struct threaddata *pThreadData);
 
 SpyEditorScreen::SpyEditorScreen(wxWindow * parent, wxWindowID WXUNUSED(id), const wxString & title,
@@ -855,7 +855,7 @@ wxWindow *SpyEditorScreen::CreateURLControlTab()
 
 void SpyEditorScreen::OnWindowControlSelChanged(wxCommandEvent& event)
 {
-	int index = event.GetSelection();
+	size_t index = event.GetSelection();
 
 	vector <SpyControlData*> controlList = pDataFacade->GetControls();
 
@@ -885,7 +885,7 @@ void SpyEditorScreen::OnWindowControlSelChanged(wxCommandEvent& event)
 
 void SpyEditorScreen::OnURLControlSelChanged(wxCommandEvent& event)
 {
-	int index = event.GetSelection();
+	size_t index = event.GetSelection();
 
 	vector <SpyControlData*> controlList = pDataFacade->GetControls();
 
@@ -1483,7 +1483,7 @@ void SpyEditorScreen::OnGotoURL(wxCommandEvent& WXUNUSED(event))
 
 void SpyEditorScreen::OnSaveControls(wxCommandEvent& WXUNUSED(event))
 {
-	int index = windowControlList->GetSelection();
+	size_t index = windowControlList->GetSelection();
 	vector <SpyControlData*> controlList = pDataFacade->GetControls();
 
 	if (index <= controlList.size())
@@ -1528,7 +1528,7 @@ void SpyEditorScreen::OnSaveControls(wxCommandEvent& WXUNUSED(event))
 
 void SpyEditorScreen::OnURLSaveControls(wxCommandEvent& event)
 {
-	int index = urlControlLB->GetSelection();
+	size_t index = urlControlLB->GetSelection();
 
 	vector <SpyControlData*> controlList = pDataFacade->GetControls();
 
@@ -2291,6 +2291,8 @@ void SpyEditorScreen::GetWindowNames(vector <DWORD> &pIDs)
 	threadDataVal.windowData.clear();
 	threadDataVal.pidCount.clear();
 	urlThread = CreateThread(0, 0, GetWindowNameThreadFunction, (LPVOID *)&threadDataVal, 0, &urlThreadID);
+	if (urlThread == NULL)
+		return;
 	WaitForSingleObject(urlThread, INFINITE);
 	CloseHandle(urlThread);
 
@@ -2609,564 +2611,564 @@ void GetWindowNamesInThread(struct threaddata *pThreadData)
 
 
 
-void GetWindowControlsInThread(struct threaddata *pThreadData)
-{
-	/*
-	IUIAutomationElement *pDesktop = NULL;
-	list <IUIAutomationElement *> pSearchWindows;
-	HRESULT hr = NULL;
-
-	pSearchWindows.clear();
-
-	g_pUIA->GetRootElement(&pDesktop);
-	if (pDesktop != NULL)
-	{
-		pSearchWindows.push_back(pDesktop);
-		vector <DWORD>::iterator itPID = pThreadData->pids.begin();
-		IUIAutomationCondition* pCombinedCondition = NULL;
-		IUIAutomationCondition* pWindowTypeCondition = NULL;
-		IUIAutomationCondition* pOrArrayCondition = NULL;
-		IUIAutomationCondition **pOrConditionArray = DBG_NEW IUIAutomationCondition *[pThreadData->pids.size()];
-		IUIAutomationElement *pMainWindowFound = NULL;
-
-		int num = 0;
-		while (itPID != pThreadData->pids.end())
-		{
-			VARIANT varProp;
-			varProp.vt = VT_I4;
-			varProp.lVal = *itPID;
-			hr = g_pUIA->CreatePropertyCondition(UIA_ProcessIdPropertyId, varProp, &pOrConditionArray[num]);
-			if (pOrConditionArray[num] == NULL || !SUCCEEDED(hr))
-			{
-				num = 0;
-				break;
-			}
-			num++;
-			itPID++;
-		}
-
-		if (num > 0)
-		{
-			IUIAutomationCondition **pControlTypeConditionArray = (IUIAutomationCondition **)malloc(sizeof(IUIAutomationCondition *) * 2);
-
-			VARIANT varProp;
-			varProp.vt = VT_I4;
-			varProp.lVal = UIA_WindowControlTypeId;
-			//			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pWindowTypeCondition);
-			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pControlTypeConditionArray[0]);
-
-			VARIANT varProp2;
-			varProp2.vt = VT_I4;
-			varProp2.lVal = UIA_PaneControlTypeId;
-			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp2, &pControlTypeConditionArray[1]);
-			hr = g_pUIA->CreateOrConditionFromNativeArray(pControlTypeConditionArray, 2, &pWindowTypeCondition);
-
-
-			//VARIANT varProp;
-			//varProp.vt = VT_I4;
-			//varProp.lVal = UIA_WindowControlTypeId;
-			//hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pWindowTypeCondition);
-			if (!SUCCEEDED(hr) || pWindowTypeCondition == NULL)
-			{
-				;
-			}
-			else if (num == 1)
-			{
-				hr = g_pUIA->CreateAndCondition(pOrConditionArray[0], pWindowTypeCondition, &pCombinedCondition);
-			}
-			else
-			{
-				hr = g_pUIA->CreateOrConditionFromNativeArray(pOrConditionArray, num, &pOrArrayCondition);
-				if (!SUCCEEDED(hr) || pOrArrayCondition == NULL)
-				{
-					;
-				}
-				else
-				{
-					hr = g_pUIA->CreateAndCondition(pOrArrayCondition, pWindowTypeCondition, &pCombinedCondition);
-				}
-			}
-		}
-		if (num == 0 || !SUCCEEDED(hr) || pCombinedCondition == NULL)
-			;
-		else
-		{
-			while (pSearchWindows.size() != 0)
-			{
-				IUIAutomationElement *pWindow = pSearchWindows.front();
-				pSearchWindows.pop_front();
-				IUIAutomationElementArray *pWindowElements = NULL;
-				pWindow->FindAll(TreeScope_Children, pCombinedCondition, &pWindowElements);
-				if (pWindowElements != NULL)
-				{
-					int numWindows = 0;
-					pWindowElements->get_Length(&numWindows);
-					for (int numW = 0; numW < numWindows; numW++)
-					{
-						IUIAutomationElement *pFoundWindow = NULL;
-						pWindowElements->GetElement(numW, &pFoundWindow);
-						pSearchWindows.push_back(pFoundWindow);
-
-						if (pFoundWindow != NULL)
-						{
-							VARIANT varValue;
-							VariantInit(&varValue);
-							pFoundWindow->GetCurrentPropertyValue(UIA_NamePropertyId, &varValue);
-							string stringName = "";
-							if (varValue.vt == VT_BSTR)
-							{
-
-								wstring wStringName(varValue.bstrVal);
-								stringName = ws2s(wStringName);
-							}
-							VariantClear(&varValue);
-							if (stringName == pThreadData->windowName)
-							{
-								pMainWindowFound = pFoundWindow;
-
-							}
-							else
-							{
-								pFoundWindow->Release();
-								pFoundWindow = NULL;
-							}
-						}
-						if (pMainWindowFound != NULL)
-							break;
-					}
-
-				}
-				pWindow->Release();
-				pWindow = NULL;
-				if (pMainWindowFound != NULL)
-					break;
-			}
-		}
-
-		for (int i = 0; i < num; i++)
-		{
-			if (pOrConditionArray[i] != NULL)
-				pOrConditionArray[i]->Release();
-		}
-		delete[] pOrConditionArray;
-		if (pCombinedCondition != NULL)
-			pCombinedCondition->Release();
-		pCombinedCondition = NULL;
-		if (pWindowTypeCondition != NULL)
-			pWindowTypeCondition->Release();
-		pWindowTypeCondition = NULL;
-		if (pOrArrayCondition != NULL)
-			pOrArrayCondition->Release();
-		pOrArrayCondition = NULL;
-
-
-		if (pMainWindowFound != NULL)
-		{
-			// Get Control Data out here
-			RECT rect;
-			pMainWindowFound->get_CurrentBoundingRectangle(&rect);
-			GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
-			pMainWindowFound->Release();
-		}
-	}
-	*/
-}
-
-
-void GetURLControlsInThread(struct threaddata *pThreadData)
-{
-	/*
-	IUIAutomationElement *pDesktop = NULL;
-	list <IUIAutomationElement *> pSearchWindows;
-	bool isChrome = false;
-
-	pSearchWindows.clear();
-
-	// First find the URL in the list of Browser PIDs found passed to the thread
-	// if the URL is found then find the start point of the URL Search, this depends on the PID Browser Type
-
-	g_pUIA->GetRootElement(&pDesktop);
-
-
-	// Walk through the tree and find controls that matter
-	IUIAutomationElement *pFound = NULL;
-	IUIAutomationTreeWalker *pControlWalker = NULL;
-	IUIAutomationElement *pNode = NULL;
-
-
-	g_pUIA->get_ControlViewWalker(&pControlWalker);
-	if (pControlWalker == NULL)
-	{
-		return;
-	}
-
-	pControlWalker->GetFirstChildElement(pDesktop, &pNode);
-
-	IUIAutomationElement *pURLElement = NULL;
-
-	while (pNode)
-	{
-		BSTR className;
-		pNode->get_CurrentClassName(&className);
-		wstring wString(className);
-		SysFreeString(className);
-
-		if (wString == L"Chrome_WidgetWin_1")
-		{
-			// Get Chrome URL or MsEdge Chromium Widget.
-
-			IUIAutomationCondition* pControlNameCondition = NULL;
-
-			// Create a property condition for the button control type.
-			VARIANT varProp;
-			varProp.vt = VT_BSTR;
-			varProp.bstrVal = SysAllocString(L"Address and search bar");
-			g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varProp, &pControlNameCondition);
-			if (pControlNameCondition != NULL)
-			{
-				pNode->FindFirst(TreeScope_Descendants, pControlNameCondition, &pFound);
-				pControlNameCondition->Release();
-			}
-			if (pFound != NULL)
-			{
-				VARIANT varValue;
-				VariantInit(&varValue);
-				pFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
-
-				if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
-				{
-					wstring wStringValue(varValue.bstrVal);
-					string urlName = ws2s(wStringValue);
-					if (urlName != pThreadData->urlName)
-					{
-						pURLElement = NULL;
-					}
-					else
-					{
-						isChrome = true;
-						pURLElement = pNode;
-						pURLElement->AddRef();
-						SysFreeString(varProp.bstrVal);
-						pFound->Release();
-						break;
-					}
-				}
-				pFound->Release();
-			}
-			SysFreeString(varProp.bstrVal);
-		}
-		else if (wString == L"ApplicationFrameWindow")
-		{
-			// Get Edge URL
-			IUIAutomationCondition* pWindowClassCondition = NULL;
-			IUIAutomationElement *pMainWindowFound = NULL;
-
-			VARIANT varProp;
-			varProp.vt = VT_BSTR;
-			varProp.bstrVal = SysAllocString(L"Windows.UI.Core.CoreWindow");
-			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
-
-			pNode->FindFirst(TreeScope_Descendants, pWindowClassCondition, &pMainWindowFound);
-			if (pMainWindowFound != NULL)
-			{
-				pWindowClassCondition->Release();
-				pWindowClassCondition = NULL;
-
-				IUIAutomationCondition* pControlNameCondition = NULL;
-
-				// Create a property condition for the button control type.
-				VARIANT varNameProp;
-				varNameProp.vt = VT_BSTR;
-				varNameProp.bstrVal = SysAllocString(L"Search or enter web address");
-				g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varNameProp, &pControlNameCondition);
-				if (pControlNameCondition != NULL)
-				{
-					pMainWindowFound->FindFirst(TreeScope_Children, pControlNameCondition, &pFound);
-					pControlNameCondition->Release();
-				}
-				SysFreeString(varNameProp.bstrVal);
-				if (pFound != NULL)
-				{
-					VARIANT varValue;
-					VariantInit(&varValue);
-					pFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
-					if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
-					{
-						wstring wStringValue(varValue.bstrVal);
-						string urlName = ws2s(wStringValue);
-						if (urlName != pThreadData->urlName)
-						{
-							pURLElement = NULL;
-						}
-						else
-						{
-							pURLElement = pMainWindowFound;
-							pURLElement->AddRef();
-							pMainWindowFound->Release();
-							SysFreeString(varProp.bstrVal);
-							pFound->Release();
-							break;
-						}
-					}
-					pFound->Release();
-				}
-
-			}
-			SysFreeString(varProp.bstrVal);
-		}
-
-		IUIAutomationElement* pNext;
-		pControlWalker->GetNextSiblingElement(pNode, &pNext);
-		pNode->Release();
-		pNode = pNext;
-	}
-
-	if (pControlWalker != NULL)
-		pControlWalker->Release();
-	if (pNode != NULL)
-		pNode->Release();
-	pDesktop->Release();
-
-	if (pURLElement != NULL)
-	{
-
-		if (isChrome)
-		{
-			// Here the URL is Found, now find the start point to get the URL controls
-			// It will come here for both MSEdge Chromium as well as Chrome
-			IUIAutomationCondition* pWindowChromeCondition = NULL;
-			IUIAutomationElement *pMainWindowFound = NULL;
-			IUIAutomationCondition *pWindowEdgeCondition = NULL;
-
-			//LandmarkTarget
-			VARIANT varProp;
-			varProp.vt = VT_BSTR;
-			varProp.bstrVal = SysAllocString(L"Chrome_RenderWidgetHostHWND");
-			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowChromeCondition);
-
-			VARIANT varPropEdge;
-			varPropEdge.vt = VT_BSTR;
-			varPropEdge.bstrVal = SysAllocString(L"BrowserView");
-			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varPropEdge, &pWindowEdgeCondition);
-
-			IUIAutomationCondition *pWindowORCondition = NULL;
-			g_pUIA->CreateOrCondition(pWindowEdgeCondition, pWindowChromeCondition, &pWindowORCondition);
-
-			pURLElement->FindFirst(TreeScope_Descendants, pWindowORCondition, &pMainWindowFound);
-			VariantClear(&varProp);
-			VariantClear(&varPropEdge);
-
-			pWindowChromeCondition->Release();
-			pWindowEdgeCondition->Release();
-			pWindowORCondition->Release();
-			if (pMainWindowFound == NULL)
-				return;
-
-			// Check if Classname of item is "BrowserView" then it is Edge window, Go down one level to the child with a view class
-			//BSTR bStrVal = NULL;
-			//pMainWindowFound->get_CurrentClassName(&bStrVal);
-			//string foundClassName = "";
-			//if (bStrVal != NULL)
-			//{
-			//	wstring wStringName(bStrVal);
-			//	foundClassName = ws2s(wStringName);
-			//}
-			//SysFreeString(bStrVal);
-			//if (foundClassName == "BrowserView")
-			//{
-			//	VARIANT varClass;
-			//	varClass.vt = VT_BSTR;
-			//	varClass.bstrVal = SysAllocString(L"View");
-			//	IUIAutomationCondition* pWindowEdgeCondition = NULL;
-			//	g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varClass, &pWindowEdgeCondition);
-
-			//	if (pWindowEdgeCondition != NULL)
-			//	{
-			//		IUIAutomationElement *pEdgeBrowserElement = NULL;
-			//		pMainWindowFound->FindFirst(TreeScope_Children, pWindowEdgeCondition, &pEdgeBrowserElement);
-			//		if (pEdgeBrowserElement != NULL)
-			//		{
-			//			pMainWindowFound->Release();
-			//			pMainWindowFound = pEdgeBrowserElement;
-			//		}
-			//		pWindowEdgeCondition->Release();
-			//	}
-			//}
-		
-			// Now capture the window and store in the thread value;
-			// Get Control Data out here
-			RECT rect;
-			pMainWindowFound->get_CurrentBoundingRectangle(&rect);
-			GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
-			pMainWindowFound->Release();
-			pURLElement->Release();
-		}
-		else
-		{
-			//IUIAutomationElement *pURLFound = NULL;
-
-			if (pURLElement != NULL)
-			{
-				// Here the URL is Found, now find the start point to get the URL controls
-				//IUIAutomationCondition* pWindowTypeCondition = NULL;
-				//IUIAutomationCondition* pWindowNameCondition = NULL;
-				IUIAutomationCondition* pWindowClassCondition = NULL;
-				IUIAutomationElement *pMainWindowFound = NULL;
-
-
-				//LandmarkTarget
-				VARIANT varProp;
-				varProp.vt = VT_BSTR;
-				varProp.bstrVal = SysAllocString(L"LandmarkTarget");
-				g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
-				pURLElement->FindFirst(TreeScope_Children, pWindowClassCondition, &pMainWindowFound);
-				VariantClear(&varProp);
-
-				if (pMainWindowFound != NULL)
-				{
-					pWindowClassCondition->Release();
-					pWindowClassCondition = NULL;
-
-					pControlWalker = NULL;
-					IUIAutomationElement *pNodeChild = NULL;
-
-					g_pUIA->get_ControlViewWalker(&pControlWalker);
-					if (pControlWalker == NULL)
-					{
-						return;
-					}
-
-					int i = 0;
-					while (i < 2)
-					{
-						pControlWalker->GetFirstChildElement(pMainWindowFound, &pNodeChild);
-						pMainWindowFound->Release();
-						pMainWindowFound = pNodeChild;
-						if (pNodeChild == NULL)
-							break;
-						pNodeChild = NULL;
-						i++;
-					}
-					pControlWalker->Release();
-
-					if (pMainWindowFound == NULL)
-						return;
-
-
-					// Now capture the window and store in the thread value;
-					// Get Control Data out here
-					RECT rect;
-					pMainWindowFound->get_CurrentBoundingRectangle(&rect);
-					GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
-					pMainWindowFound->Release();
-				}
-			}
-
-		}
-	}
-	*/
-}
-
-
-void GetChromeURLControlsInThread(struct threaddata *pThreadData)
-{
-	/*
-	IUIAutomationElement *pDesktop = NULL;
-	list <IUIAutomationElement *> pSearchWindows;
-	HRESULT hr = NULL;
-
-	pSearchWindows.clear();
-
-	// First find the URL in the list of Browser PIDs found passed to the thread
-	// if the URL is found then find the start point of the URL Search, this depends on the PID Browser Type
-
-	IUIAutomationElement *pURLElement = NULL;
-
-
-	g_pUIA->GetRootElement(&pDesktop);
-
-	if (pDesktop != NULL)
-	{
-		IUIAutomationCondition* pProcessIDCondition = NULL;
-		// Create a property condition for the button control type.
-		VARIANT varProp;
-		varProp.vt = VT_I4;
-		varProp.lVal = pThreadData->pid;
-		g_pUIA->CreatePropertyCondition(UIA_ProcessIdPropertyId, varProp, &pProcessIDCondition);
-		if (pProcessIDCondition != NULL)
-		{
-			pDesktop->FindFirst(TreeScope_Children, pProcessIDCondition, &pURLElement);
-			if (pProcessIDCondition != NULL)
-				pProcessIDCondition->Release();
-		}
-	}
-
-	IUIAutomationElement *pFound = pURLElement;
-	if (SUCCEEDED(hr) && pFound != NULL)
-	{
-		IUIAutomationCondition* pControlNameCondition = NULL;
-		IUIAutomationElement *pURLFound = NULL;
-		// Create a property condition for the button control type.
-		VARIANT varProp;
-		varProp.vt = VT_BSTR;
-		varProp.bstrVal = SysAllocString(L"Address and search bar");
-		g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varProp, &pControlNameCondition);
-		if (pControlNameCondition != NULL)
-		{
-			pFound->FindFirst(TreeScope_Descendants, pControlNameCondition, &pURLFound);
-		}
-		if (pControlNameCondition != NULL)
-			pControlNameCondition->Release();
-		if (pURLFound != NULL)
-		{
-			VARIANT varValue;
-			VariantInit(&varValue);
-			pURLFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
-			if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
-			{
-				wstring wString(varValue.bstrVal);
-				pThreadData->url = ws2s(wString);
-			}
-			if (pURLFound != NULL)
-				pURLFound->Release();
-			if (pThreadData->url != pThreadData->urlName)
-			{
-				pURLElement->Release();
-				pURLElement = NULL;
-			}
-
-		}
-	}
-
-	if (pURLElement != NULL)
-	{
-		// Here the URL is Found, now find the start point to get the URL controls
-		IUIAutomationCondition* pWindowClassCondition = NULL;
-		IUIAutomationElement *pMainWindowFound = NULL;
-
-		//LandmarkTarget
-		VARIANT varProp;
-		varProp.vt = VT_BSTR;
-		varProp.bstrVal = SysAllocString(L"Chrome_RenderWidgetHostHWND");
-		g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
-		pURLElement->FindFirst(TreeScope_Children, pWindowClassCondition, &pMainWindowFound);
-		VariantClear(&varProp);
-
-		if (pMainWindowFound == NULL)
-			return;
-
-
-		// Now capture the window and store in the thread value;
-		// Get Control Data out here
-		RECT rect;
-		pMainWindowFound->get_CurrentBoundingRectangle(&rect);
-		GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
-		pMainWindowFound->Release();
-		pURLElement->Release();
-
-	}
-	*/
-}
+//void GetWindowControlsInThread(struct threaddata *pThreadData)
+//{
+//	/*
+//	IUIAutomationElement *pDesktop = NULL;
+//	list <IUIAutomationElement *> pSearchWindows;
+//	HRESULT hr = NULL;
+//
+//	pSearchWindows.clear();
+//
+//	g_pUIA->GetRootElement(&pDesktop);
+//	if (pDesktop != NULL)
+//	{
+//		pSearchWindows.push_back(pDesktop);
+//		vector <DWORD>::iterator itPID = pThreadData->pids.begin();
+//		IUIAutomationCondition* pCombinedCondition = NULL;
+//		IUIAutomationCondition* pWindowTypeCondition = NULL;
+//		IUIAutomationCondition* pOrArrayCondition = NULL;
+//		IUIAutomationCondition **pOrConditionArray = DBG_NEW IUIAutomationCondition *[pThreadData->pids.size()];
+//		IUIAutomationElement *pMainWindowFound = NULL;
+//
+//		int num = 0;
+//		while (itPID != pThreadData->pids.end())
+//		{
+//			VARIANT varProp;
+//			varProp.vt = VT_I4;
+//			varProp.lVal = *itPID;
+//			hr = g_pUIA->CreatePropertyCondition(UIA_ProcessIdPropertyId, varProp, &pOrConditionArray[num]);
+//			if (pOrConditionArray[num] == NULL || !SUCCEEDED(hr))
+//			{
+//				num = 0;
+//				break;
+//			}
+//			num++;
+//			itPID++;
+//		}
+//
+//		if (num > 0)
+//		{
+//			IUIAutomationCondition **pControlTypeConditionArray = (IUIAutomationCondition **)malloc(sizeof(IUIAutomationCondition *) * 2);
+//
+//			VARIANT varProp;
+//			varProp.vt = VT_I4;
+//			varProp.lVal = UIA_WindowControlTypeId;
+//			//			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pWindowTypeCondition);
+//			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pControlTypeConditionArray[0]);
+//
+//			VARIANT varProp2;
+//			varProp2.vt = VT_I4;
+//			varProp2.lVal = UIA_PaneControlTypeId;
+//			hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp2, &pControlTypeConditionArray[1]);
+//			hr = g_pUIA->CreateOrConditionFromNativeArray(pControlTypeConditionArray, 2, &pWindowTypeCondition);
+//
+//
+//			//VARIANT varProp;
+//			//varProp.vt = VT_I4;
+//			//varProp.lVal = UIA_WindowControlTypeId;
+//			//hr = g_pUIA->CreatePropertyCondition(UIA_ControlTypePropertyId, varProp, &pWindowTypeCondition);
+//			if (!SUCCEEDED(hr) || pWindowTypeCondition == NULL)
+//			{
+//				;
+//			}
+//			else if (num == 1)
+//			{
+//				hr = g_pUIA->CreateAndCondition(pOrConditionArray[0], pWindowTypeCondition, &pCombinedCondition);
+//			}
+//			else
+//			{
+//				hr = g_pUIA->CreateOrConditionFromNativeArray(pOrConditionArray, num, &pOrArrayCondition);
+//				if (!SUCCEEDED(hr) || pOrArrayCondition == NULL)
+//				{
+//					;
+//				}
+//				else
+//				{
+//					hr = g_pUIA->CreateAndCondition(pOrArrayCondition, pWindowTypeCondition, &pCombinedCondition);
+//				}
+//			}
+//		}
+//		if (num == 0 || !SUCCEEDED(hr) || pCombinedCondition == NULL)
+//			;
+//		else
+//		{
+//			while (pSearchWindows.size() != 0)
+//			{
+//				IUIAutomationElement *pWindow = pSearchWindows.front();
+//				pSearchWindows.pop_front();
+//				IUIAutomationElementArray *pWindowElements = NULL;
+//				pWindow->FindAll(TreeScope_Children, pCombinedCondition, &pWindowElements);
+//				if (pWindowElements != NULL)
+//				{
+//					int numWindows = 0;
+//					pWindowElements->get_Length(&numWindows);
+//					for (int numW = 0; numW < numWindows; numW++)
+//					{
+//						IUIAutomationElement *pFoundWindow = NULL;
+//						pWindowElements->GetElement(numW, &pFoundWindow);
+//						pSearchWindows.push_back(pFoundWindow);
+//
+//						if (pFoundWindow != NULL)
+//						{
+//							VARIANT varValue;
+//							VariantInit(&varValue);
+//							pFoundWindow->GetCurrentPropertyValue(UIA_NamePropertyId, &varValue);
+//							string stringName = "";
+//							if (varValue.vt == VT_BSTR)
+//							{
+//
+//								wstring wStringName(varValue.bstrVal);
+//								stringName = ws2s(wStringName);
+//							}
+//							VariantClear(&varValue);
+//							if (stringName == pThreadData->windowName)
+//							{
+//								pMainWindowFound = pFoundWindow;
+//
+//							}
+//							else
+//							{
+//								pFoundWindow->Release();
+//								pFoundWindow = NULL;
+//							}
+//						}
+//						if (pMainWindowFound != NULL)
+//							break;
+//					}
+//
+//				}
+//				pWindow->Release();
+//				pWindow = NULL;
+//				if (pMainWindowFound != NULL)
+//					break;
+//			}
+//		}
+//
+//		for (int i = 0; i < num; i++)
+//		{
+//			if (pOrConditionArray[i] != NULL)
+//				pOrConditionArray[i]->Release();
+//		}
+//		delete[] pOrConditionArray;
+//		if (pCombinedCondition != NULL)
+//			pCombinedCondition->Release();
+//		pCombinedCondition = NULL;
+//		if (pWindowTypeCondition != NULL)
+//			pWindowTypeCondition->Release();
+//		pWindowTypeCondition = NULL;
+//		if (pOrArrayCondition != NULL)
+//			pOrArrayCondition->Release();
+//		pOrArrayCondition = NULL;
+//
+//
+//		if (pMainWindowFound != NULL)
+//		{
+//			// Get Control Data out here
+//			RECT rect;
+//			pMainWindowFound->get_CurrentBoundingRectangle(&rect);
+//			GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
+//			pMainWindowFound->Release();
+//		}
+//	}
+//	*/
+//}
+
+
+//void GetURLControlsInThread(struct threaddata *pThreadData)
+//{
+//	/*
+//	IUIAutomationElement *pDesktop = NULL;
+//	list <IUIAutomationElement *> pSearchWindows;
+//	bool isChrome = false;
+//
+//	pSearchWindows.clear();
+//
+//	// First find the URL in the list of Browser PIDs found passed to the thread
+//	// if the URL is found then find the start point of the URL Search, this depends on the PID Browser Type
+//
+//	g_pUIA->GetRootElement(&pDesktop);
+//
+//
+//	// Walk through the tree and find controls that matter
+//	IUIAutomationElement *pFound = NULL;
+//	IUIAutomationTreeWalker *pControlWalker = NULL;
+//	IUIAutomationElement *pNode = NULL;
+//
+//
+//	g_pUIA->get_ControlViewWalker(&pControlWalker);
+//	if (pControlWalker == NULL)
+//	{
+//		return;
+//	}
+//
+//	pControlWalker->GetFirstChildElement(pDesktop, &pNode);
+//
+//	IUIAutomationElement *pURLElement = NULL;
+//
+//	while (pNode)
+//	{
+//		BSTR className;
+//		pNode->get_CurrentClassName(&className);
+//		wstring wString(className);
+//		SysFreeString(className);
+//
+//		if (wString == L"Chrome_WidgetWin_1")
+//		{
+//			// Get Chrome URL or MsEdge Chromium Widget.
+//
+//			IUIAutomationCondition* pControlNameCondition = NULL;
+//
+//			// Create a property condition for the button control type.
+//			VARIANT varProp;
+//			varProp.vt = VT_BSTR;
+//			varProp.bstrVal = SysAllocString(L"Address and search bar");
+//			g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varProp, &pControlNameCondition);
+//			if (pControlNameCondition != NULL)
+//			{
+//				pNode->FindFirst(TreeScope_Descendants, pControlNameCondition, &pFound);
+//				pControlNameCondition->Release();
+//			}
+//			if (pFound != NULL)
+//			{
+//				VARIANT varValue;
+//				VariantInit(&varValue);
+//				pFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
+//
+//				if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
+//				{
+//					wstring wStringValue(varValue.bstrVal);
+//					string urlName = ws2s(wStringValue);
+//					if (urlName != pThreadData->urlName)
+//					{
+//						pURLElement = NULL;
+//					}
+//					else
+//					{
+//						isChrome = true;
+//						pURLElement = pNode;
+//						pURLElement->AddRef();
+//						SysFreeString(varProp.bstrVal);
+//						pFound->Release();
+//						break;
+//					}
+//				}
+//				pFound->Release();
+//			}
+//			SysFreeString(varProp.bstrVal);
+//		}
+//		else if (wString == L"ApplicationFrameWindow")
+//		{
+//			// Get Edge URL
+//			IUIAutomationCondition* pWindowClassCondition = NULL;
+//			IUIAutomationElement *pMainWindowFound = NULL;
+//
+//			VARIANT varProp;
+//			varProp.vt = VT_BSTR;
+//			varProp.bstrVal = SysAllocString(L"Windows.UI.Core.CoreWindow");
+//			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
+//
+//			pNode->FindFirst(TreeScope_Descendants, pWindowClassCondition, &pMainWindowFound);
+//			if (pMainWindowFound != NULL)
+//			{
+//				pWindowClassCondition->Release();
+//				pWindowClassCondition = NULL;
+//
+//				IUIAutomationCondition* pControlNameCondition = NULL;
+//
+//				// Create a property condition for the button control type.
+//				VARIANT varNameProp;
+//				varNameProp.vt = VT_BSTR;
+//				varNameProp.bstrVal = SysAllocString(L"Search or enter web address");
+//				g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varNameProp, &pControlNameCondition);
+//				if (pControlNameCondition != NULL)
+//				{
+//					pMainWindowFound->FindFirst(TreeScope_Children, pControlNameCondition, &pFound);
+//					pControlNameCondition->Release();
+//				}
+//				SysFreeString(varNameProp.bstrVal);
+//				if (pFound != NULL)
+//				{
+//					VARIANT varValue;
+//					VariantInit(&varValue);
+//					pFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
+//					if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
+//					{
+//						wstring wStringValue(varValue.bstrVal);
+//						string urlName = ws2s(wStringValue);
+//						if (urlName != pThreadData->urlName)
+//						{
+//							pURLElement = NULL;
+//						}
+//						else
+//						{
+//							pURLElement = pMainWindowFound;
+//							pURLElement->AddRef();
+//							pMainWindowFound->Release();
+//							SysFreeString(varProp.bstrVal);
+//							pFound->Release();
+//							break;
+//						}
+//					}
+//					pFound->Release();
+//				}
+//
+//			}
+//			SysFreeString(varProp.bstrVal);
+//		}
+//
+//		IUIAutomationElement* pNext;
+//		pControlWalker->GetNextSiblingElement(pNode, &pNext);
+//		pNode->Release();
+//		pNode = pNext;
+//	}
+//
+//	if (pControlWalker != NULL)
+//		pControlWalker->Release();
+//	if (pNode != NULL)
+//		pNode->Release();
+//	pDesktop->Release();
+//
+//	if (pURLElement != NULL)
+//	{
+//
+//		if (isChrome)
+//		{
+//			// Here the URL is Found, now find the start point to get the URL controls
+//			// It will come here for both MSEdge Chromium as well as Chrome
+//			IUIAutomationCondition* pWindowChromeCondition = NULL;
+//			IUIAutomationElement *pMainWindowFound = NULL;
+//			IUIAutomationCondition *pWindowEdgeCondition = NULL;
+//
+//			//LandmarkTarget
+//			VARIANT varProp;
+//			varProp.vt = VT_BSTR;
+//			varProp.bstrVal = SysAllocString(L"Chrome_RenderWidgetHostHWND");
+//			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowChromeCondition);
+//
+//			VARIANT varPropEdge;
+//			varPropEdge.vt = VT_BSTR;
+//			varPropEdge.bstrVal = SysAllocString(L"BrowserView");
+//			g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varPropEdge, &pWindowEdgeCondition);
+//
+//			IUIAutomationCondition *pWindowORCondition = NULL;
+//			g_pUIA->CreateOrCondition(pWindowEdgeCondition, pWindowChromeCondition, &pWindowORCondition);
+//
+//			pURLElement->FindFirst(TreeScope_Descendants, pWindowORCondition, &pMainWindowFound);
+//			VariantClear(&varProp);
+//			VariantClear(&varPropEdge);
+//
+//			pWindowChromeCondition->Release();
+//			pWindowEdgeCondition->Release();
+//			pWindowORCondition->Release();
+//			if (pMainWindowFound == NULL)
+//				return;
+//
+//			// Check if Classname of item is "BrowserView" then it is Edge window, Go down one level to the child with a view class
+//			//BSTR bStrVal = NULL;
+//			//pMainWindowFound->get_CurrentClassName(&bStrVal);
+//			//string foundClassName = "";
+//			//if (bStrVal != NULL)
+//			//{
+//			//	wstring wStringName(bStrVal);
+//			//	foundClassName = ws2s(wStringName);
+//			//}
+//			//SysFreeString(bStrVal);
+//			//if (foundClassName == "BrowserView")
+//			//{
+//			//	VARIANT varClass;
+//			//	varClass.vt = VT_BSTR;
+//			//	varClass.bstrVal = SysAllocString(L"View");
+//			//	IUIAutomationCondition* pWindowEdgeCondition = NULL;
+//			//	g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varClass, &pWindowEdgeCondition);
+//
+//			//	if (pWindowEdgeCondition != NULL)
+//			//	{
+//			//		IUIAutomationElement *pEdgeBrowserElement = NULL;
+//			//		pMainWindowFound->FindFirst(TreeScope_Children, pWindowEdgeCondition, &pEdgeBrowserElement);
+//			//		if (pEdgeBrowserElement != NULL)
+//			//		{
+//			//			pMainWindowFound->Release();
+//			//			pMainWindowFound = pEdgeBrowserElement;
+//			//		}
+//			//		pWindowEdgeCondition->Release();
+//			//	}
+//			//}
+//		
+//			// Now capture the window and store in the thread value;
+//			// Get Control Data out here
+//			RECT rect;
+//			pMainWindowFound->get_CurrentBoundingRectangle(&rect);
+//			GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
+//			pMainWindowFound->Release();
+//			pURLElement->Release();
+//		}
+//		else
+//		{
+//			//IUIAutomationElement *pURLFound = NULL;
+//
+//			if (pURLElement != NULL)
+//			{
+//				// Here the URL is Found, now find the start point to get the URL controls
+//				//IUIAutomationCondition* pWindowTypeCondition = NULL;
+//				//IUIAutomationCondition* pWindowNameCondition = NULL;
+//				IUIAutomationCondition* pWindowClassCondition = NULL;
+//				IUIAutomationElement *pMainWindowFound = NULL;
+//
+//
+//				//LandmarkTarget
+//				VARIANT varProp;
+//				varProp.vt = VT_BSTR;
+//				varProp.bstrVal = SysAllocString(L"LandmarkTarget");
+//				g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
+//				pURLElement->FindFirst(TreeScope_Children, pWindowClassCondition, &pMainWindowFound);
+//				VariantClear(&varProp);
+//
+//				if (pMainWindowFound != NULL)
+//				{
+//					pWindowClassCondition->Release();
+//					pWindowClassCondition = NULL;
+//
+//					pControlWalker = NULL;
+//					IUIAutomationElement *pNodeChild = NULL;
+//
+//					g_pUIA->get_ControlViewWalker(&pControlWalker);
+//					if (pControlWalker == NULL)
+//					{
+//						return;
+//					}
+//
+//					int i = 0;
+//					while (i < 2)
+//					{
+//						pControlWalker->GetFirstChildElement(pMainWindowFound, &pNodeChild);
+//						pMainWindowFound->Release();
+//						pMainWindowFound = pNodeChild;
+//						if (pNodeChild == NULL)
+//							break;
+//						pNodeChild = NULL;
+//						i++;
+//					}
+//					pControlWalker->Release();
+//
+//					if (pMainWindowFound == NULL)
+//						return;
+//
+//
+//					// Now capture the window and store in the thread value;
+//					// Get Control Data out here
+//					RECT rect;
+//					pMainWindowFound->get_CurrentBoundingRectangle(&rect);
+//					GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
+//					pMainWindowFound->Release();
+//				}
+//			}
+//
+//		}
+//	}
+//	*/
+//}
+
+
+//void GetChromeURLControlsInThread(struct threaddata *pThreadData)
+//{
+//	/*
+//	IUIAutomationElement *pDesktop = NULL;
+//	list <IUIAutomationElement *> pSearchWindows;
+//	HRESULT hr = NULL;
+//
+//	pSearchWindows.clear();
+//
+//	// First find the URL in the list of Browser PIDs found passed to the thread
+//	// if the URL is found then find the start point of the URL Search, this depends on the PID Browser Type
+//
+//	IUIAutomationElement *pURLElement = NULL;
+//
+//
+//	g_pUIA->GetRootElement(&pDesktop);
+//
+//	if (pDesktop != NULL)
+//	{
+//		IUIAutomationCondition* pProcessIDCondition = NULL;
+//		// Create a property condition for the button control type.
+//		VARIANT varProp;
+//		varProp.vt = VT_I4;
+//		varProp.lVal = pThreadData->pid;
+//		g_pUIA->CreatePropertyCondition(UIA_ProcessIdPropertyId, varProp, &pProcessIDCondition);
+//		if (pProcessIDCondition != NULL)
+//		{
+//			pDesktop->FindFirst(TreeScope_Children, pProcessIDCondition, &pURLElement);
+//			if (pProcessIDCondition != NULL)
+//				pProcessIDCondition->Release();
+//		}
+//	}
+//
+//	IUIAutomationElement *pFound = pURLElement;
+//	if (SUCCEEDED(hr) && pFound != NULL)
+//	{
+//		IUIAutomationCondition* pControlNameCondition = NULL;
+//		IUIAutomationElement *pURLFound = NULL;
+//		// Create a property condition for the button control type.
+//		VARIANT varProp;
+//		varProp.vt = VT_BSTR;
+//		varProp.bstrVal = SysAllocString(L"Address and search bar");
+//		g_pUIA->CreatePropertyCondition(UIA_NamePropertyId, varProp, &pControlNameCondition);
+//		if (pControlNameCondition != NULL)
+//		{
+//			pFound->FindFirst(TreeScope_Descendants, pControlNameCondition, &pURLFound);
+//		}
+//		if (pControlNameCondition != NULL)
+//			pControlNameCondition->Release();
+//		if (pURLFound != NULL)
+//		{
+//			VARIANT varValue;
+//			VariantInit(&varValue);
+//			pURLFound->GetCurrentPropertyValue(UIA_ValueValuePropertyId, &varValue);
+//			if (varValue.vt == VT_BSTR && varValue.bstrVal != NULL)
+//			{
+//				wstring wString(varValue.bstrVal);
+//				pThreadData->url = ws2s(wString);
+//			}
+//			if (pURLFound != NULL)
+//				pURLFound->Release();
+//			if (pThreadData->url != pThreadData->urlName)
+//			{
+//				pURLElement->Release();
+//				pURLElement = NULL;
+//			}
+//
+//		}
+//	}
+//
+//	if (pURLElement != NULL)
+//	{
+//		// Here the URL is Found, now find the start point to get the URL controls
+//		IUIAutomationCondition* pWindowClassCondition = NULL;
+//		IUIAutomationElement *pMainWindowFound = NULL;
+//
+//		//LandmarkTarget
+//		VARIANT varProp;
+//		varProp.vt = VT_BSTR;
+//		varProp.bstrVal = SysAllocString(L"Chrome_RenderWidgetHostHWND");
+//		g_pUIA->CreatePropertyCondition(UIA_ClassNamePropertyId, varProp, &pWindowClassCondition);
+//		pURLElement->FindFirst(TreeScope_Children, pWindowClassCondition, &pMainWindowFound);
+//		VariantClear(&varProp);
+//
+//		if (pMainWindowFound == NULL)
+//			return;
+//
+//
+//		// Now capture the window and store in the thread value;
+//		// Get Control Data out here
+//		RECT rect;
+//		pMainWindowFound->get_CurrentBoundingRectangle(&rect);
+//		GetWindowControlsForElement(&pThreadData->controlData, pMainWindowFound, &rect);
+//		pMainWindowFound->Release();
+//		pURLElement->Release();
+//
+//	}
+//	*/
+//}
 
 void GetWindowControlsForElement(vector <WindowControlData *> *pControlData, IUIAutomationElement *pMainWindowFound, LPRECT pRect)
 {
@@ -3264,57 +3266,57 @@ void GetWindowControlsForElement(vector <WindowControlData *> *pControlData, IUI
 	
 }
 
-DWORD WINAPI GetWindowControlsThreadFunction(LPVOID lpParameter)
-{
-	g_pUIA = NULL;
-	CoInitializeEx(NULL, COINIT_MULTITHREADED);
-	CoCreateInstance(__uuidof(CUIAutomation),
-			NULL, CLSCTX_INPROC_SERVER,
-			__uuidof(IUIAutomation),
-			(void**)&g_pUIA);
-
-	struct threaddata *pThreadData = (struct threaddata *)lpParameter;
-	GetWindowControlsInThread(pThreadData);
-	g_pUIA->Release();
-	g_pUIA = NULL;
-	CoUninitialize();
-	return 0;
-}
-
-DWORD WINAPI GetEdgeURLControlsThreadFunction(LPVOID lpParameter)
-{
-	g_pUIA = NULL;
-	CoInitializeEx(NULL, COINIT_MULTITHREADED);
-	CoCreateInstance(__uuidof(CUIAutomation),
-			NULL, CLSCTX_INPROC_SERVER,
-			__uuidof(IUIAutomation),
-			(void**)&g_pUIA);
-
-	struct threaddata *pThreadData = (struct threaddata *)lpParameter;
-	GetURLControlsInThread(pThreadData);
-	g_pUIA->Release();
-	g_pUIA = NULL;
-	CoUninitialize();
-	return 0;
-}
-
-DWORD WINAPI GetChromeURLControlsThreadFunction(LPVOID lpParameter)
-{
-	g_pUIA = NULL;
-	CoInitializeEx(NULL, COINIT_MULTITHREADED);
-	CoCreateInstance(__uuidof(CUIAutomation),
-			NULL, CLSCTX_INPROC_SERVER,
-			__uuidof(IUIAutomation),
-			(void**)&g_pUIA);
-
-	struct threaddata *pThreadData = (struct threaddata *)lpParameter;
-	GetChromeURLControlsInThread(pThreadData);
-	g_pUIA->Release();
-	g_pUIA = NULL;
-	CoUninitialize();
-	return 0;
-}
-
+//DWORD WINAPI GetWindowControlsThreadFunction(LPVOID lpParameter)
+//{
+//	g_pUIA = NULL;
+//	CoInitializeEx(NULL, COINIT_MULTITHREADED);
+//	CoCreateInstance(__uuidof(CUIAutomation),
+//			NULL, CLSCTX_INPROC_SERVER,
+//			__uuidof(IUIAutomation),
+//			(void**)&g_pUIA);
+//
+//	//struct threaddata *pThreadData = (struct threaddata *)lpParameter;
+//	//GetWindowControlsInThread(pThreadData);
+//	g_pUIA->Release();
+//	g_pUIA = NULL;
+//	CoUninitialize();
+//	return 0;
+//}
+//
+//DWORD WINAPI GetEdgeURLControlsThreadFunction(LPVOID lpParameter)
+//{
+//	g_pUIA = NULL;
+//	CoInitializeEx(NULL, COINIT_MULTITHREADED);
+//	CoCreateInstance(__uuidof(CUIAutomation),
+//			NULL, CLSCTX_INPROC_SERVER,
+//			__uuidof(IUIAutomation),
+//			(void**)&g_pUIA);
+//
+//	/*struct threaddata *pThreadData = (struct threaddata *)lpParameter;
+//	GetURLControlsInThread(pThreadData);*/
+//	g_pUIA->Release();
+//	g_pUIA = NULL;
+//	CoUninitialize();
+//	return 0;
+//}
+//
+//DWORD WINAPI GetChromeURLControlsThreadFunction(LPVOID lpParameter)
+//{
+//	g_pUIA = NULL;
+//	CoInitializeEx(NULL, COINIT_MULTITHREADED);
+//	CoCreateInstance(__uuidof(CUIAutomation),
+//			NULL, CLSCTX_INPROC_SERVER,
+//			__uuidof(IUIAutomation),
+//			(void**)&g_pUIA);
+//
+//	//struct threaddata *pThreadData = (struct threaddata *)lpParameter;
+//	//GetChromeURLControlsInThread(pThreadData);
+//	g_pUIA->Release();
+//	g_pUIA = NULL;
+//	CoUninitialize();
+//	return 0;
+//}
+//
 
 void SpyEditorScreen::GetEdgeURL(DWORD pid, vector <string> &URLs)
 {
@@ -3330,6 +3332,8 @@ void SpyEditorScreen::GetEdgeURL(DWORD pid, vector <string> &URLs)
 	threadDataVal.name = "";
 
 	urlThread = CreateThread(0, 0, GetURLThreadFunction, (LPVOID *)&threadDataVal, 0, &urlThreadID);
+	if (urlThread == NULL)
+		return;
 	WaitForSingleObject(urlThread, INFINITE);
 	if (threadDataVal.urlNames.size() > 0)
 		URLs = threadDataVal.urlNames;
@@ -3348,6 +3352,8 @@ void SpyEditorScreen::GetChromeURL(DWORD pid, vector <string> &URLs)
 	threadDataVal.pid = pid;
 	threadDataVal.url = "";
 	chromeUrlThread = CreateThread(0, 0, GetChromeURLThreadFunction, (LPVOID *)&threadDataVal, 0, &chromeUrlThreadID);
+	if (chromeUrlThread == NULL)
+		return;
 	WaitForSingleObject(chromeUrlThread, INFINITE);
 	if (threadDataVal.url != "")
 		URLs.push_back(threadDataVal.url);

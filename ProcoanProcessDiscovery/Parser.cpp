@@ -66,7 +66,7 @@ Expression* Parser::logicalAND()
 	while (lhs) {
 		int mark2 = tokens->mark();
 		if (tokens->token() == "AND") {
-			if (rhs = relational())
+			if ((rhs = relational()) != nullptr)
 				lhs = DBG_NEW LogicalExpression('&', lhs, rhs);
 			else {
 				delete lhs;
@@ -93,7 +93,7 @@ Expression* Parser::relational()
 		int mark2 = tokens->mark();
 		std::string token = tokens->token();
 		if (token == "GT" || token == "LT" || token == "GTE" || token == "LTE" || token == "EQ" || token == "NEQ") {
-			if (rhs = sum())
+			if ((rhs = sum()) != nullptr)
 			{
 				if (token == "GT")
 					lhs = DBG_NEW RelationalExpression('>', lhs, rhs);
@@ -202,7 +202,7 @@ Expression* Parser::unary()
 	else
 		tokens->reset(mark);
 	Expression *rhs;
-	if (rhs = postfix())
+	if ((rhs = postfix()) != nullptr)
 	{
 		if (bUnary)
 		{
@@ -257,7 +257,7 @@ Expression *Parser::primary()
 	int mark = tokens->mark();
 
 	Expression *rhs;
-	if (rhs = group())
+	if ((rhs = group()) != nullptr)
 	{
 		return rhs;
 	}

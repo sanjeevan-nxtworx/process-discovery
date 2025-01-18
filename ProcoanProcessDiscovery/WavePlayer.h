@@ -27,9 +27,9 @@ public:
 	void Restart();
 	void SetDataManager(PlayerDataFileManager *pRecorder);
 	void SetRecordBufferManager(RecordBufferManager *pRecBuff);
-	void SetAudioParameters(long freq, int noChannels, int format, int bitsPerSample);
+	void SetAudioParameters(long freq, int noChannels, int bitsPerSample);
 	void SetAudioPlayerBuffer(AudioPlayerBuffer *pBuffer);
-	void StartPlay(long long fPos);
+	void StartPlay(void);
 	void StopPlay();
 	void SetStartFlag(bool bFlg);
 	void SetExitFlag(bool bFlg);

@@ -99,7 +99,7 @@ public:
 	void StopMoveAbsoluteThread();
 	void StopStepRewindForwardThread();
 	void WaitForThreadsToStop();
-	void SetInsertEvent();
+	//void SetInsertEvent();
 
 	// Recorder Threads
 	void StartWriteFileThread();
@@ -112,10 +112,10 @@ public:
 	void StopVideoRecording();
 	void StopEventRecording();
 
-	void SetThumbImage(int num);
+	//void SetThumbImage(int num);
 	void ShowSliderTime();
 	void CheckTabNotifications(NMHDR *pNMHdr);
-	void CheckKillFocus(HWND hWnd);
+	//void CheckKillFocus(HWND hWnd);
 	void SetSelectedMonitorList(list <struct monitorDetails *> *pList);
 	void SetEventRecording(bool bFlg);
 	void SetVideoRecording(bool bFlg);

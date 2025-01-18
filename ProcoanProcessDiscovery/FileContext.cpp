@@ -3265,7 +3265,7 @@ void FileContext::BranchDelete(ULONG nEventIndex, bool bDelEntire)
 	spdlog::info("Branch Delete");
 	struct branchIndexDescriptor *pBranch1, *pBranch2, *pBranch3;
 	pBranch1 = pBranch2 = pBranch3 = NULL;
-	struct joinIndexDescriptor *pJoin1, *pJoin2, *pJoin3;
+	struct joinIndexDescriptor *pJoin1, *pJoin2 = nullptr, *pJoin3;
 	long long posRight1, posRight2, posRight3;
 	posRight1 = posRight2 = posRight3 = 0LL;
 

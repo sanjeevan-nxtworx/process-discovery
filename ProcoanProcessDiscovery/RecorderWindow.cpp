@@ -35,7 +35,7 @@ HWND RecorderWindow::GetRecorderWindowHandle()
 	return hRecorderWnd;
 }
 
-void RecorderWindow::CreateRecorderWindow(HWND parent, HINSTANCE hInstance)
+void RecorderWindow::CreateRecorderWindow(HINSTANCE hInstance)
 {
 	if (hRecorderWnd != NULL)
 		return;
@@ -101,7 +101,7 @@ RecorderWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			scan = lParam & 0xffff;
 			key = (lParam >> 16) & 0xffff;
 			if (pCallback != NULL)
-				pCallback->KeyboardCallback(wParam, key, scan);
+				pCallback->KeyboardCallback(wParam, (WORD)key, (WORD)scan);
 			break;
 		}
 		return 0;

@@ -31,7 +31,7 @@ public:
 	virtual void SetEventMap(map<ULONG, struct eventListElement *> *pEventMap) = 0;
 	virtual void InsertEvent(ULONG nEventID, long long timestamp) = 0;
 	virtual void SetStartFlag(bool bFlg) = 0;
-	virtual void StartPlay(long long fPos) = 0;
+	virtual void StartPlay(void) = 0;
 	virtual void StartDisplay() = 0;
 	virtual long GetSliderPosition() = 0;
 	virtual void DisplayImage() = 0;

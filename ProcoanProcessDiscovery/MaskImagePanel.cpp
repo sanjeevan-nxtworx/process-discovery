@@ -307,7 +307,7 @@ void MaskImagePanel::SetImage()
  * calling Refresh()/Update().
  */
 
-void MaskImagePanel::paintEvent(wxPaintEvent & evt)
+void MaskImagePanel::paintEvent(wxPaintEvent& WXUNUSED(evt))
 {
 	// depending on your system you may need to look at double-buffered dcs
 	wxPaintDC dc(this);

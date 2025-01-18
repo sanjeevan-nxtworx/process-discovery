@@ -86,7 +86,7 @@ class EventRecorder : public IMouseEventCallback
 
 public:
 	EventRecorder();
-	~EventRecorder();
+	virtual ~EventRecorder();
 	void RecordEvent(bool bPause);
 	void EventResolver();
 	bool IsEventReady();

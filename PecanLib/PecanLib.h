@@ -14,7 +14,7 @@ extern "C" {
 	class IMouseEventCallback
 	{
 	public:
-		virtual void MouseCallback(int mEventNum, DWORD pt) = 0;
+		virtual void MouseCallback(int mEventNum, ULONG lParam) = 0;
 		virtual void KeyboardCallback(int mEventNum, WORD vk_code, WORD scanCode) = 0;
 		virtual void TimerEnd() = 0;
 	};

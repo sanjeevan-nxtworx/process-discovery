@@ -23,7 +23,7 @@ long CompareData(long *dest, long *src, int height, int width);
 long UnpackCompareData(long *dest, long *src, int width, long numBlocks);
 long CompressCompareBuffer(char *dest, long *src, long numBlocks);
 long ExpandScreenData(long *dest, unsigned char *src, long size);
-long ExpandCompareData(long *dest, char *src, int width, long numBlocks);
+long ExpandCompareData(long *dest, char *src, long numBlocks);
 
 string FindReplaceString(string str, string strFind, string strReplace);
 string EscapeString(string strVal);

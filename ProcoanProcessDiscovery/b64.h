@@ -33,7 +33,7 @@ static std::string base64_decode(const std::string &in) {
     for (int i=0; i<64; i++) T["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"[i]] = i; 
 
     int val=0, valb=-8;
-    for (int jj = 0; jj < in.size(); jj++) {
+    for (size_t jj = 0; jj < in.size(); jj++) {
     	char c = in[jj];
         if (T[c] == -1) break;
         val = (val<<6) + T[c];

@@ -36,47 +36,47 @@ PicButtonControlPanel::PicButtonControlPanel(wxPanel *parent, DWORD id, wxPoint 
 	btnRewind = DBG_NEW ProcoanButton(
 			this, EDITOR_FREW, wxPoint(buttonMargin, buttonMargin),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnRewind, FRewNormal_xpm, FRewDisabled_xpm, FRewMouseOver_xpm, FRewPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnRewind, FRewSMNormal_xpm, FRewSMDisabled_xpm, FRewSMMouseOver_xpm, FRewSMPressed_xpm, 30);
+	SetButtonBitmaps(btnRewind, FRewNormal_xpm, FRewDisabled_xpm, FRewMouseOver_xpm, FRewPressed_xpm);
+	SetSmallButtonBitmaps(btnRewind, FRewSMNormal_xpm, FRewSMDisabled_xpm, FRewSMMouseOver_xpm, FRewSMPressed_xpm);
 	btnRewind->SetToolTip(wxT("Fast Rewind"));
 	btnStepBack = DBG_NEW ProcoanButton(
 			this, EDITOR_SREW,
 			wxPoint(buttonMargin + (buttonXPosDiff * 1), buttonMargin + (buttonYPosDiff * 1)),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnStepBack, SRewNormal_xpm, SRewDisabled_xpm, SRewMouseOver_xpm, SRewPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnStepBack, SRewSMNormal_xpm, SRewSMDisabled_xpm, SRewSMMouseOver_xpm, SRewSMPressed_xpm, 30);
+	SetButtonBitmaps(btnStepBack, SRewNormal_xpm, SRewDisabled_xpm, SRewMouseOver_xpm, SRewPressed_xpm);
+	SetSmallButtonBitmaps(btnStepBack, SRewSMNormal_xpm, SRewSMDisabled_xpm, SRewSMMouseOver_xpm, SRewSMPressed_xpm);
 	btnStepBack->SetToolTip(wxT("Step Back"));
 
 	btnStop = DBG_NEW ProcoanButton(
 			this, EDITOR_STOP,
 			wxPoint(buttonMargin + (buttonXPosDiff * 2), buttonMargin + (buttonYPosDiff * 2)),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnStop, stopNormal_xpm, stopDisabled_xpm, stopMouseOver_xpm, stopPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnStop, stopSMNormal_xpm, stopSMDisabled_xpm, stopSMMouseOver_xpm, stopSMPressed_xpm, 30);
+	SetButtonBitmaps(btnStop, stopNormal_xpm, stopDisabled_xpm, stopMouseOver_xpm, stopPressed_xpm);
+	SetSmallButtonBitmaps(btnStop, stopSMNormal_xpm, stopSMDisabled_xpm, stopSMMouseOver_xpm, stopSMPressed_xpm);
 	btnStop->SetToolTip(wxT("Stop"));
 
 	btnPlay = DBG_NEW ProcoanButton(
 			this, EDITOR_PLAY,
 			wxPoint(buttonMargin + (buttonXPosDiff * 3), buttonMargin + (buttonYPosDiff * 3)),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnPlay, playNormal_xpm, playDisabled_xpm, playMouseOver_xpm, playPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnPlay, playSMNormal_xpm, playSMDisabled_xpm, playSMMouseOver_xpm, playSMPressed_xpm, 30);
+	SetButtonBitmaps(btnPlay, playNormal_xpm, playDisabled_xpm, playMouseOver_xpm, playPressed_xpm);
+	SetSmallButtonBitmaps(btnPlay, playSMNormal_xpm, playSMDisabled_xpm, playSMMouseOver_xpm, playSMPressed_xpm);
 	btnPlay->SetToolTip(wxT("Play"));
 
 	btnStepFwd = DBG_NEW ProcoanButton(
 			this, EDITOR_SFWD,
 			wxPoint(buttonMargin + (buttonXPosDiff * 4), buttonMargin + (buttonYPosDiff * 4)),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnStepFwd, SFwdNormal_xpm, SFwdDisabled_xpm, SFwdMouseOver_xpm, SFwdPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnStepFwd, SFwdSMNormal_xpm, SFwdSMDisabled_xpm, SFwdSMMouseOver_xpm, SFwdSMPressed_xpm, 30);
+	SetButtonBitmaps(btnStepFwd, SFwdNormal_xpm, SFwdDisabled_xpm, SFwdMouseOver_xpm, SFwdPressed_xpm);
+	SetSmallButtonBitmaps(btnStepFwd, SFwdSMNormal_xpm, SFwdSMDisabled_xpm, SFwdSMMouseOver_xpm, SFwdSMPressed_xpm);
 	btnStepFwd->SetToolTip(wxT("Step Forward"));
 
 	btnForward = DBG_NEW ProcoanButton(
 			this, EDITOR_FFWD,
 			wxPoint(buttonMargin + (buttonXPosDiff * 5), buttonMargin + (buttonYPosDiff * 5)),
 			wxSize(buttonWidth, buttonWidth));
-	SetButtonBitmaps(btnForward, FFwdNormal_xpm, FFwdDisabled_xpm, FFwdMouseOver_xpm, FFwdPressed_xpm, buttonWidth);
-	SetSmallButtonBitmaps(btnForward, FFwdSMNormal_xpm, FFwdSMDisabled_xpm, FFwdSMMouseOver_xpm, FFwdSMPressed_xpm, 30);
+	SetButtonBitmaps(btnForward, FFwdNormal_xpm, FFwdDisabled_xpm, FFwdMouseOver_xpm, FFwdPressed_xpm);
+	SetSmallButtonBitmaps(btnForward, FFwdSMNormal_xpm, FFwdSMDisabled_xpm, FFwdSMMouseOver_xpm, FFwdSMPressed_xpm);
 	btnForward->SetToolTip(wxT("Fast Forward"));
 
 	if (!bPlayerMode)
@@ -85,64 +85,64 @@ PicButtonControlPanel::PicButtonControlPanel(wxPanel *parent, DWORD id, wxPoint 
 			this, EDITOR_ADD_ACTIVTY,
 			wxPoint(buttonMargin + (buttonXPosDiff * 6), buttonMargin + (buttonYPosDiff * 6)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnAddActivity, addActivityNormal_xpm, addActivityDisabled_xpm, addActivityMouseOver_xpm, addActivityPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnAddActivity, addActivitySMNormal_xpm, addActivitySMDisabled_xpm, addActivitySMMouseOver_xpm, addActivitySMPressed_xpm, 30);
+		SetButtonBitmaps(btnAddActivity, addActivityNormal_xpm, addActivityDisabled_xpm, addActivityMouseOver_xpm, addActivityPressed_xpm);
+		SetSmallButtonBitmaps(btnAddActivity, addActivitySMNormal_xpm, addActivitySMDisabled_xpm, addActivitySMMouseOver_xpm, addActivitySMPressed_xpm);
 		btnAddActivity->SetToolTip(wxT("Add New Activity"));
 
 		btnStartSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_START_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 7), buttonMargin + (buttonYPosDiff * 7)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnStartSegment, startSegmentNormal_xpm, startSegmentDisabled_xpm, startSegmentMouseOver_xpm, startSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnStartSegment, startSegmentSMNormal_xpm, startSegmentSMDisabled_xpm, startSegmentSMMouseOver_xpm, startSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnStartSegment, startSegmentNormal_xpm, startSegmentDisabled_xpm, startSegmentMouseOver_xpm, startSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnStartSegment, startSegmentSMNormal_xpm, startSegmentSMDisabled_xpm, startSegmentSMMouseOver_xpm, startSegmentSMPressed_xpm);
 		btnStartSegment->SetToolTip(wxT("Start Segment"));
 
 		btnEndSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_END_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 8), buttonMargin + (buttonYPosDiff * 8)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnEndSegment, endSegmentNormal_xpm, endSegmentDisabled_xpm, endSegmentMouseOver_xpm, endSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnEndSegment, endSegmentSMNormal_xpm, endSegmentSMDisabled_xpm, endSegmentSMMouseOver_xpm, endSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnEndSegment, endSegmentNormal_xpm, endSegmentDisabled_xpm, endSegmentMouseOver_xpm, endSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnEndSegment, endSegmentSMNormal_xpm, endSegmentSMDisabled_xpm, endSegmentSMMouseOver_xpm, endSegmentSMPressed_xpm);
 		btnEndSegment->SetToolTip(wxT("End Segment"));
 
 		btnClearSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_CLEAR_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 9), buttonMargin + (buttonYPosDiff * 9)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnClearSegment, clearSegmentNormal_xpm, clearSegmentDisabled_xpm, clearSegmentMouseOver_xpm, clearSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnClearSegment, clearSegmentSMNormal_xpm, clearSegmentSMDisabled_xpm, clearSegmentSMMouseOver_xpm, clearSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnClearSegment, clearSegmentNormal_xpm, clearSegmentDisabled_xpm, clearSegmentMouseOver_xpm, clearSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnClearSegment, clearSegmentSMNormal_xpm, clearSegmentSMDisabled_xpm, clearSegmentSMMouseOver_xpm, clearSegmentSMPressed_xpm);
 		btnClearSegment->SetToolTip(wxT("Clear Segment"));
 
 		btnCopySegment = DBG_NEW ProcoanButton(
 			this, EDITOR_COPY_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 10), buttonMargin + (buttonYPosDiff * 10)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnCopySegment, copySegmentNormal_xpm, copySegmentDisabled_xpm, copySegmentMouseOver_xpm, copySegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnCopySegment, copySegmentSMNormal_xpm, copySegmentSMDisabled_xpm, copySegmentSMMouseOver_xpm, copySegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnCopySegment, copySegmentNormal_xpm, copySegmentDisabled_xpm, copySegmentMouseOver_xpm, copySegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnCopySegment, copySegmentSMNormal_xpm, copySegmentSMDisabled_xpm, copySegmentSMMouseOver_xpm, copySegmentSMPressed_xpm);
 		btnCopySegment->SetToolTip(wxT("Copy Segment"));
 
 		btnCutSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_CUT_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 11), buttonMargin + (buttonYPosDiff * 11)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnCutSegment, cutSegmentNormal_xpm, cutSegmentDisabled_xpm, cutSegmentMouseOver_xpm, cutSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnCutSegment, cutSegmentSMNormal_xpm, cutSegmentSMDisabled_xpm, cutSegmentSMMouseOver_xpm, cutSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnCutSegment, cutSegmentNormal_xpm, cutSegmentDisabled_xpm, cutSegmentMouseOver_xpm, cutSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnCutSegment, cutSegmentSMNormal_xpm, cutSegmentSMDisabled_xpm, cutSegmentSMMouseOver_xpm, cutSegmentSMPressed_xpm);
 		btnCutSegment->SetToolTip(wxT("Cut Segment"));
 
 		btnPasteSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_PASTE_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 12), buttonMargin + (buttonYPosDiff * 12)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnPasteSegment, pasteSegmentNormal_xpm, pasteSegmentDisabled_xpm, pasteSegmentMouseOver_xpm, pasteSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnPasteSegment, pasteSegmentSMNormal_xpm, pasteSegmentSMDisabled_xpm, pasteSegmentSMMouseOver_xpm, pasteSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnPasteSegment, pasteSegmentNormal_xpm, pasteSegmentDisabled_xpm, pasteSegmentMouseOver_xpm, pasteSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnPasteSegment, pasteSegmentSMNormal_xpm, pasteSegmentSMDisabled_xpm, pasteSegmentSMMouseOver_xpm, pasteSegmentSMPressed_xpm);
 		btnPasteSegment->SetToolTip(wxT("Paste Segment"));
 
 		btnBranchSegment = DBG_NEW ProcoanButton(
 			this, EDITOR_BRANCH_SEGMENT,
 			wxPoint(buttonMargin + (buttonXPosDiff * 13), buttonMargin + (buttonYPosDiff * 13)),
 			wxSize(buttonWidth, buttonWidth));
-		SetButtonBitmaps(btnBranchSegment, branchSegmentNormal_xpm, branchSegmentDisabled_xpm, branchSegmentMouseOver_xpm, branchSegmentPressed_xpm, buttonWidth);
-		SetSmallButtonBitmaps(btnBranchSegment, branchSegmentSMNormal_xpm, branchSegmentSMDisabled_xpm, branchSegmentSMMouseOver_xpm, branchSegmentSMPressed_xpm, 30);
+		SetButtonBitmaps(btnBranchSegment, branchSegmentNormal_xpm, branchSegmentDisabled_xpm, branchSegmentMouseOver_xpm, branchSegmentPressed_xpm);
+		SetSmallButtonBitmaps(btnBranchSegment, branchSegmentSMNormal_xpm, branchSegmentSMDisabled_xpm, branchSegmentSMMouseOver_xpm, branchSegmentSMPressed_xpm);
 		btnBranchSegment->SetToolTip(wxT("Create Branch Sement"));
 
 	}
@@ -362,7 +362,7 @@ void PicButtonControlPanel::SetButtonStatus()
 }
 
 
-void PicButtonControlPanel::SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth)
+void PicButtonControlPanel::SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed)
 {
 	if (btnObj == NULL)
 		return;
@@ -391,7 +391,7 @@ void PicButtonControlPanel::SetButtonBitmaps(ProcoanButton *btnObj, const char *
 
 }
 
-void PicButtonControlPanel::SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth)
+void PicButtonControlPanel::SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed)
 {
 	if (btnObj == NULL)
 		return;

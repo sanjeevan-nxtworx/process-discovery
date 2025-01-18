@@ -67,25 +67,25 @@ void ProcessSummaryPanel::SetProcessData(string val)
 
 string ProcessSummaryPanel::GetProcessName()
 {
-	return pProcessName->GetValue();
+	return string(pProcessName->GetValue().mb_str());
 }
 
 string ProcessSummaryPanel::GetProcessDescription()
 {
-	return pProcessDescription->GetValue();
+	return string(pProcessDescription->GetValue().mb_str());
 }
 
 string ProcessSummaryPanel::GetSubProcessName()
 {
-	return pSubProcessName->GetValue();
+	return string(pSubProcessName->GetValue().mb_str());
 }
 
 string ProcessSummaryPanel::GetSubProcessDescription()
 {
-	return pSubProcessDescription->GetValue();
+	return string(pSubProcessDescription->GetValue().mb_str());
 }
 
 string ProcessSummaryPanel::GetCreatedBy()
 {
-	return pCreatedBy->GetValue();
+	return string(pCreatedBy->GetValue().mb_str());
 }

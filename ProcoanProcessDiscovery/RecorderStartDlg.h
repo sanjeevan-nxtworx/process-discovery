@@ -45,7 +45,7 @@ class RecorderStartDlg : public wxDialog
 	void OnOK(wxCommandEvent&evt);
 
 public:
-	RecorderStartDlg(std::list <struct monitorDetails *> *pList, wxWindow * parent, wxWindowID id, const wxString & title,
+	RecorderStartDlg(std::list <struct monitorDetails *> *pList, wxWindow * parent, const wxString & title,
 		const wxPoint & position, const wxSize & size);
 	void FindDirectoryButtonClicked(wxCommandEvent& event);
 	void SetMonitorList(std::list <struct monitorDetails *> *pList);

@@ -442,7 +442,7 @@ void BPMNControlPanel::ShowElement()
 	clientRect.bottom = size.GetHeight();
 
 	OffsetRect(&rect, pointOffset.x, pointOffset.y);
-	if (pDiagramMap->IsElementInWindow(pElement, &clientRect, &rect))
+	if (pDiagramMap->IsElementInWindow(&clientRect, &rect))
 		; // the element is on the screen
 	else
 	{

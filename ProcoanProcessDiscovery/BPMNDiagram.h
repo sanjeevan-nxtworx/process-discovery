@@ -35,8 +35,8 @@ class BPMNDiagram
 	struct cellDef *SetElementsInDiagram(list <BPMNElement *> *pElementList, int *row, int *col, int *maxCol, struct cellDef *pCellPrev, list <cellDef *> *bBranchEndElements);
 	void UpdateBranchCells(list <struct cellDef *> *pBranchElementList, int startCol);
 	void UpdateBranchCellSizes(list <struct cellDef *> *pBranchElementList);
-	void DrawConnectingLines(HDC hdc, LPRECT rectFrom, LPRECT rectTo, LPRECT wndRect);
-	wxSize GetDiagramExtents(HDC hdc);
+	void DrawConnectingLines(HDC hdc, LPRECT rectFrom, LPRECT rectTo);
+	wxSize GetDiagramExtents(void);
 	void GetControlDimensions(list <BPMNElement *> *pElementList);
 public:
 	void SetSyncElement();
@@ -66,8 +66,8 @@ public:
 	void CreateBPMNBitmap(vector<unsigned char>& buffer,  SIZE *szBmp);
 	void GetEventBitmap(vector<unsigned char>& buffer, ULONG& cx, ULONG& cy, ULONG nEventID, vector <BPMNElement *> &pElementList);
 
-	bool IsElementInWindow(BPMNElement *pElement, LPRECT pWindowRect, LPRECT pElementRect);
-	bool IsElementPartialInWindow(BPMNElement *pElement, LPRECT pWindowRect, LPRECT pElementRect);
+	bool IsElementInWindow(LPRECT pWindowRect, LPRECT pElementRect);
+	bool IsElementPartialInWindow(LPRECT pWindowRect, LPRECT pElementRect);
 	void SetDrawPosition();
 
 	struct cellDef *FindCell(int xPos, int yPos);

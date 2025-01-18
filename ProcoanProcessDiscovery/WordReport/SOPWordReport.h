@@ -49,8 +49,8 @@ class SOPWordReport
 	void CreateHeaderFile(WordDocument *pDoc);
 	void CreateMainFooterFile(WordDocument *pDoc);
 	void CreateCoverPage(WordDocument *pDoc, DocumentBody *pBody);
-	void CreateControlPage(WordDocument *pDoc, DocumentBody *pBody);
-	void CreateTOC(WordDocument *pDoc, DocumentBody *pBody);
+	void CreateControlPage(DocumentBody *pBody);
+	void CreateTOC(DocumentBody *pBody);
 	void CreateFontTableFile(WordDocument *pDoc);
 	void CreateTheme1File(WordDocument *pDoc);
 	void CreateNumberingFile(WordDocument *pDoc);

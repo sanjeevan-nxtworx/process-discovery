@@ -51,7 +51,7 @@ void PDFDocument::GenerateReport()
 	nLevelNumber = 1;
 	list <BPMNElement *> *mainDiagram = pDataFileManager->GetBPMNDiagram();
 	psSNo = "";
-	PrintReportTable("", 0, pdf, mainDiagram);
+	PrintReportTable("", pdf, mainDiagram);
 	nLevelNumber = 2;
 	psSNo = "A";
 	PrintReport(pdf, mainDiagram);
@@ -63,7 +63,7 @@ void PDFDocument::GenerateReport()
 		BPMNElement *pElement = section->pElement;
 		if (pElement->GetType() == 3)
 		{
-			PrintSubProcessActivities(pdf, pElement, section);
+			PrintSubProcessActivities(pdf, pElement);
 		}
 		else if (pElement->GetType() == 4)
 		{
@@ -73,7 +73,7 @@ void PDFDocument::GenerateReport()
 	pdf.SaveAsFile(wxS("c:\\Projects\\SOPReport.pdf"));
 }
 
-void PDFDocument::PrintReportTable(string pMainSNo, int subSNo, PDFSOPDoc &doc, list <BPMNElement *> *pElementList)
+void PDFDocument::PrintReportTable(string pMainSNo, PDFSOPDoc &doc, list <BPMNElement *> *pElementList)
 {
 	list <BPMNElement *>::iterator itAction = pElementList->begin();
 	BPMNElement *pElement = NULL;
@@ -815,7 +815,7 @@ void PDFDocument::ReportGroupTable(PDFSOPDoc &doc, vector <BPMNElement *> &pElem
 	doc.DataTable(header, data, w, align);
 }
 
-void PDFDocument::PrintSubProcessActivities(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails)
+void PDFDocument::PrintSubProcessActivities(PDFSOPDoc &doc, BPMNElement *pElement)
 {
 	//wxString actionString = wxS("");
 	//actionString = wxS(" Sub-Process: ") + pElement->GetKeyValueAsString("Annotation");
@@ -915,11 +915,11 @@ void PDFDocument::PrintSubProcess(PDFSOPDoc &doc, BPMNElement *pElement, struct 
 	reportSections.push_back(pSectionDetails);
 	if (pSectionDetails->linkSNo[0] >= '0' && pSectionDetails->linkSNo <= '9')
 	{
-		PrintReportTable(psSNo, 0, doc, pSubProcess->GetSubProcessElements());
+		PrintReportTable(psSNo, doc, pSubProcess->GetSubProcessElements());
 		psSNo[0] = psSNo[0] + 1;
 	}
 	else
-		PrintReportTable(pSectionDetails->linkSNo,0, doc, pSubProcess->GetSubProcessElements());
+		PrintReportTable(pSectionDetails->linkSNo,doc, pSubProcess->GetSubProcessElements());
 }
 
 void PDFDocument::PrintBranchActivities(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails)
@@ -947,7 +947,7 @@ void PDFDocument::PrintRightBranch(PDFSOPDoc &doc, BPMNElement *pElement, struct
 	doc.Ln(4);
 	BPMNDecision *pDecision = (BPMNDecision *)pElement;
 
-	PrintReportTable(pSectionDetails->linkSNo, 0, doc, pDecision->GetBranchRightElements());
+	PrintReportTable(pSectionDetails->linkSNo, doc, pDecision->GetBranchRightElements());
 }
 
 void PDFDocument::PrintBottomBranch(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails)
@@ -961,7 +961,7 @@ void PDFDocument::PrintBottomBranch(PDFSOPDoc &doc, BPMNElement *pElement, struc
 	doc.Ln(4);
 	BPMNDecision *pDecision = (BPMNDecision *)pElement;
 
-	PrintReportTable(pSectionDetails->linkSNo, 0, doc, pDecision->GetBranchBottomElements());
+	PrintReportTable(pSectionDetails->linkSNo, doc, pDecision->GetBranchBottomElements());
 }
 
 

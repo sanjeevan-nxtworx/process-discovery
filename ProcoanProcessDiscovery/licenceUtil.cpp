@@ -372,7 +372,7 @@ string decryptRailFence(string cipher, int key)
 	}
 
 	// now we can construct the fill the rail matrix 
-	int index = 0;
+	size_t index = 0;
 	for (int i = 0; i < key; i++)
 		for (int j = 0; j < size; j++)
 			if (rail[i][j] == '*' && index < cipher.length())

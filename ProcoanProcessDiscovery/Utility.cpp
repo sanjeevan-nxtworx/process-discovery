@@ -825,7 +825,7 @@ long CompressCompareBuffer(char *dest, long *src, long numBlocks)
 	return retSize;
 }
 
-long ExpandCompareData(long *dest, char *src, int width, long numBlocks)
+long ExpandCompareData(long *dest, char *src,  long numBlocks)
 {
 	int numRLE = *src;
 	src++;
@@ -1146,7 +1146,7 @@ void GetAllWindowsFromProcessID(DWORD dwProcessID, std::vector <HWND> &vhWnds)
 		if (dwProcessID == dwWndProcessID)
 		{
 			vhWnds.push_back(hCurWnd);  // add the found hCurWnd to the vector
-			wprintf(L"Found hWnd %d\n", hCurWnd);
+			//wprintf(L"Found hWnd %d\n", hCurWnd);
 		}
 	} while (hCurWnd != NULL);
 }
@@ -1165,7 +1165,7 @@ HWND FindTopWindow(DWORD pid)
 		if (GetWindowThreadProcessId(hwnd, &processId) && processId == pParams->second)
 		{
 			// Stop enumerating
-			SetLastError(-1L);
+			SetLastError((DWORD)-1L);
 			pParams->first = hwnd;
 			return FALSE;
 		}

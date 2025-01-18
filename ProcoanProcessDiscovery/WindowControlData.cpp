@@ -334,7 +334,7 @@ void WindowControlData::SetMatchedValue(struct matchResult* pMatchResult)
 	CopyMemory(&matchValue, pMatchResult, sizeof(struct matchResult));
 }
 
-void WindowControlData::CheckMatchedValue(struct matchResult* pMatchResult, DWORD ID)
+void WindowControlData::CheckMatchedValue(struct matchResult* pMatchResult, DWORD id)
 {
 	if (pMatchResult->matchAncestors >= matchValue.matchAncestors &&
 		pMatchResult->matchChildren >= matchValue.matchChildren &&
@@ -343,7 +343,7 @@ void WindowControlData::CheckMatchedValue(struct matchResult* pMatchResult, DWOR
 		pMatchResult->matchNeighbors >= matchValue.matchNeighbors)
 	{
 		CopyMemory(&matchValue, pMatchResult, sizeof(struct matchResult));
-		controlID = ID;
+		controlID = id;
 		bMatch = true;
 	}
 }
@@ -399,6 +399,6 @@ struct matchResult *WindowControlData::GetMatchData(int num)
 
 int WindowControlData::GetMatchCount()
 {
-	return matchResults.size();
+	return (int)matchResults.size();
 }
 

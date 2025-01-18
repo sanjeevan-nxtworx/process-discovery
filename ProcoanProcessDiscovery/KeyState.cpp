@@ -234,7 +234,7 @@ string KeyState::GetPrintableKey(int keyVal)
 	{
 		keyString = GetControlKeyValue();
 		UINT code = MapVirtualKeyA(keyVal, MAPVK_VK_TO_CHAR);
-		keyString += code;
+		keyString += (char)code;
 	}
 	else
 	{

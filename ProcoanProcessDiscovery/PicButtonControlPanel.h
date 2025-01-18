@@ -42,8 +42,8 @@ public:
 	void SetFileOpenFlg(bool bFlg);
 	void SetPrimaryFile(bool bFlg);
 	void SetButtonStatus();
-	void SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth);
-	void SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed, int buttonWidth);
+	void SetButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed);
+	void SetSmallButtonBitmaps(ProcoanButton *btnObj, const char *const *xpmNormal, const char *const *xpmDisabled, const char *const *xpmFocussed, const char *const *xpmPressed);
 
 	void Resize(int buttonWidth, int buttonMargin, int buttonXPosDiff, int buttonYPosDiff);
 	void OnFastRewind(wxCommandEvent& event);

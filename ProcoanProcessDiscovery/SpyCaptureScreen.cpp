@@ -53,7 +53,7 @@ SpyCaptureScreen::SpyCaptureScreen(wxWindow* parent, wxWindowID WXUNUSED(id), co
 	pEventCapture = DBG_NEW EventCaptureURL();
 
 	CreateRecorderWindow();
-	GetRecorderWnd()->CreateRecorderWindow(this->GetHWND(), GetModuleHandle(NULL));
+	GetRecorderWnd()->CreateRecorderWindow(GetModuleHandle(NULL));
 	GetRecorderWnd()->SetCallBack(pEventCapture);
 	setKeyboardHook(GetRecorderWnd()->GetRecorderWindowHandle());
 	setMouseHook(GetRecorderWnd()->GetRecorderWindowHandle());
@@ -191,8 +191,8 @@ void SpyCaptureScreen::OnSave(wxCommandEvent& WXUNUSED(event))
 		int captureType = pCapturedElement->GetCaptureType();
 		
 		wxString wControlName = controlName->GetValue();
-		string controlName = wControlName.mb_str();
-		if (controlName == "")
+		string controlNameLocal = wControlName.mb_str();
+		if (controlNameLocal == "")
 		{
 			wxMessageBox("ERROR: Name is empty");
 			return;
@@ -202,7 +202,7 @@ void SpyCaptureScreen::OnSave(wxCommandEvent& WXUNUSED(event))
 
 		//CONTROLTYPEID controlType = pCapturedElement->GetControlType();
 		pCapturedElement->SetAnnotation(annotation);
-		pCapturedElement->SetUserDefinedName(controlName);
+		pCapturedElement->SetUserDefinedName(controlNameLocal);
 		pDataFacade->ClearWindowData();
 		pDataFacade->ClearControlsData();
 

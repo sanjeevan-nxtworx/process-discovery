@@ -48,7 +48,7 @@ public:
 	void EndEventProcessing();
 	CaptureElementData* GetCapturedEvent();
 
-	virtual void MouseCallback(int mEventNum, DWORD pt);
+	virtual void MouseCallback(int mEventNum, ULONG lParam);
 	virtual void KeyboardCallback(int mEventNum, WORD vk_code, WORD scanCode);
 	virtual void TimerEnd();
 	void CreateTimerThread();

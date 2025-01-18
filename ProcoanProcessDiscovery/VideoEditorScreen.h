@@ -98,7 +98,7 @@ class VideoEditorScreen : public wxFrame, public IPlayerWindow
 	string  displayAnnotationNotes;
 	string  displayAnnotationBottomString;
 
-	void ResizeWindow(wxSize szFrameSize);
+	void ResizeWindow(void);
 	void ReArrangeForm();
 
 	void CreateMainMenuBar();
@@ -125,7 +125,7 @@ public:
 	void OnToolBarRight(wxCommandEvent &event);
 	void OnFileChanged(wxNotebookEvent &event);
 	void OnFileClose(wxCommandEvent &event);
-	void OnExit(wxCommandEvent &event);
+	void OnExit(wxCommandEvent& event);
 	void OnVideoPaneLeft(wxCommandEvent &event);
 	void OnVideoPaneRight(wxCommandEvent &event);
 	void OnSwitchPanel(wxCommandEvent &event);
@@ -202,7 +202,7 @@ public:
 	void InsertEvent(ULONG nEventID, long long timestamp);
 	bool IsVideoThreadWaiting();
 	void SetStartFlag(bool bFlg);
-	void StartPlay(long long fPos);
+	void StartPlay(void);
 	void StartDisplay();
 	long GetSliderPosition();
 	void DisplayImage();
@@ -221,7 +221,7 @@ public:
 	//void GetMonitorDetails(int noMonitors, long long fPosMonitorDetails);
 	void SetRecordBufferManager(RecordBufferManager *pRecBuffer);
 	void OnClose(wxCloseEvent & event);
-	VideoEditorScreen(wxWindow * parent, wxWindowID id, const wxString & title,
+	VideoEditorScreen(wxWindow * parent, const wxString & title,
 		const wxPoint & position, const wxSize & size, bool bFlg);
 	void DrawVideoPanel(wxPanel *parent, int width, int height, int xPos, int yPos);
 	void DrawBPMNPanel(wxPanel *parent, int width,int height,  int xPos, int yPos);

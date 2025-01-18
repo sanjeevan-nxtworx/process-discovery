@@ -117,13 +117,14 @@ unsigned insertChunks(std::vector<unsigned char>& png,
     next = lodepng_chunk_next_const(chunk);
     if (next <= chunk) return 1; // integer overflow
 
+    long val = (long)(chunk - begin) + 8;
     if(name == "PLTE") {
-      if(l0 == 0) l0 = chunk - begin + 8;
+      if(l0 == 0) l0 = val;
     } else if(name == "IDAT") {
-      if(l0 == 0) l0 = chunk - begin + 8;
-      if(l1 == 0) l1 = chunk - begin + 8;
+      if(l0 == 0) l0 = val;
+      if(l1 == 0) l1 = val;
     } else if(name == "IEND") {
-      if(l2 == 0) l2 = chunk - begin + 8;
+      if(l2 == 0) l2 =  val;
     }
 
     chunk = next;
@@ -431,7 +432,6 @@ static float iccBackwardTRC(const LodePNGICCCurve* curve, float x) {
         a = m;
       }
     }
-    return 0;
   }
   if(curve->type == 2) {
     /* Gamma compression */
@@ -481,7 +481,7 @@ static int decodeICCInt32(const unsigned char* data, size_t size, size_t* pos) {
 }
 
 static float decodeICC15Fixed16(const unsigned char* data, size_t size, size_t* pos) {
-  return decodeICCInt32(data, size, pos) / 65536.0;
+  return decodeICCInt32(data, size, pos) / 65536.0f;
 }
 
 static unsigned isICCword(const unsigned char* data, size_t size, size_t pos, const char* word) {
@@ -659,9 +659,9 @@ static unsigned parseICC(LodePNGICC* icc, const unsigned char* data, size_t size
 static void mulMatrix(float* x2, float* y2, float* z2, const float* m, double x, double y, double z) {
   /* double used as inputs even though in general the images are float, so the sums happen in
   double precision, because float can give numerical problems for nearby values */
-  *x2 = x * m[0] + y * m[1] + z * m[2];
-  *y2 = x * m[3] + y * m[4] + z * m[5];
-  *z2 = x * m[6] + y * m[7] + z * m[8];
+  *x2 = (float)(x * m[0] + y * m[1] + z * m[2]);
+  *y2 = (float)(x * m[3] + y * m[4] + z * m[5]);
+  *z2 = (float)(x * m[6] + y * m[7] + z * m[8]);
 }
 
 static void mulMatrixMatrix(float* result, const float* a, const float* b) {
@@ -685,15 +685,15 @@ static unsigned invMatrix(float* m) {
   double d = 1.0 / (m[0] * e0 + m[1] * e3 + m[2] * e6);
   float result[9];
   if(fabs(d) > 1e15) return 1; /* error, likely not invertible */
-  result[0] = e0 * d;
-  result[1] = ((double)m[2] * m[7] - (double)m[1] * m[8]) * d;
-  result[2] = ((double)m[1] * m[5] - (double)m[2] * m[4]) * d;
-  result[3] = e3 * d;
-  result[4] = ((double)m[0] * m[8] - (double)m[2] * m[6]) * d;
-  result[5] = ((double)m[3] * m[2] - (double)m[0] * m[5]) * d;
-  result[6] = e6 * d;
-  result[7] = ((double)m[6] * m[1] - (double)m[0] * m[7]) * d;
-  result[8] = ((double)m[0] * m[4] - (double)m[3] * m[1]) * d;
+  result[0] = (float)(e0 * d);
+  result[1] = (float)(((double)m[2] * m[7] - (double)m[1] * m[8]) * d);
+  result[2] = (float)(((double)m[1] * m[5] - (double)m[2] * m[4]) * d);
+  result[3] = (float)(e3 * d);
+  result[4] = (float)(((double)m[0] * m[8] - (double)m[2] * m[6]) * d);
+  result[5] = (float)(((double)m[3] * m[2] - (double)m[0] * m[5]) * d);
+  result[6] = (float)(e6 * d);
+  result[7] = (float)(((double)m[6] * m[1] - (double)m[0] * m[7]) * d);
+  result[8] = (float)(((double)m[0] * m[4] - (double)m[3] * m[1]) * d);
   for(i = 0; i < 9; i++) m[i] = result[i];
   return 0; /* ok */
 }
@@ -741,24 +741,24 @@ static unsigned getAdaptationMatrix(float* m, int type,
                                     float wx1, float wy1, float wz1) {
   int i;
   static const float bradford[9] = {
-    0.8951, 0.2664, -0.1614,
-    -0.7502, 1.7135, 0.0367,
-    0.0389, -0.0685, 1.0296
+    0.8951f, 0.2664f, -0.1614f,
+    -0.7502f, 1.7135f, 0.0367f,
+    0.0389f, -0.0685f, 1.0296f
   };
   static const float bradfordinv[9] = {
-    0.9869929, -0.1470543, 0.1599627,
-    0.4323053, 0.5183603, 0.0492912,
-   -0.0085287, 0.0400428, 0.9684867
+    0.9869929f, -0.1470543f, 0.1599627f,
+    0.4323053f, 0.5183603f, 0.0492912f,
+   -0.0085287f, 0.0400428f, 0.9684867f
   };
   static const float vonkries[9] = {
-    0.40024, 0.70760, -0.08081,
-    -0.22630, 1.16532, 0.04570,
-    0.00000, 0.00000, 0.91822,
+    0.40024f, 0.70760f, -0.08081f,
+    -0.22630f, 1.16532f, 0.04570f,
+    0.00000f, 0.00000f, 0.91822f,
   };
   static const float vonkriesinv[9] = {
-    1.8599364, -1.1293816, 0.2198974,
-    0.3611914, 0.6388125, -0.0000064,
-   0.0000000, 0.0000000, 1.0890636
+    1.8599364f, -1.1293816f, 0.2198974f,
+    0.3611914f, 0.6388125f, -0.0000064f,
+   0.0000000f, 0.0000000f, 1.0890636f
   };
   if(type == 0) {
     for(i = 0; i < 9; i++) m[i] = 0;
@@ -1285,8 +1285,8 @@ unsigned convertFromXYZ(unsigned char* out, const float* in, unsigned w, unsigne
       for(c = 0; c < 4; c++) {
         size_t j = i * 8 + c * 2;
         int i16 = (int)(0.5f + 65535.0f * LODEPNG_MIN(LODEPNG_MAX(0.0f, im[i * 4 + c]), 1.0f));
-        data[j + 0] = i16 >> 8;
-        data[j + 1] = i16 & 255;
+        data[j + 0] = (unsigned char)(i16 >> 8);
+        data[j + 1] = (unsigned char)(i16 & 255);
       }
     }
     error = lodepng_convert(out, data, mode_out, &mode16, w, h);
@@ -1296,7 +1296,7 @@ unsigned convertFromXYZ(unsigned char* out, const float* in, unsigned w, unsigne
     for(i = 0; i < n; i++) {
       for(c = 0; c < 4; c++) {
         int i8 = (int)(0.5f + 255.0f * LODEPNG_MIN(LODEPNG_MAX(0.0f, im[i * 4 + c]), 1.0f));
-        data[i * 4 + c] = i8;
+        data[i * 4 + c] = (unsigned char)i8;
       }
     }
     error = lodepng_convert(out, data, mode_out, &mode8, w, h);
@@ -1498,9 +1498,9 @@ struct ExtractZlib { // Zlib decompression and information extraction
     size_t HLIT =  readBitsFromStream(bp, in, 5) + 257; //number of literal/length codes + 257
     size_t HDIST = readBitsFromStream(bp, in, 5) + 1; //number of dist codes + 1
     size_t HCLEN = readBitsFromStream(bp, in, 4) + 4; //number of code length codes + 4
-    zlibinfo->back().hlit = HLIT - 257;
-    zlibinfo->back().hdist = HDIST - 1;
-    zlibinfo->back().hclen = HCLEN - 4;
+    zlibinfo->back().hlit = (int)(HLIT - 257);
+    zlibinfo->back().hdist = (int)(HDIST - 1);
+    zlibinfo->back().hclen = (int)(HCLEN - 4);
     std::vector<unsigned long> codelengthcode(19); //lengths of tree to decode the lengths of the dynamic tree
     for(size_t i = 0; i < 19; i++) codelengthcode[CLCL[i]] = (i < HCLEN) ? readBitsFromStream(bp, in, 3) : 0;
     //code length code lengths
@@ -1524,7 +1524,7 @@ struct ExtractZlib { // Zlib decompression and information extraction
       } else if(code == 17) { //repeat "0" 3-10 times
         if(bp >> 3 >= inlength) { error = 50; return; } //error, bit pointer jumps past memory
         replength = 3 + readBitsFromStream(bp, in, 3);
-        zlibinfo->back().treecodes.push_back(replength); //tree symbol code repetitions
+        zlibinfo->back().treecodes.push_back((int)replength); //tree symbol code repetitions
         for(size_t n = 0; n < replength; n++) { //repeat this value in the next lengths
           if(i >= HLIT + HDIST) { error = 14; return; } //error: i is larger than the amount of codes
           if(i < HLIT) bitlen[i++] = 0; else bitlenD[i++ - HLIT] = 0;
@@ -1532,7 +1532,7 @@ struct ExtractZlib { // Zlib decompression and information extraction
       } else if(code == 18) { //repeat "0" 11-138 times
         if(bp >> 3 >= inlength) { error = 50; return; } //error, bit pointer jumps past memory
         replength = 11 + readBitsFromStream(bp, in, 7);
-        zlibinfo->back().treecodes.push_back(replength); //tree symbol code repetitions
+        zlibinfo->back().treecodes.push_back((int)replength); //tree symbol code repetitions
         for(size_t n = 0; n < replength; n++) { //repeat this value in the next lengths
           if(i >= HLIT + HDIST) { error = 15; return; } //error: i is larger than the amount of codes
           if(i < HLIT) bitlen[i++] = 0; else bitlenD[i++ - HLIT] = 0;
@@ -1590,9 +1590,9 @@ struct ExtractZlib { // Zlib decompression and information extraction
         }
         numlen++;
         zlibinfo->back().lz77_dcode.back() = codeD; //output distance code
-        zlibinfo->back().lz77_lbits.back() = numextrabits; //output length extra bits
+        zlibinfo->back().lz77_lbits.back() = (unsigned long)numextrabits; //output length extra bits
         zlibinfo->back().lz77_dbits.back() = numextrabitsD; //output dist extra bits
-        zlibinfo->back().lz77_lvalue.back() = length; //output length
+        zlibinfo->back().lz77_lvalue.back() = (unsigned long)length; //output length
         zlibinfo->back().lz77_dvalue.back() = dist; //output dist
       }
     }
@@ -1710,7 +1710,7 @@ void extractZlibInfo(std::vector<ZlibBlockInfo>& zlibinfo, const std::vector<uns
 unsigned decodeBMP(std::vector<unsigned char>& image, unsigned& w, unsigned& h, const std::vector<unsigned char>& bmp) {
 	static const unsigned MINHEADER = 54; //minimum BMP header size
 
-	if (bmp.size() < MINHEADER) return -1;
+	if (bmp.size() < MINHEADER) return 0xffffffff;
 	if (bmp[0] != 'B' || bmp[1] != 'M') return 1; //It's not a BMP file if it doesn't start with marker 'BM'
 	unsigned pixeloffset = bmp[10] + 256 * bmp[11]; //where the pixel data starts
 	//read width and height from BMP header
@@ -1763,7 +1763,7 @@ unsigned decodeBMP(std::vector<unsigned char>& image, unsigned& w, unsigned& h, 
 unsigned decodeBMPNoInvert(std::vector<unsigned char>& image, unsigned& w, unsigned& h, const std::vector<unsigned char>& bmp) {
 	static const unsigned MINHEADER = 54; //minimum BMP header size
 
-	if (bmp.size() < MINHEADER) return -1;
+	if (bmp.size() < MINHEADER) return 0xffffffff;
 	if (bmp[0] != 'B' || bmp[1] != 'M') return 1; //It's not a BMP file if it doesn't start with marker 'BM'
 	unsigned pixeloffset = bmp[10] + 256 * bmp[11]; //where the pixel data starts
 	//read width and height from BMP header

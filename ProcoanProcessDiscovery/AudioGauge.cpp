@@ -143,7 +143,7 @@ void AudioGauge::SetLEDBackColor(wxColor wxbackColor)
 	LEDbackColor = wxbackColor;
 }
 
-void AudioGauge::SetAudioValue(unsigned short value)
-{
-	guageValue = value;
-}
+//void AudioGauge::SetAudioValue(unsigned short value)
+//{
+//	guageValue = value;
+//}

@@ -24,10 +24,10 @@ public:
 	void PrintCoverPage(PDFSOPDoc &doc);
 	void PrintSummaryPage(PDFSOPDoc &doc);
 	void PrintReport(PDFSOPDoc &doc, list <BPMNElement *> *pElementList);
-	void PrintReportTable(string pMainSNo, int subSNo, PDFSOPDoc &doc, list <BPMNElement *> *pElementList);
+	void PrintReportTable(string pMainSNo, PDFSOPDoc &doc, list <BPMNElement *> *pElementList);
 	void PrintTaskGroup(PDFSOPDoc &doc, vector <BPMNElement *> &pElementList, struct linkReportSections *pSectionDetails);
 	void PrintSubProcess(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails);
-	void PrintSubProcessActivities(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails);
+	void PrintSubProcessActivities(PDFSOPDoc &doc, BPMNElement *pElement);
 	void PrintBranchActivities(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails);
 	void PrintRightBranch(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails);
 	void PrintBottomBranch(PDFSOPDoc &doc, BPMNElement *pElement, struct linkReportSections *pSectionDetails);

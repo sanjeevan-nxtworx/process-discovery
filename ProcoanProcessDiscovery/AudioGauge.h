@@ -20,7 +20,7 @@ public:
 	void SetForeColor(wxColor wxforeColor);
 	void SetBackColor(wxColor wxbackColor);
 	void SetLEDBackColor(wxColor wxbackColor);
-	void SetAudioValue(unsigned short value);
+	//void SetAudioValue(unsigned short value);
 
 	DECLARE_EVENT_TABLE()
 };

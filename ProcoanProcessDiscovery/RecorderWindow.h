@@ -8,7 +8,7 @@ class RecorderWindow
 public:
 	RecorderWindow();
 	~RecorderWindow();
-	void CreateRecorderWindow(HWND Parent, HINSTANCE hInstance);
+	void CreateRecorderWindow(HINSTANCE hInstance);
 	HWND GetRecorderWindowHandle();
 	void SetCallBack(IMouseEventCallback *callback);
 };

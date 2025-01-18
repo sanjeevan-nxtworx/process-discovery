@@ -15,7 +15,7 @@ EVT_BUTTON(SCENARIO_CANCELBTN, ManageScenarioDlg::OnCancelDlg)
 EVT_BUTTON(SCENARIO_CLOSEBTN, ManageScenarioDlg::OnCloseDlg)
 wxEND_EVENT_TABLE()
 
-ManageScenarioDlg::ManageScenarioDlg(ScenarioFacade *pScenarios, wxWindow * parent, wxWindowID id, const wxString & title,
+ManageScenarioDlg::ManageScenarioDlg(ScenarioFacade *pScenarios, wxWindow * parent, const wxString & title,
 	const wxPoint & position, const wxSize & size)
 	: wxDialog(NULL, -1, title, position, size)
 {

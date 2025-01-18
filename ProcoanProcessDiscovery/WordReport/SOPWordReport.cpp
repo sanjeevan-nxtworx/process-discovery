@@ -114,8 +114,8 @@ void SOPWordReport::CreateSOPReport()
 
 	DocXDocPart::pageNumber = 1;
 	CreateCoverPage(pDocument, pBody);
-	CreateControlPage(pDocument, pBody);
-	CreateTOC(pDocument, pBody);
+	CreateControlPage(pBody);
+	CreateTOC(pBody);
 	CreateProcessSummaryPage(pDocument, pBody);
 	CreateProcessStep(pDocument, pBody);
 
@@ -967,7 +967,7 @@ void SOPWordReport::AddRowTableCell(TableRow *pRow, int cellWidth, string text)
 	pRun->SetText(text, false);
 }
 
-void SOPWordReport::CreateTOC(WordDocument *pDocument, DocumentBody *pBody)
+void SOPWordReport::CreateTOC(DocumentBody *pBody)
 {
 	TOCsdt *toc = DBG_NEW TOCsdt();
 
@@ -1023,7 +1023,7 @@ void SOPWordReport::AddEmptyParagraph(DocumentBody *pBody, string tabSide, int t
 	para->SetFont(runFont, runFontSize, runCsSize);
 }
 
-void SOPWordReport::CreateControlPage(WordDocument *pDocument, DocumentBody *pBody)
+void SOPWordReport::CreateControlPage(DocumentBody *pBody)
 {
 	Table *pTable = pBody->AddTable();
 	pTable->SetTableStyle("TableGrid");

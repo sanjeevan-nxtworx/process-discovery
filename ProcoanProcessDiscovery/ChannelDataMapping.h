@@ -35,7 +35,7 @@ class ChannelDataMapping
 	void GetMonitorDetails(int noMonitors, long long fPosMonitorDetails);
 	void DrawRectangleInEventBitmap(LPSTR pBuffer, int monNum, RECT r);
 	void DrawHorizLine(char *pBuffer, int width, int height, int leftCol, int row, int rightCol);
-	void DrawVertLine(char *pBuffer, int width, int height, int col, int topRow, int botRow);
+	void DrawVertLine(char *pBuffer, int width, int col, int topRow, int botRow);
 	void ReadVideoData(bool bMainPath, map <long long, struct indexPageDescriptor *> *mapVideo, long long fPos);
 
 public:

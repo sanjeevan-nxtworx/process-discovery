@@ -42,7 +42,7 @@ RecorderUI::RecorderUI(wxWindow * parent, wxWindowID id, const wxString & title,
 	parent->Hide();
 	monitorList.clear();
 	CreateRecorderWindow();
-	GetRecorderWnd()->CreateRecorderWindow(this->GetHWND(), GetModuleHandle(NULL));
+	GetRecorderWnd()->CreateRecorderWindow(GetModuleHandle(NULL));
 	CreateExecutionManager()->StartExecutionManager();
 }
 
